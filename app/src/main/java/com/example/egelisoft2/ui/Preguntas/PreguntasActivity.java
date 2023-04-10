@@ -1,6 +1,7 @@
-package com.example.egelisoft2.ui.dashboard;
+package com.example.egelisoft2.ui.Preguntas;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -19,7 +20,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class PreguntasActivity2  extends AppCompatActivity {
+
+public class PreguntasActivity extends AppCompatActivity {
 
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
@@ -125,7 +127,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
 
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -139,7 +141,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
         } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -156,8 +158,8 @@ public class PreguntasActivity2  extends AppCompatActivity {
 
         } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
 
-            //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
+           //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -173,7 +175,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
         } else {
             //muestra el bottom sheet
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -188,14 +190,30 @@ public class PreguntasActivity2  extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
 
         }
+
+        //guardar cual fue la ultima actividad
+        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("ultimaActividad", "preguntasActivity");
+        editor.apply();
+
         // Muestra la siguiente pregunta o finaliza la actividad
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
-            finish();
+
+
+            Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
+            startActivity(intent);
 
 
         }
     }
 }
+
+
+
+
+
+

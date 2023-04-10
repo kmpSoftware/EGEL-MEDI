@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,7 +13,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.egelisoft2.R;
 import com.example.egelisoft2.databinding.FragmentDashboardBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.egelisoft2.ui.Subtemas.subtemas;
+import com.example.egelisoft2.ui.Subtemas.subtemas2;
 
 public class DashboardFragment extends Fragment {
 

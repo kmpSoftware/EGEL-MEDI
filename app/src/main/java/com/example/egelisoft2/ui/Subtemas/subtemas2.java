@@ -1,4 +1,4 @@
-package com.example.egelisoft2.ui.dashboard;
+package com.example.egelisoft2.ui.Subtemas;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,20 +8,18 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.egelisoft2.R;
+import com.example.egelisoft2.ui.Preguntas.PreguntasActivity2;
 
 public class subtemas2 extends AppCompatActivity{
-
-
 
         Button button1;
         Button button2;
         Button button3;
 
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.subtemas);
+            setContentView(R.layout.subtemas2);
 
             // Busca el botón por su id
             button1 = findViewById(R.id.button1);
@@ -35,7 +33,7 @@ public class subtemas2 extends AppCompatActivity{
                 @Override
                 public void onClick(View v) {
                     // Crea un intent para abrir la nueva actividad
-                    Intent intent = new Intent(com.example.egelisoft2.ui.dashboard.subtemas2.this, PreguntasActivity2.class);
+                    Intent intent = new Intent(subtemas2.this, PreguntasActivity2.class);
 
                     // Agrega un identificador al Intent para indicar que se presionó el botón 1
                     intent.putExtra("BOTON_PRESIONADO", 1);
@@ -49,7 +47,7 @@ public class subtemas2 extends AppCompatActivity{
                 @Override
                 public void onClick(View v) {
                     // Crea un intent para abrir la nueva actividad
-                    Intent intent = new Intent(com.example.egelisoft2.ui.dashboard.subtemas2.this, PreguntasActivity2.class);
+                    Intent intent = new Intent(subtemas2.this, PreguntasActivity2.class);
 
                     // Agrega un identificador al Intent para indicar que se presionó el botón 2
                     intent.putExtra("BOTON_PRESIONADO", 2);
@@ -63,7 +61,7 @@ public class subtemas2 extends AppCompatActivity{
                 @Override
                 public void onClick(View v) {
                     // Crea un intent para abrir la nueva actividad
-                    Intent intent = new Intent(com.example.egelisoft2.ui.dashboard.subtemas2.this, PreguntasActivity2.class);
+                    Intent intent = new Intent(subtemas2.this, PreguntasActivity2.class);
 
                     // Agrega un identificador al Intent para indicar que se presionó el botón 3
                     intent.putExtra("BOTON_PRESIONADO", 3);

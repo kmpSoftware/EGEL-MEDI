@@ -1,4 +1,4 @@
-package com.example.egelisoft2.ui.dashboard;
+package com.example.egelisoft2.ui.Subtemas;
 
 import static android.app.PendingIntent.getActivity;
 
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.egelisoft2.R;
+import com.example.egelisoft2.ui.Preguntas.PreguntasActivity;
 
 public class subtemas extends AppCompatActivity {
     Button button1;

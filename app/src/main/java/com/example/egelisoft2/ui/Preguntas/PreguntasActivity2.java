@@ -1,6 +1,7 @@
-package com.example.egelisoft2.ui.dashboard;
+package com.example.egelisoft2.ui.Preguntas;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -8,22 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.egelisoft2.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
-public class PreguntasActivity extends AppCompatActivity {
+public class PreguntasActivity2  extends AppCompatActivity {
 
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
@@ -52,11 +49,11 @@ public class PreguntasActivity extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"¿Qué son los requerimientos de software?", "Conjunto de especificaciones que describen lo que debe hacer el software", "Documentación que describe cómo fue diseñado el software", "Programas que permiten a los usuarios interactuar con el software", "Conjunto de especificaciones que describen lo que debe hacer el software", "Los requerimientos de software son una parte crucial del proceso de desarrollo de software. Son un conjunto de especificaciones que describen las necesidades, deseos y expectativas del cliente y los usuarios para el software. Estos requerimientos son la base para el diseño, la implementación y las pruebas del software. Una comprensión clara de los requerimientos de software es esencial para el éxito del proyecto, ya que ayuda a evitar malinterpretaciones y errores en el diseño y la construcción del software."},
-                        {"¿Por qué es importante definir los requerimientos de software?", "Para evitar malinterpretaciones y errores en el diseño del software", "Para crear documentación para futuras mejoras del software", "Para mantener a los programadores ocupados", "Para evitar malinterpretaciones y errores en el diseño del software", "Definir correctamente los requerimientos de software es fundamental para el éxito del proyecto. Es importante porque permite a los desarrolladores comprender lo que se espera del software, evita malentendidos y errores en el diseño y construcción, y proporciona una base sólida para el plan de desarrollo del software. Al definir los requerimientos de software, se establece una visión clara y coherente de lo que se quiere lograr, lo que ayuda a mantener enfocado el proyecto y a asegurarse de que se alcancen los objetivos deseados."},
-                        {"¿Qué es un requerimiento funcional?", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento funcional es aquel que describe una función específica que debe ser realizada por el software. Los requerimientos funcionales describen lo que el software debe hacer, y suelen estar relacionados con tareas específicas que el usuario desea realizar con el software. Estos requerimientos son importantes porque describen la funcionalidad del software y son la base para el diseño, la implementación y las pruebas del software."},
-                        {"¿Qué es un requerimiento no funcional?", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones",  "Un requerimiento no funcional es aquel que describe cómo debe comportarse el software bajo ciertas condiciones. Estos requerimientos se centran en aspectos que no están directamente relacionados con la funcionalidad del software, como la seguridad, la escalabilidad, el rendimiento, la usabilidad, entre otros. Los requerimientos no funcionales son importantes porque aseguran que el software se comporte de la manera esperada en diferentes condiciones, y son la base para la evaluación del software en términos de calidad y eficacia."},
-                        {"¿Qué es un requerimiento de usuario?", "Un requerimiento que especifica las necesidades del usuario", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica las necesidades del usuario","Un requerimiento de usuario es una descripción de las necesidades, deseos y expectativas de los usuarios finales del software. Estos requerimientos pueden ser explícitos o implícitos, y a menudo son recopilados mediante encuestas, entrevistas y otras técnicas de investigación de usuario. Es importante tener en cuenta que los requerimientos de usuario pueden ser muy diferentes a los requerimientos técnicos del software, y es necesario encontrar un equilibrio entre las necesidades del usuario y las limitaciones técnicas del software. Además, los requerimientos de usuario pueden evolucionar a lo largo del tiempo y pueden requerir actualizaciones periódicas para mantenerse alineados con las necesidades de los usuarios a medida que cambian. Por lo tanto, es fundamental tener en cuenta los requerimientos de usuario al diseñar y desarrollar un software exitoso y que cumpla con las necesidades de los usuarios."}
+                        {"¿2Qué son los requerimientos de software?", "Conjunto de especificaciones que describen lo que debe hacer el software", "Documentación que describe cómo fue diseñado el software", "Programas que permiten a los usuarios interactuar con el software", "Conjunto de especificaciones que describen lo que debe hacer el software", "Los requerimientos de software son una parte crucial del proceso de desarrollo de software. Son un conjunto de especificaciones que describen las necesidades, deseos y expectativas del cliente y los usuarios para el software. Estos requerimientos son la base para el diseño, la implementación y las pruebas del software. Una comprensión clara de los requerimientos de software es esencial para el éxito del proyecto, ya que ayuda a evitar malinterpretaciones y errores en el diseño y la construcción del software."},
+                        {"¿2Por qué es importante definir los requerimientos de software?", "Para evitar malinterpretaciones y errores en el diseño del software", "Para crear documentación para futuras mejoras del software", "Para mantener a los programadores ocupados", "Para evitar malinterpretaciones y errores en el diseño del software", "Definir correctamente los requerimientos de software es fundamental para el éxito del proyecto. Es importante porque permite a los desarrolladores comprender lo que se espera del software, evita malentendidos y errores en el diseño y construcción, y proporciona una base sólida para el plan de desarrollo del software. Al definir los requerimientos de software, se establece una visión clara y coherente de lo que se quiere lograr, lo que ayuda a mantener enfocado el proyecto y a asegurarse de que se alcancen los objetivos deseados."},
+                        {"¿2Qué es un requerimiento funcional?", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento funcional es aquel que describe una función específica que debe ser realizada por el software. Los requerimientos funcionales describen lo que el software debe hacer, y suelen estar relacionados con tareas específicas que el usuario desea realizar con el software. Estos requerimientos son importantes porque describen la funcionalidad del software y son la base para el diseño, la implementación y las pruebas del software."},
+                        {"¿2Qué es un requerimiento no funcional?", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones",  "Un requerimiento no funcional es aquel que describe cómo debe comportarse el software bajo ciertas condiciones. Estos requerimientos se centran en aspectos que no están directamente relacionados con la funcionalidad del software, como la seguridad, la escalabilidad, el rendimiento, la usabilidad, entre otros. Los requerimientos no funcionales son importantes porque aseguran que el software se comporte de la manera esperada en diferentes condiciones, y son la base para la evaluación del software en términos de calidad y eficacia."},
+                        {"¿2Qué es un requerimiento de usuario?", "Un requerimiento que especifica las necesidades del usuario", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica las necesidades del usuario","Un requerimiento de usuario es una descripción de las necesidades, deseos y expectativas de los usuarios finales del software. Estos requerimientos pueden ser explícitos o implícitos, y a menudo son recopilados mediante encuestas, entrevistas y otras técnicas de investigación de usuario. Es importante tener en cuenta que los requerimientos de usuario pueden ser muy diferentes a los requerimientos técnicos del software, y es necesario encontrar un equilibrio entre las necesidades del usuario y las limitaciones técnicas del software. Además, los requerimientos de usuario pueden evolucionar a lo largo del tiempo y pueden requerir actualizaciones periódicas para mantenerse alineados con las necesidades de los usuarios a medida que cambian. Por lo tanto, es fundamental tener en cuenta los requerimientos de usuario al diseñar y desarrollar un software exitoso y que cumpla con las necesidades de los usuarios."}
                 };
                 break;
             case 2:
@@ -129,7 +126,7 @@ public class PreguntasActivity extends AppCompatActivity {
 
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -143,7 +140,7 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
         } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -160,8 +157,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
         } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
 
-           //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -177,7 +174,7 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
         } else {
             //muestra el bottom sheet
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -192,20 +189,28 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
 
         }
+
+        //guardar cual fue la ultima actividad
+        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("ultimaActividad", "preguntasActivity2");
+        editor.apply();
+
+
+
+
         // Muestra la siguiente pregunta o finaliza la actividad
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
-            finish();
+
+            //mostart pantalla de finalizacion
+            Intent intent = new Intent(PreguntasActivity2.this, FinalActivity.class);
+            startActivity(intent);
+
 
 
         }
     }
 }
-
-
-
-
-
-

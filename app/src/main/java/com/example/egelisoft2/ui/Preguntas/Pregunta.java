@@ -1,4 +1,4 @@
-package com.example.egelisoft2.ui.dashboard;
+package com.example.egelisoft2.ui.Preguntas;
 
 public class Pregunta {
     private String pregunta;
