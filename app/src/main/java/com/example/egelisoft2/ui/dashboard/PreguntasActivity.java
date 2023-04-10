@@ -18,6 +18,8 @@ import com.example.egelisoft2.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -51,10 +53,10 @@ public class PreguntasActivity extends AppCompatActivity {
             case 1:
                 preguntas = new String[][]{
                         {"¿Qué son los requerimientos de software?", "Conjunto de especificaciones que describen lo que debe hacer el software", "Documentación que describe cómo fue diseñado el software", "Programas que permiten a los usuarios interactuar con el software", "Conjunto de especificaciones que describen lo que debe hacer el software"},
-                        {"¿Por qué es importante definir los requerimientos de software?", "Para evitar malinterpretaciones y errores en el diseño del software", "Para crear documentación para futuras mejoras del software", "Para mantener a los programadores ocupados", "Para hacer que el software sea más atractivo visualmente", "Para evitar malinterpretaciones y errores en el diseño del software"},
-                        {"¿Qué es un requerimiento funcional?", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica las características de seguridad del software", "Un requerimiento que especifica una función específica que debe ser realizada por el software"},
-                        {"¿Qué es un requerimiento no funcional?", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones"},
-                        {"¿Qué es un requerimiento de usuario?", "Un requerimiento que especifica las necesidades del usuario", "Un requerimiento que especifica los detalles técnicos del software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica las necesidades del usuario"}
+                        {"¿Por qué es importante definir los requerimientos de software?", "Para evitar malinterpretaciones y errores en el diseño del software", "Para crear documentación para futuras mejoras del software", "Para mantener a los programadores ocupados", "Para evitar malinterpretaciones y errores en el diseño del software"},
+                        {"¿Qué es un requerimiento funcional?", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica una función específica que debe ser realizada por el software"},
+                        {"¿Qué es un requerimiento no funcional?", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica una función específica que debe ser realizada por el software", "Un requerimiento que especifica el hardware necesario para ejecutar el software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones"},
+                        {"¿Qué es un requerimiento de usuario?", "Un requerimiento que especifica las necesidades del usuario", "Un requerimiento que especifica cómo debe ser la apariencia visual del software", "Un requerimiento que especifica cómo debe comportarse el software bajo ciertas condiciones", "Un requerimiento que especifica las necesidades del usuario"}
                 };
                 break;
             case 2:
@@ -106,13 +108,13 @@ public class PreguntasActivity extends AppCompatActivity {
     private void mostrarPregunta(int indicePregunta) {
         // Muestra la pregunta y opciones correspondientes
         preguntaTextView.setText(preguntas[indicePregunta][0]);
-        opcion1Button.setText(preguntas[indicePregunta][1]);
-        opcion2Button.setText(preguntas[indicePregunta][2]);
-        opcion3Button.setText(preguntas[indicePregunta][3]);
 
-        // Actualiza el progreso en la barra
-        //set progress bar
-        progressBar.setProgress(preguntaActual + 1);
+        List<String> opciones = Arrays.asList(preguntas[indicePregunta][1], preguntas[indicePregunta][2], preguntas[indicePregunta][3]);
+        Collections.shuffle(opciones);
+
+        opcion1Button.setText(opciones.get(0));
+        opcion2Button.setText(opciones.get(1));
+        opcion3Button.setText(opciones.get(2));
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
