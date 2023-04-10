@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_preguntas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/preguntaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/opcionesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preguntaTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/opcion1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="opcionSeleccionada"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/opcion2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="opcionSeleccionada"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/opcion3Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="opcionSeleccionada"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguienteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@id/opcionesLayout"
+        android:layout_alignParentEnd="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/siguienteButton"
+        android:indeterminate="false"
+        android:max="5"
+        android:progress="0"
+
+        />
+</RelativeLayout>
