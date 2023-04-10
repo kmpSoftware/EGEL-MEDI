@@ -1,19 +1,23 @@
 package com.example.egelisoft2.ui.Preguntas;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.egelisoft2.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Arrays;
@@ -33,6 +37,13 @@ public class PreguntasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //guardar cual fue la ultima actividad
+        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("ultimaActividad", "preguntasActivity");
+        editor.apply();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
 
@@ -41,6 +52,7 @@ public class PreguntasActivity extends AppCompatActivity {
         opcion2Button = findViewById(R.id.opcion2Button);
         opcion3Button = findViewById(R.id.opcion3Button);
         progressBar = findViewById(R.id.progressBar);
+
 
         // Lee el identificador del botón presionado del Intent
         Intent intent = getIntent();
@@ -116,20 +128,27 @@ public class PreguntasActivity extends AppCompatActivity {
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
+
         // Verifica si la respuesta seleccionada es correcta
         String respuestaCorrecta = preguntas[preguntaActual][4];
-
         String retroalimentacion = preguntas[preguntaActual][5];
 
         System.out.println("respuesta correcta: " + respuestaCorrecta);
         System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
 
 
-
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
             //Obtener el TextView donde se mostrará el mensaje
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
@@ -144,6 +163,14 @@ public class PreguntasActivity extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
             //Obtener el TextView donde se mostrará el mensaje
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
@@ -162,6 +189,14 @@ public class PreguntasActivity extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
 
 
@@ -178,6 +213,14 @@ public class PreguntasActivity extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
 
             //Obtener el TextView donde se mostrará el mensaje
@@ -191,25 +234,23 @@ public class PreguntasActivity extends AppCompatActivity {
 
         }
 
-        //guardar cual fue la ultima actividad
-        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("ultimaActividad", "preguntasActivity");
-        editor.apply();
+    }
 
+    //funcion para mostart siguien pregunta
+    public void mostrarSiguientePregunta(View view) {
         // Muestra la siguiente pregunta o finaliza la actividad
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
 
-
             Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
             startActivity(intent);
 
-
         }
     }
+
+
 }
 
 

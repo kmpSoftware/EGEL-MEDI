@@ -1,5 +1,6 @@
 package com.example.egelisoft2.ui.Preguntas;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -32,6 +33,13 @@ public class PreguntasActivity2  extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //guardar cual fue la ultima actividad
+        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("ultimaActividad", "preguntasActivity2");
+        editor.apply();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
 
@@ -129,6 +137,14 @@ public class PreguntasActivity2  extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
             //Obtener el TextView donde se mostrará el mensaje
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
@@ -143,6 +159,14 @@ public class PreguntasActivity2  extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
             //Obtener el TextView donde se mostrará el mensaje
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
@@ -161,6 +185,14 @@ public class PreguntasActivity2  extends AppCompatActivity {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
 
 
@@ -173,10 +205,20 @@ public class PreguntasActivity2  extends AppCompatActivity {
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
         } else {
+
             //muestra el bottom sheet
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+            //Establecer el listener de cancelación
+            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                @Override
+                public void onCancel(DialogInterface dialog) {
+                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                    mostrarSiguientePregunta(null);
+                }
+            });
             bottomSheetDialog.show();
 
             //Obtener el TextView donde se mostrará el mensaje
@@ -188,28 +230,22 @@ public class PreguntasActivity2  extends AppCompatActivity {
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
 
+
         }
+      //  mostrarSiguientePregunta(null);
 
-        //guardar cual fue la ultima actividad
-        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("ultimaActividad", "preguntasActivity2");
-        editor.apply();
+    }
 
-
-
-
+    //funcion para mostart siguien pregunta
+    public void mostrarSiguientePregunta(View view) {
         // Muestra la siguiente pregunta o finaliza la actividad
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
 
-            //mostart pantalla de finalizacion
             Intent intent = new Intent(PreguntasActivity2.this, FinalActivity.class);
             startActivity(intent);
-
-
 
         }
     }
