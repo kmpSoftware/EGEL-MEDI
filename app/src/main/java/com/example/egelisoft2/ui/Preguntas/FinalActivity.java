@@ -5,9 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.egelisoft2.R;
 import com.example.egelisoft2.ui.Subtemas.subtemas;
 import com.example.egelisoft2.ui.Subtemas.subtemas2;
@@ -15,13 +14,18 @@ import com.example.egelisoft2.ui.Subtemas.subtemas2;
 public class FinalActivity extends AppCompatActivity {
 
     Button button1;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.finalscreen);
 
+        // Obtener la puntuación del Intent
         button1 = findViewById(R.id.buttonSalir);
+        textView = findViewById(R.id.puntuacionTextView);
+        double puntuacion = getIntent().getIntExtra("puntuacion", 0);
+        textView.setText("Tu puntuación es: " + puntuacion);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

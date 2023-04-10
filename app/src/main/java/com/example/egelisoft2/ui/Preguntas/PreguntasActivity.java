@@ -30,6 +30,7 @@ public class PreguntasActivity extends AppCompatActivity {
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
+    double puntuacion = 0;
 
     private String[][] preguntas;
 
@@ -130,12 +131,11 @@ public class PreguntasActivity extends AppCompatActivity {
     private void verificarRespuesta(int opcionSeleccionada) {
 
         // Verifica si la respuesta seleccionada es correcta
+
         String respuestaCorrecta = preguntas[preguntaActual][4];
         String retroalimentacion = preguntas[preguntaActual][5];
-
         System.out.println("respuesta correcta: " + respuestaCorrecta);
         System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
-
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
@@ -154,6 +154,9 @@ public class PreguntasActivity extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
+
+
 
             //set background color of bottom sheet
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -176,6 +179,7 @@ public class PreguntasActivity extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
 
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -204,6 +208,8 @@ public class PreguntasActivity extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
+
 
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -244,7 +250,10 @@ public class PreguntasActivity extends AppCompatActivity {
             mostrarPregunta(preguntaActual);
         } else {
 
+            //put extra para pasar la puntuacion a la siguiente actividad
+
             Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
+            intent.putExtra("puntuacion", puntuacion);
             startActivity(intent);
 
         }
