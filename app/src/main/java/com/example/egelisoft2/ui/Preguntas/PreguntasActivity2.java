@@ -26,10 +26,9 @@ public class PreguntasActivity2  extends AppCompatActivity {
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
-
     private String[][] preguntas;
-
     private int preguntaActual = 0;
+    private double puntuacion = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,6 +149,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
 
             //set background color of bottom sheet
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -172,6 +172,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
 
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -200,6 +201,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
             TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
+            puntuacion += 1;
 
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -245,6 +247,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
         } else {
 
             Intent intent = new Intent(PreguntasActivity2.this, FinalActivity.class);
+            intent.putExtra("puntuacion", puntuacion);
             startActivity(intent);
 
         }
