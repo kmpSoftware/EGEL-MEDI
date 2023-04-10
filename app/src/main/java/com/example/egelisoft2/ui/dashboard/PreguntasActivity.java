@@ -84,21 +84,21 @@ public class PreguntasActivity extends AppCompatActivity {
         opcion1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verificarRespuesta(1);
+                verificarRespuesta(0);
             }
         });
 
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verificarRespuesta(2);
+                verificarRespuesta(1);
             }
         });
 
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verificarRespuesta(3);
+                verificarRespuesta(2);
             }
         });
     }
@@ -118,7 +118,32 @@ public class PreguntasActivity extends AppCompatActivity {
     private void verificarRespuesta(int opcionSeleccionada) {
         // Verifica si la respuesta seleccionada es correcta
         String respuestaCorrecta = preguntas[preguntaActual][4];
-        if (respuestaCorrecta.equals(preguntas[opcionSeleccionada][1])) {
+
+        System.out.println("respuesta correcta: " + respuestaCorrecta);
+        System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
+
+        if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            bottomSheetDialog.show();
+            //Obtener el TextView donde se mostrará el mensaje
+            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+            //Asignar el mensaje al TextView
+            mensajeTextView.setText("Correcto");
+
+        } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            bottomSheetDialog.show();
+            //Obtener el TextView donde se mostrará el mensaje
+            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+            //Asignar el mensaje al TextView
+            mensajeTextView.setText("Correcto");
+
+        } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
+
            //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
