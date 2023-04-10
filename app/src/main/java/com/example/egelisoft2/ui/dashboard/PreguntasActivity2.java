@@ -8,22 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.egelisoft2.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
-public class PreguntasActivity extends AppCompatActivity {
+public class PreguntasActivity2  extends AppCompatActivity {
 
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
@@ -129,7 +125,7 @@ public class PreguntasActivity extends AppCompatActivity {
 
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -143,7 +139,7 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
         } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -160,8 +156,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
         } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
 
-           //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -177,7 +173,7 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
         } else {
             //muestra el bottom sheet
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity2.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             bottomSheetDialog.show();
@@ -203,9 +199,3 @@ public class PreguntasActivity extends AppCompatActivity {
         }
     }
 }
-
-
-
-
-
-
