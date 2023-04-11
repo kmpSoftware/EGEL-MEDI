@@ -17,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.egelisoft2.R;
+import com.example.egelisoft2.ui.Subtemas.subtemas;
+import com.example.egelisoft2.ui.Subtemas.subtemas2;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -31,6 +33,7 @@ public class PreguntasActivity extends AppCompatActivity {
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
     double puntuacion = 0;
+    Button button1;
 
     private String[][] preguntas;
 
@@ -38,6 +41,16 @@ public class PreguntasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+//        button1 = findViewById(R.id.btnSalir);
+//        button1.setOnClickListener(new View.OnClickListener() {
+//            //cerrar la actividad
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
+
 
         //guardar cual fue la ultima actividad
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
@@ -115,6 +128,8 @@ public class PreguntasActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void mostrarPregunta(int indicePregunta) {
         // Muestra la pregunta y opciones correspondientes
         preguntaTextView.setText(preguntas[indicePregunta][0]);
@@ -135,6 +150,7 @@ public class PreguntasActivity extends AppCompatActivity {
         String retroalimentacion = preguntas[preguntaActual][5];
         System.out.println("respuesta correcta: " + respuestaCorrecta);
         System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
+        int contador = 0;
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
@@ -159,6 +175,8 @@ public class PreguntasActivity extends AppCompatActivity {
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
+
+
         } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
@@ -180,6 +198,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
+
+
 
         } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
 
@@ -205,6 +225,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
+
+
         } else {
             //muestra el bottom sheet
             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
@@ -228,12 +250,17 @@ public class PreguntasActivity extends AppCompatActivity {
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
+
+
         }
     }
 
     //funcion para mostart siguien pregunta
     public void mostrarSiguientePregunta(View view) {
         // Muestra la siguiente pregunta o finaliza la actividad
+        //progres bar
+        progressBar.setProgress(preguntaActual + 1);
+
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
@@ -244,6 +271,12 @@ public class PreguntasActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    //funcion para salir de la actividad
+    public void salir(View view) {
+        finish();
+    }
+
 
 }
 

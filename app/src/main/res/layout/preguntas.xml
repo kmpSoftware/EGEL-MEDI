@@ -13,32 +13,32 @@
 
     <LinearLayout
         android:id="@+id/opcionesLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="378dp"
+        android:layout_height="242dp"
         android:layout_below="@id/preguntaTextView"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/opcion1Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="opcionSeleccionada"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:onClick="opcionSeleccionada" />
 
         <Button
             android:id="@+id/opcion2Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="opcionSeleccionada"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:onClick="opcionSeleccionada" />
 
         <Button
             android:id="@+id/opcion3Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="opcionSeleccionada"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:onClick="opcionSeleccionada" />
     </LinearLayout>
 
     <Button
@@ -49,6 +49,20 @@
         android:layout_below="@id/opcionesLayout"
         android:layout_alignParentEnd="true"/>
 
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/opcionesLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="204dp"
+        android:onClick="salir"
+        android:text="Salir" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -58,7 +72,7 @@
         android:layout_below="@id/siguienteButton"
         android:indeterminate="false"
         android:max="5"
-        android:progress="0"
+        android:progress="1"
 
         />
 </RelativeLayout>

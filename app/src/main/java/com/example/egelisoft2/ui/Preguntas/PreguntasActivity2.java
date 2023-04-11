@@ -240,6 +240,8 @@ public class PreguntasActivity2  extends AppCompatActivity {
 
     //funcion para mostart siguien pregunta
     public void mostrarSiguientePregunta(View view) {
+        progressBar.setProgress(preguntaActual + 1);
+
         // Muestra la siguiente pregunta o finaliza la actividad
         preguntaActual++;
         if (preguntaActual < preguntas.length) {
@@ -251,5 +253,10 @@ public class PreguntasActivity2  extends AppCompatActivity {
             startActivity(intent);
 
         }
+    }
+
+    //funcion para salir de la actividad
+    public void salir(View view) {
+        finish();
     }
 }
