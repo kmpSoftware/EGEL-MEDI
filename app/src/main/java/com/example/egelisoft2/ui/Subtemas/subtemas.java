@@ -2,33 +2,90 @@ package com.example.egelisoft2.ui.Subtemas;
 
 import static android.app.PendingIntent.getActivity;
 
+import android.content.ClipData;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.egelisoft2.R;
+import com.example.egelisoft2.databinding.ActivityMainBinding;
+import com.example.egelisoft2.databinding.FragmentNotificationsBinding;
 import com.example.egelisoft2.ui.Preguntas.PreguntasActivity;
+import com.example.egelisoft2.ui.dashboard.DashboardFragment;
+import com.example.egelisoft2.ui.home.HomeFragment;
+import com.example.egelisoft2.ui.notifications.NotificationsFragment;
+import com.example.egelisoft2.ui.notifications.NotificationsViewModel;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class subtemas extends AppCompatActivity {
     Button button1;
     Button button2;
     Button button3;
 
+    private BottomNavigationView bottomNavigationView;
+    private ActivityMainBinding binding;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtemas);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+        bottomNavigationView.setOnItemSelectedListener(
+                new NavigationBarView.OnItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        Fragment selectedFragment = null;
+                        switch (item.getItemId()) {
+                            case R.id.navigation_home:
+                                //cerrar activity actual
+
+                                selectedFragment = new HomeFragment();
+                                finish();
+                                break;
+                            case R.id.navigation_dashboard:
+                                selectedFragment = new DashboardFragment();
+                                finish();
+                                break;
+                            case R.id.navigation_notifications:
+                                selectedFragment = new NotificationsFragment();
+                                finish();
+                                break;
+                        }
+                        if (selectedFragment != null) {
+                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                            return true;
+                        }
+                        return false;
+                    }
+                });
 
         // Busca el botón por su id
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
-
-
 
         // Agrega un listener al botón
         button1.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +101,6 @@ public class subtemas extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +114,6 @@ public class subtemas extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

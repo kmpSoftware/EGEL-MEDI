@@ -34,8 +34,6 @@ public class DashboardFragment extends Fragment {
         Button2 = root.findViewById(R.id.button2);
         Button3 = root.findViewById(R.id.button3);
 
-
-
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
