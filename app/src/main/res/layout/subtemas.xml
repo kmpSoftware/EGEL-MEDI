@@ -6,6 +6,21 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
 
+    <!-- boton para volver   -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="404dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/white"
+        android:onClick="buttonClick"
+        android:text="VOLVER"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -109,10 +124,10 @@
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginStart="2dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
                 android:onClick="buttonClick"
                 android:backgroundTint="#8d0801"
                 android:text="Button" />

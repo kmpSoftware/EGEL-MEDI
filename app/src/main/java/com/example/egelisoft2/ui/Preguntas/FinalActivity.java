@@ -26,15 +26,10 @@ public class FinalActivity extends AppCompatActivity {
         setContentView(R.layout.finalscreen);
 
 
-
         // Obtener la puntuación del Intent
         button1 = findViewById(R.id.buttonSalir);
         textView = findViewById(R.id.puntuacionTextView);
         double puntuacion = getIntent().getDoubleExtra("puntuacion", 0.0);
-
-
-
-
 
 
         textView.setText("Tu puntuación es: " + puntuacion);

@@ -39,12 +39,10 @@ public class subtemas extends AppCompatActivity {
     Button button1;
     Button button2;
     Button button3;
+    Button btnVolver;
 
     private BottomNavigationView bottomNavigationView;
     private ActivityMainBinding binding;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +50,19 @@ public class subtemas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtemas);
 
-
-
         // Busca el botón por su id
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
+        btnVolver = findViewById(R.id.btnVolver);
+
+        btnVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.navigation_dashboard);
+            }
+        });
 
         // Agrega un listener al botón
         button1.setOnClickListener(new View.OnClickListener() {

@@ -1,14 +1,22 @@
 package com.example.egelisoft2.ui.Preguntas;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Chronometer;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -16,7 +24,10 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import com.bumptech.glide.Glide;
 import com.example.egelisoft2.R;
 import com.example.egelisoft2.ui.Subtemas.subtemas;
 import com.example.egelisoft2.ui.Subtemas.subtemas2;
@@ -34,6 +45,14 @@ public class PreguntasActivity extends AppCompatActivity {
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
 
+
+    private Vibrator vibrator;
+
+
+    private CountDownTimer countDownTimer; // variable de instancia para el objeto CountDownTimer
+    private long tiempoRestante = TIEMPO_TOTAL; // el tiempo total del temporizador
+    private static final long TIEMPO_TOTAL = 3000; // 30 segundos
+
     private double puntuacionActual = 0;
     Button button1;
     double puntuacion = 0;
@@ -41,6 +60,10 @@ public class PreguntasActivity extends AppCompatActivity {
     private String[][] preguntas;
 
     private int preguntaActual = 0;
+
+    private TextView tiempoTextView;
+
+    private boolean tiempoTerminado = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,11 +77,25 @@ public class PreguntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
 
+//        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//        // Solicitar permiso para vibrar
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.VIBRATE)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.VIBRATE}, 0);
+//        }
+
         preguntaTextView = findViewById(R.id.preguntaTextView);
         opcion1Button = findViewById(R.id.opcion1Button);
         opcion2Button = findViewById(R.id.opcion2Button);
         opcion3Button = findViewById(R.id.opcion3Button);
         progressBar = findViewById(R.id.progressBar);
+
+        //cronometro
+        tiempoTextView = findViewById(R.id.tiempoTextView);
+
+        ImageView gifImageView = findViewById(R.id.gifImageView);
+        Glide.with(this).load(R.raw.timer).into(gifImageView);
+
 
         // Lee el identificador del botón presionado del Intent
         Intent intent = getIntent();
@@ -68,52 +105,34 @@ public class PreguntasActivity extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2"  , "retroalimentacion"},
-                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"},
-                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1"   , "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2" , "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"}
+                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
+                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
                 };
             case 2:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2"  , "retroalimentacion"},
-                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"},
-                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1"   , "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2" , "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"}
+                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
+                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
                 };
                 break;
             case 3:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2"  , "retroalimentacion"},
-                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"},
-                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1"   , "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2" , "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"}
+                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
+                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
                 };
                 break;
         }
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
-        // Agrega un listener a los botones de opción
-        opcion1Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verificarRespuesta(0);
-            }
-        });
-        opcion2Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verificarRespuesta(1);
-            }
-        });
-        opcion3Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verificarRespuesta(2);
-            }
-        });
+
     }
 
     private void mostrarPregunta(int indicePregunta) {
@@ -124,157 +143,244 @@ public class PreguntasActivity extends AppCompatActivity {
         opcion1Button.setText(opciones.get(0));
         opcion2Button.setText(opciones.get(1));
         opcion3Button.setText(opciones.get(2));
+
+        // Agrega onClickListeners a los botones de opción para manejar la selección de respuesta
+        opcion1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                verificarRespuesta(0);
+
+            }
+        });
+
+        opcion2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                verificarRespuesta(1);
+
+            }
+        });
+
+        opcion3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                verificarRespuesta(2);
+
+            }
+        });
+       cronometro();
+
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
-
+        // Detener el cronómetro
+        countDownTimer.cancel();
 
         // Verifica si la respuesta seleccionada es correcta
         String respuestaCorrecta = preguntas[preguntaActual][4];
         String retroalimentacion = preguntas[preguntaActual][5];
-        System.out.println("respuesta correcta: " + respuestaCorrecta);
-        System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
+//        System.out.println("respuesta correcta: " + respuestaCorrecta);
+//        System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
 
-        int contador = 0;
-
-        if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
-            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
-            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            //Establecer el listener de cancelación
-            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null, puntuacion);
-                }
-            });
-            bottomSheetDialog.show();
-            //Obtener el TextView donde se mostrará el mensaje
-            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
-            //Asignar el mensaje al TextView
-            mensajeTextView.setText("Correcto\n"+ retroalimentacion);
-            puntuacion += 1;
+            // Código para manejar la selección de respuesta dentro del tiempo
+            // ...
+            if(opcionSeleccionada == -1) {
+                mostrarSiguientePregunta(null, puntuacion);
 
 
-            //set background color of bottom sheet
-            LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
-            bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
+            }else if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
+
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+                bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+                bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                //Establecer el listener de cancelación
+                bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                        mostrarSiguientePregunta(null, puntuacion);
+                    }
+                });
+                bottomSheetDialog.show();
+                //Obtener el TextView donde se mostrará el mensaje
+                TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+                //Asignar el mensaje al TextView
+                mensajeTextView.setText("Correcto\n" + retroalimentacion);
+                puntuacion += 1;
+
+                //set background color of bottom sheet
+                LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
+                bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
 
+            } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
 
-        } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
-            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
-            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            //Establecer el listener de cancelación
-            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null, puntuacion);
-                }
-            });
-            bottomSheetDialog.show();
-            //Obtener el TextView donde se mostrará el mensaje
-            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
-            //Asignar el mensaje al TextView
-            mensajeTextView.setText("Correcto\n"+ retroalimentacion);
-            puntuacion += 1;
-
-
-            LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
-            bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+                bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+                bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                //Establecer el listener de cancelación
+                bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                        mostrarSiguientePregunta(null, puntuacion);
+                    }
+                });
+                bottomSheetDialog.show();
+                //Obtener el TextView donde se mostrará el mensaje
+                TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+                //Asignar el mensaje al TextView
+                mensajeTextView.setText("Correcto\n" + retroalimentacion);
+                puntuacion += 1;
 
 
-
-        } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
-
-           //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
-            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
-            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            //Establecer el listener de cancelación
-            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null, puntuacion);
-                }
-            });
-            bottomSheetDialog.show();
-
-            //Obtener el TextView donde se mostrará el mensaje
-            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
-            //Asignar el mensaje al TextView
-            mensajeTextView.setText("Correcto\n"+ retroalimentacion);
-            puntuacion += 1;
+                LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
+                bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
 
-            LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
-            bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
+            } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
 
 
-        } else {
-            //muestra el bottom sheet
-            BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
-            bottomSheetDialog.setContentView(R.layout.bottom_sheet);
-            bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            //Establecer el listener de cancelación
+                //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+                bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+                bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                //Establecer el listener de cancelación
+                bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                        mostrarSiguientePregunta(null, puntuacion);
+                    }
+                });
+                bottomSheetDialog.show();
 
-            bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null, puntuacion);
-                }
-            });
-            bottomSheetDialog.show();
+                //Obtener el TextView donde se mostrará el mensaje
+                TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+                //Asignar el mensaje al TextView
+                mensajeTextView.setText("Correcto\n" + retroalimentacion);
+                puntuacion += 1;
 
-            //Obtener el TextView donde se mostrará el mensaje
-            TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
-            //Asignar el mensaje al TextView
 
-            mensajeTextView.setText("Incorrecto\n"+ retroalimentacion);
+                LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
+                bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
-            LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
-            bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
+
+            } else {
+
+                //muestra el bottom sheet
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
+                bottomSheetDialog.setContentView(R.layout.bottom_sheet);
+                bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                //Establecer el listener de cancelación
+
+                bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
+                        mostrarSiguientePregunta(null, puntuacion);
+                    }
+                });
+                bottomSheetDialog.show();
+
+                //Obtener el TextView donde se mostrará el mensaje
+                TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
+                //Asignar el mensaje al TextView
+
+                mensajeTextView.setText("Incorrecto\n" + retroalimentacion);
+
+                LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
+                bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
+            }
+
         }
-    }
 
-    //funcion para mostart siguien pregunta
-    public void mostrarSiguientePregunta(View view, double puntuacion) {
+        //funcion para mostart siguien pregunta
+        public void mostrarSiguientePregunta (View view,double puntuacion){
 
-        puntuacionActual = puntuacion;
+            puntuacionActual = puntuacion;
+            // Muestra la siguiente pregunta o finaliza la actividad
+            //progres bar
+            progressBar.setProgress(preguntaActual + 1);
 
-        // Muestra la siguiente pregunta o finaliza la actividad
-        //progres bar
-        progressBar.setProgress(preguntaActual + 1);
-
-        preguntaActual++;
-        if (preguntaActual < preguntas.length) {
-            mostrarPregunta(preguntaActual);
-        } else {
-            mostrarFinalActivity(null);
+            preguntaActual++;
+            if (preguntaActual < preguntas.length) {
+                mostrarPregunta(preguntaActual);
+            } else {
+                mostrarFinalActivity(null);
+            }
         }
-    }
 
-    //funcion para motrar la FinalActivity
-    public void mostrarFinalActivity(View view) {
-        Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
+        //funcion para motrar la FinalActivity
+        public void mostrarFinalActivity (View view){
+            Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
 
-        intent.putExtra("puntuacion", puntuacionActual);
+            intent.putExtra("puntuacion", puntuacionActual);
 
-        Toast.makeText(this, "puntuacion final" + puntuacionActual, Toast.LENGTH_SHORT).show();
-        startActivity(intent);
-    }
 
-    //funcion para salir de la actividad
-    public void salir(View view) {
-        finish();
-    }
+            startActivity(intent);
+
+        }
+
+        //funcion para salir de la actividad
+        public void salir (View view){
+            countDownTimer.cancel();
+            finish();
+        }
+
+        //funcion para poner cronometro de 20 segundos en cada pregunta
+        public void cronometro () {
+            countDownTimer = new CountDownTimer(20000, 1000) {
+                public void onTick(long millisUntilFinished) {
+                    tiempoTextView.setText("Tiempo restante: " + millisUntilFinished / 1000);
+                }
+                public void onFinish() {
+                    tiempoTextView.setText("Tiempo restante: 0");
+                    Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    if (vibrator.hasVibrator()) {
+                        // Crear un efecto de vibración
+                        VibrationEffect vibrationEffect = VibrationEffect.createOneShot(1000, VibrationEffect.DEFAULT_AMPLITUDE);
+
+                        // Vibra el teléfono con el efecto creado
+                        vibrator.vibrate(vibrationEffect);
+                    }
+                    verificarRespuesta(3); // indica que no se seleccionó ninguna respuesta
+                }
+            }.start();
+
+        }
+
+//
+//    private void iniciarTemporizador() {
+//        countDownTimer = new CountDownTimer(tiempoRestante, 1000) {
+//            @Override
+//            public void onTick(long millisUntilFinished) {
+//                tiempoRestante = millisUntilFinished;
+//                // Actualizar la pantalla del temporizador aquí
+//                // cronometroTextView.setText(formatTime(tiempoRestante));
+//                tiempoTextView.setText("Tiempo: " + millisUntilFinished / 1000);
+//            }
+//
+//            @Override
+//            public void onFinish() {
+//                tiempoTextView.setText("Tiempo: 0");
+//                verificarRespuesta(3);
+//                // Acción a realizar cuando el temporizador termina
+//                // mostrarSiguientePregunta(null, puntuacion);
+//            }
+//        }.start();
+//    }
+//
+//    private void detenerTemporizador() {
+//        if (countDownTimer != null) {
+//            countDownTimer.cancel();
+//        }
+//    }
+
 }
-
 
 
 
