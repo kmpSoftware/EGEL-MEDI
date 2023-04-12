@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,8 +33,10 @@ public class PreguntasActivity extends AppCompatActivity {
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
-    double puntuacion = 0;
+
+    private double puntuacionActual = 0;
     Button button1;
+    double puntuacion = 0;
 
     private String[][] preguntas;
 
@@ -41,16 +44,6 @@ public class PreguntasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-//        button1 = findViewById(R.id.btnSalir);
-//        button1.setOnClickListener(new View.OnClickListener() {
-//            //cerrar la actividad
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//            }
-//        });
-
 
         //guardar cual fue la ultima actividad
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
@@ -67,7 +60,6 @@ public class PreguntasActivity extends AppCompatActivity {
         opcion3Button = findViewById(R.id.opcion3Button);
         progressBar = findViewById(R.id.progressBar);
 
-
         // Lee el identificador del botón presionado del Intent
         Intent intent = getIntent();
         int botonPresionado = intent.getIntExtra("BOTON_PRESIONADO", 1);
@@ -76,19 +68,19 @@ public class PreguntasActivity extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4","retroalimentacion"},
-                        {"Pregunta 2 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4", "retroalimentacion"},
-                        {"Pregunta 3 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"},
-                        {"Pregunta 4 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"},
-                        {"Pregunta 5 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"}
+                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2"  , "retroalimentacion"},
+                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"},
+                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1"   , "retroalimentacion"},
+                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2" , "retroalimentacion"},
+                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"}
                 };
             case 2:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4","retroalimentacion"},
-                        {"Pregunta 2 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4", "retroalimentacion"},
-                        {"Pregunta 3 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"},
-                        {"Pregunta 4 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"},
-                        {"Pregunta 5 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 4" , "retroalimentacion"}
+                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2"  , "retroalimentacion"},
+                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"},
+                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1"   , "retroalimentacion"},
+                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2" , "retroalimentacion"},
+                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3" , "retroalimentacion"}
                 };
                 break;
             case 3:
@@ -101,10 +93,8 @@ public class PreguntasActivity extends AppCompatActivity {
                 };
                 break;
         }
-
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
-
         // Agrega un listener a los botones de opción
         opcion1Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,14 +102,12 @@ public class PreguntasActivity extends AppCompatActivity {
                 verificarRespuesta(0);
             }
         });
-
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 verificarRespuesta(1);
             }
         });
-
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,15 +116,11 @@ public class PreguntasActivity extends AppCompatActivity {
         });
     }
 
-
-
     private void mostrarPregunta(int indicePregunta) {
         // Muestra la pregunta y opciones correspondientes
         preguntaTextView.setText(preguntas[indicePregunta][0]);
-
         List<String> opciones = Arrays.asList(preguntas[indicePregunta][1], preguntas[indicePregunta][2], preguntas[indicePregunta][3]);
         Collections.shuffle(opciones);
-
         opcion1Button.setText(opciones.get(0));
         opcion2Button.setText(opciones.get(1));
         opcion3Button.setText(opciones.get(2));
@@ -144,12 +128,13 @@ public class PreguntasActivity extends AppCompatActivity {
 
     private void verificarRespuesta(int opcionSeleccionada) {
 
-        // Verifica si la respuesta seleccionada es correcta
 
+        // Verifica si la respuesta seleccionada es correcta
         String respuestaCorrecta = preguntas[preguntaActual][4];
         String retroalimentacion = preguntas[preguntaActual][5];
         System.out.println("respuesta correcta: " + respuestaCorrecta);
         System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
+
         int contador = 0;
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
@@ -161,7 +146,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -170,6 +155,7 @@ public class PreguntasActivity extends AppCompatActivity {
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
             puntuacion += 1;
+
 
             //set background color of bottom sheet
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
@@ -186,7 +172,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -195,6 +181,7 @@ public class PreguntasActivity extends AppCompatActivity {
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
             puntuacion += 1;
+
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
@@ -212,7 +199,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -222,6 +209,7 @@ public class PreguntasActivity extends AppCompatActivity {
             //Asignar el mensaje al TextView
             mensajeTextView.setText("Correcto\n"+ retroalimentacion);
             puntuacion += 1;
+
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
@@ -233,11 +221,12 @@ public class PreguntasActivity extends AppCompatActivity {
             bottomSheetDialog.setContentView(R.layout.bottom_sheet);
             bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             //Establecer el listener de cancelación
+
             bottomSheetDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -250,13 +239,14 @@ public class PreguntasActivity extends AppCompatActivity {
 
             LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
             bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
-
-
         }
     }
 
     //funcion para mostart siguien pregunta
-    public void mostrarSiguientePregunta(View view) {
+    public void mostrarSiguientePregunta(View view, double puntuacion) {
+
+        puntuacionActual = puntuacion;
+
         // Muestra la siguiente pregunta o finaliza la actividad
         //progres bar
         progressBar.setProgress(preguntaActual + 1);
@@ -265,19 +255,24 @@ public class PreguntasActivity extends AppCompatActivity {
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
-            //put extra para pasar la puntuacion a la siguiente actividad
-            Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
-            intent.putExtra("puntuacion", puntuacion);
-            startActivity(intent);
+            mostrarFinalActivity(null);
         }
+    }
+
+    //funcion para motrar la FinalActivity
+    public void mostrarFinalActivity(View view) {
+        Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
+
+        intent.putExtra("puntuacion", puntuacionActual);
+
+        Toast.makeText(this, "puntuacion final" + puntuacionActual, Toast.LENGTH_SHORT).show();
+        startActivity(intent);
     }
 
     //funcion para salir de la actividad
     public void salir(View view) {
         finish();
     }
-
-
 }
 
 

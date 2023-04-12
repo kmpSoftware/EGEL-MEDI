@@ -30,6 +30,10 @@ public class PreguntasActivity2  extends AppCompatActivity {
     private int preguntaActual = 0;
     private double puntuacion = 0;
 
+    private double puntuacionActual = 0;
+    Button button1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -141,7 +145,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -164,7 +168,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -191,7 +195,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -218,7 +222,7 @@ public class PreguntasActivity2  extends AppCompatActivity {
                 @Override
                 public void onCancel(DialogInterface dialog) {
                     //Aquí es donde se ejecuta la función cuando se oculta el BottomSheetDialog
-                    mostrarSiguientePregunta(null);
+                    mostrarSiguientePregunta(null, puntuacion);
                 }
             });
             bottomSheetDialog.show();
@@ -239,7 +243,10 @@ public class PreguntasActivity2  extends AppCompatActivity {
     }
 
     //funcion para mostart siguien pregunta
-    public void mostrarSiguientePregunta(View view) {
+    public void mostrarSiguientePregunta(View view, double puntuacion) {
+
+        puntuacionActual = puntuacion;
+
         progressBar.setProgress(preguntaActual + 1);
 
         // Muestra la siguiente pregunta o finaliza la actividad
@@ -248,11 +255,16 @@ public class PreguntasActivity2  extends AppCompatActivity {
             mostrarPregunta(preguntaActual);
         } else {
 
-            Intent intent = new Intent(PreguntasActivity2.this, FinalActivity.class);
-            intent.putExtra("puntuacion", puntuacion);
-            startActivity(intent);
+            mostrarFinalActivity(null);
 
         }
+    }
+
+    //funcion para motrar la FinalActivity
+    public void mostrarFinalActivity(View view) {
+        Intent intent = new Intent(PreguntasActivity2.this, FinalActivity.class);
+        intent.putExtra("puntuacion", puntuacion);
+        startActivity(intent);
     }
 
     //funcion para salir de la actividad

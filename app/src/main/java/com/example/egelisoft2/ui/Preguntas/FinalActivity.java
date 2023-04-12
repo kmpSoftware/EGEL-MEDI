@@ -30,13 +30,21 @@ public class FinalActivity extends AppCompatActivity {
         // Obtener la puntuación del Intent
         button1 = findViewById(R.id.buttonSalir);
         textView = findViewById(R.id.puntuacionTextView);
-        double puntuacion = getIntent().getIntExtra("puntuacion", 0);
+        double puntuacion = getIntent().getDoubleExtra("puntuacion", 0.0);
+
+
+
+
+
+
         textView.setText("Tu puntuación es: " + puntuacion);
 
-        if (puntuacion >= 5) {
-            textView.setText("¡Felicidades! Has aprobado");
+        if (puntuacion >= 3) {
+            textView.setText("¡Felicidades! Has aprobado" + puntuacion);
+            ImageView gifImageView = findViewById(R.id.gifImageView);
+            Glide.with(this).load(R.raw.my_gif2).into(gifImageView);
         } else {
-            textView.setText("¡Lo siento! Has suspendido");
+            textView.setText("¡Lo siento! Has reprobado" + puntuacion);
             ImageView gifImageView = findViewById(R.id.gifImageView);
             Glide.with(this).load(R.raw.my_gif).into(gifImageView);
         }

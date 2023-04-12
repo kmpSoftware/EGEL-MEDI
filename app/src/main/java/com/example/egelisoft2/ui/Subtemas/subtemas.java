@@ -52,35 +52,7 @@ public class subtemas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtemas);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
-        bottomNavigationView.setOnItemSelectedListener(
-                new NavigationBarView.OnItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                        Fragment selectedFragment = null;
-                        switch (item.getItemId()) {
-                            case R.id.navigation_home:
-                                //cerrar activity actual
 
-                                selectedFragment = new HomeFragment();
-                                finish();
-                                break;
-                            case R.id.navigation_dashboard:
-                                selectedFragment = new DashboardFragment();
-                                finish();
-                                break;
-                            case R.id.navigation_notifications:
-                                selectedFragment = new NotificationsFragment();
-                                finish();
-                                break;
-                        }
-                        if (selectedFragment != null) {
-                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-                            return true;
-                        }
-                        return false;
-                    }
-                });
 
         // Busca el botón por su id
         button1 = findViewById(R.id.button1);

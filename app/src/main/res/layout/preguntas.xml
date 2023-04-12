@@ -22,21 +22,21 @@
         <Button
             android:id="@+id/opcion1Button"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="opcionSeleccionada" />
 
         <Button
             android:id="@+id/opcion2Button"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="opcionSeleccionada" />
 
         <Button
             android:id="@+id/opcion3Button"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="opcionSeleccionada" />
     </LinearLayout>
