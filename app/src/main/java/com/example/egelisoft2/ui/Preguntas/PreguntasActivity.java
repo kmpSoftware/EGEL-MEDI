@@ -52,6 +52,7 @@ public class PreguntasActivity extends AppCompatActivity {
     private String[][] preguntas;
     private int preguntaActual = 0;
     private TextView tiempoTextView;
+    private Button siguienteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,15 @@ public class PreguntasActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
+
+        //boton siguiente
+        siguienteButton = findViewById(R.id.siguienteButton);
+        siguienteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            verificarRespuesta(3);
+            }
+        });
 
         preguntaTextView = findViewById(R.id.preguntaTextView);
         opcion1Button = findViewById(R.id.opcion1Button);
