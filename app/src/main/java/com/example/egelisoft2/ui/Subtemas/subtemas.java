@@ -2,35 +2,19 @@ package com.example.egelisoft2.ui.Subtemas;
 
 import static android.app.PendingIntent.getActivity;
 
-import android.content.ClipData;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.egelisoft2.R;
 
 import com.example.egelisoft2.ui.Preguntas.PreguntasActivity;
-import com.example.egelisoft2.ui.dashboard.DashboardFragment;
-import com.example.egelisoft2.ui.home.HomeFragment;
-import com.example.egelisoft2.ui.notifications.NotificationsFragment;
-import com.example.egelisoft2.ui.notifications.NotificationsViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 

@@ -34,12 +34,17 @@ import com.example.egelisoft2.ui.Subtemas.subtemas2;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 
 public class PreguntasActivity extends AppCompatActivity {
+
+
+    public PreguntasActivity() {}
 
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
@@ -54,6 +59,8 @@ public class PreguntasActivity extends AppCompatActivity {
     private TextView tiempoTextView;
     private Button siguienteButton;
 
+    // Lista de índices de preguntas para mostrar en un orden aleatorio
+    private List<Integer> listaIndicesPreguntas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -65,6 +72,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
+
+
 
         //boton siguiente
         siguienteButton = findViewById(R.id.siguienteButton);
@@ -88,25 +97,26 @@ public class PreguntasActivity extends AppCompatActivity {
 
         // Lee el identificador del botón presionado del Intent
         Intent intent = getIntent();
-        int botonPresionado = intent.getIntExtra("BOTON_PRESIONADO", 1);
+        int botonPresionado = intent.getIntExtra("BOTON_PRESIONADO", 0);
 
         // Elige las preguntas correspondientes según el botón presionado
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
+                        {"Pregunta 1 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 2 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
+                        {"Pregunta 3 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+                        {"Pregunta 4 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 5 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
                 };
+                break;
             case 2:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
+                        {"Pregunta 1 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 2 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
+                        {"Pregunta 3 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+                        {"Pregunta 4 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 5 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"}
                 };
                 break;
             case 3:
@@ -119,14 +129,27 @@ public class PreguntasActivity extends AppCompatActivity {
                 };
                 break;
         }
+        // Inicializa la lista de índices de preguntas y la mezcla
+        listaIndicesPreguntas = new ArrayList<>();
+        for (int i = 0; i < preguntas.length; i++) {
+            listaIndicesPreguntas.add(i);
+        }
+        Collections.shuffle(listaIndicesPreguntas);
+
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
     }
 
     private void mostrarPregunta(int indicePregunta) {
+
+        // Obtiene el índice de la pregunta a mostrar
+        int indiceRealPregunta = listaIndicesPreguntas.get(indicePregunta);
+
         // Muestra la pregunta y opciones correspondientes
-        preguntaTextView.setText(preguntas[indicePregunta][0]);
-        List<String> opciones = Arrays.asList(preguntas[indicePregunta][1], preguntas[indicePregunta][2], preguntas[indicePregunta][3]);
+//        preguntaTextView.setText(preguntas[indicePregunta][0]);
+        preguntaTextView.setText(preguntas[indiceRealPregunta][0]);
+//        List<String> opciones = Arrays.asList(preguntas[indicePregunta][1], preguntas[indicePregunta][2], preguntas[indicePregunta][3]);
+        List<String> opciones = Arrays.asList(preguntas[indiceRealPregunta][1], preguntas[indiceRealPregunta][2], preguntas[indiceRealPregunta][3]);
         Collections.shuffle(opciones);
         opcion1Button.setText(opciones.get(0));
         opcion2Button.setText(opciones.get(1));
@@ -140,7 +163,6 @@ public class PreguntasActivity extends AppCompatActivity {
                 verificarRespuesta(0);
             }
         });
-
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,7 +170,6 @@ public class PreguntasActivity extends AppCompatActivity {
                 verificarRespuesta(1);
             }
         });
-
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -156,7 +177,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 verificarRespuesta(2);
             }
         });
-       cronometro();
+            cronometro();
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
@@ -313,6 +334,8 @@ public class PreguntasActivity extends AppCompatActivity {
                 }
             }.start();
         }
+
+
 
 
 }

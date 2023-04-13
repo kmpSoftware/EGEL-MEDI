@@ -35,11 +35,11 @@ public class FinalActivity extends AppCompatActivity {
         textView.setText("Tu puntuación es: " + puntuacion);
 
         if (puntuacion >= 3) {
-            textView.setText("¡Felicidades! Has aprobado" + puntuacion);
+            textView.setText("¡Felicidades! Has aprobado \nTu puntuación es: " + puntuacion);
             ImageView gifImageView = findViewById(R.id.gifImageView);
             Glide.with(this).load(R.raw.my_gif2).into(gifImageView);
         } else {
-            textView.setText("¡Lo siento! Has reprobado" + puntuacion);
+            textView.setText("¡Lo siento! Has reprobado\nTu puntuación es: " + puntuacion);
             ImageView gifImageView = findViewById(R.id.gifImageView);
             Glide.with(this).load(R.raw.my_gif).into(gifImageView);
         }

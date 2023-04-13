@@ -1,16 +1,16 @@
-package com.example.egelisoft2.ui.notifications;
+package com.example.egelisoft2.ui.configuracion;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class ConfiguracionViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public ConfiguracionViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("");
     }
 
     public LiveData<String> getText() {

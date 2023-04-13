@@ -3,26 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.dashboard.DashboardFragment"
+    >
 
 
-    <fragment
-        android:id="@+id/nav_host_fragment_activity_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <LinearLayout
+        android:id="@+id/hidden_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:navGraph="@navigation/mobile_navigation" />
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/nav_host_fragment_activity_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="404dp"
-        android:layout_height="56dp"
+        android:layout_height="76dp"
         android:backgroundTint="@color/white"
         android:onClick="buttonClick"
         android:text="VOLVER"
@@ -31,10 +35,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
-
     <ScrollView
         android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -45,140 +48,45 @@
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:backgroundTint="#ffbe0b"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="#2271b3"
                 android:onClick="buttonClick"
-                android:text="SUBTEMAS DE TEMA 1" />
+                android:text="Tipos de requerimientos" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:backgroundTint="#fb5607"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="#2271b3"
                 android:onClick="buttonClick"
-                android:text="Button" />
+                android:text="Técnicas y herramientas para
+la obtención, análisis, priorización
+y validación de requerimientos " />
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
                 android:onClick="buttonClick"
-                android:backgroundTint="#ff006e"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#8338ec"
-                android:text="Button" />
+                android:backgroundTint="#2271b3"
+                android:text="Técnicas y herramientas
+de documentación de requerimientos " />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#3a86ff"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#f4d58d"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#bf0603"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#708d81"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#8d0801"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#373d20"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#0ead69"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:onClick="buttonClick"
-                android:backgroundTint="#ffffff"
-                android:text="Button" />
+
 
         </LinearLayout>
     </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

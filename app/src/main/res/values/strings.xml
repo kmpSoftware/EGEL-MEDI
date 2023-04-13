@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">EGEL ISOFT 2</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">EGEL ISOFT PLUS</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Temas</string>
+    <string name="title_notifications">Configuración</string>
+    <string name="title_subtemas">Subtemas</string>
+    <string name="title_preguntas">Preguntas</string>
+    <string name="title_temas">Temas</string>
+    <string name="title_home2">Inicio</string>
+
+
 </resources>

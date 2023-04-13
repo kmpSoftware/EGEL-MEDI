@@ -37,6 +37,7 @@ public class DashboardFragment extends Fragment {
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //abrir nueva actividad con varios botones para seleccionar el tipo de reporte
                 Intent intent = new Intent(getActivity(), subtemas.class);
                 startActivity(intent);
@@ -46,6 +47,7 @@ public class DashboardFragment extends Fragment {
     Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //abrir nueva actividad con varios botones para seleccionar el tipo de reporte
                 Intent intent = new Intent(getActivity(), subtemas2.class);
                 startActivity(intent);
