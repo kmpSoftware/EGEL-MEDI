@@ -51,6 +51,9 @@ public class FinalActivity extends AppCompatActivity {
                 String activityName = getActivityName(); // Obtiene el nombre de la actividad anterior
                 Intent intent = getNextActivityIntent(activityName); // Obtiene el Intent de la siguiente actividad
 
+                //destruye la actividad actual
+                finish();
+
                 // Inicia la nueva actividad
                 startActivity(intent);
             }

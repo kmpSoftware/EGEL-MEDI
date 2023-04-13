@@ -44,26 +44,14 @@ public class PreguntasActivity extends AppCompatActivity {
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
-
-
-    private Vibrator vibrator;
-
-
-    private CountDownTimer countDownTimer; // variable de instancia para el objeto CountDownTimer
-    private long tiempoRestante = TIEMPO_TOTAL; // el tiempo total del temporizador
-    private static final long TIEMPO_TOTAL = 3000; // 30 segundos
-
+    private CountDownTimer countDownTimer;
+    private long tiempoRestante = TIEMPO_TOTAL;
+    private static final long TIEMPO_TOTAL = 3000;
     private double puntuacionActual = 0;
-    Button button1;
     double puntuacion = 0;
-
     private String[][] preguntas;
-
     private int preguntaActual = 0;
-
     private TextView tiempoTextView;
-
-    private boolean tiempoTerminado = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,13 +65,6 @@ public class PreguntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
 
-//        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-//        // Solicitar permiso para vibrar
-//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.VIBRATE)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.VIBRATE}, 0);
-//        }
-
         preguntaTextView = findViewById(R.id.preguntaTextView);
         opcion1Button = findViewById(R.id.opcion1Button);
         opcion2Button = findViewById(R.id.opcion2Button);
@@ -92,10 +73,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
         //cronometro
         tiempoTextView = findViewById(R.id.tiempoTextView);
-
         ImageView gifImageView = findViewById(R.id.gifImageView);
         Glide.with(this).load(R.raw.timer).into(gifImageView);
-
 
         // Lee el identificador del botón presionado del Intent
         Intent intent = getIntent();
@@ -132,7 +111,6 @@ public class PreguntasActivity extends AppCompatActivity {
         }
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
-
     }
 
     private void mostrarPregunta(int indicePregunta) {
@@ -150,7 +128,6 @@ public class PreguntasActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 verificarRespuesta(0);
-
             }
         });
 
@@ -159,7 +136,6 @@ public class PreguntasActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 verificarRespuesta(1);
-
             }
         });
 
@@ -168,11 +144,9 @@ public class PreguntasActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 verificarRespuesta(2);
-
             }
         });
        cronometro();
-
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
@@ -182,11 +156,7 @@ public class PreguntasActivity extends AppCompatActivity {
         // Verifica si la respuesta seleccionada es correcta
         String respuestaCorrecta = preguntas[preguntaActual][4];
         String retroalimentacion = preguntas[preguntaActual][5];
-//        System.out.println("respuesta correcta: " + respuestaCorrecta);
-//        System.out.println("respuesta seleccionada: " + preguntas[opcionSeleccionada][1]);
 
-            // Código para manejar la selección de respuesta dentro del tiempo
-            // ...
             if(opcionSeleccionada == -1) {
                 mostrarSiguientePregunta(null, puntuacion);
 
@@ -236,13 +206,10 @@ public class PreguntasActivity extends AppCompatActivity {
                 mensajeTextView.setText("Correcto\n" + retroalimentacion);
                 puntuacion += 1;
 
-
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
-
             } else if (opcionSeleccionada == 2 && opcion3Button.getText().equals(respuestaCorrecta)) {
-
 
                 //mostrar el bottom sheet y mostrar el mensaje de respuesta correcta
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
@@ -257,20 +224,16 @@ public class PreguntasActivity extends AppCompatActivity {
                     }
                 });
                 bottomSheetDialog.show();
-
                 //Obtener el TextView donde se mostrará el mensaje
                 TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
                 //Asignar el mensaje al TextView
                 mensajeTextView.setText("Correcto\n" + retroalimentacion);
                 puntuacion += 1;
 
-
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
 
-
             } else {
-
                 //muestra el bottom sheet
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
                 bottomSheetDialog.setContentView(R.layout.bottom_sheet);
@@ -289,49 +252,38 @@ public class PreguntasActivity extends AppCompatActivity {
                 //Obtener el TextView donde se mostrará el mensaje
                 TextView mensajeTextView = bottomSheetDialog.findViewById(R.id.mensajeTextView);
                 //Asignar el mensaje al TextView
-
                 mensajeTextView.setText("Incorrecto\n" + retroalimentacion);
-
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
             }
-
         }
 
-        //funcion para mostart siguien pregunta
         public void mostrarSiguientePregunta (View view,double puntuacion){
 
             puntuacionActual = puntuacion;
             // Muestra la siguiente pregunta o finaliza la actividad
             //progres bar
             progressBar.setProgress(preguntaActual + 1);
-
             preguntaActual++;
             if (preguntaActual < preguntas.length) {
                 mostrarPregunta(preguntaActual);
             } else {
+                finish();
                 mostrarFinalActivity(null);
             }
         }
 
-        //funcion para motrar la FinalActivity
         public void mostrarFinalActivity (View view){
             Intent intent = new Intent(PreguntasActivity.this, FinalActivity.class);
-
             intent.putExtra("puntuacion", puntuacionActual);
-
-
             startActivity(intent);
-
         }
 
-        //funcion para salir de la actividad
         public void salir (View view){
             countDownTimer.cancel();
             finish();
         }
 
-        //funcion para poner cronometro de 20 segundos en cada pregunta
         public void cronometro () {
             countDownTimer = new CountDownTimer(20000, 1000) {
                 public void onTick(long millisUntilFinished) {
@@ -350,35 +302,8 @@ public class PreguntasActivity extends AppCompatActivity {
                     verificarRespuesta(3); // indica que no se seleccionó ninguna respuesta
                 }
             }.start();
-
         }
 
-//
-//    private void iniciarTemporizador() {
-//        countDownTimer = new CountDownTimer(tiempoRestante, 1000) {
-//            @Override
-//            public void onTick(long millisUntilFinished) {
-//                tiempoRestante = millisUntilFinished;
-//                // Actualizar la pantalla del temporizador aquí
-//                // cronometroTextView.setText(formatTime(tiempoRestante));
-//                tiempoTextView.setText("Tiempo: " + millisUntilFinished / 1000);
-//            }
-//
-//            @Override
-//            public void onFinish() {
-//                tiempoTextView.setText("Tiempo: 0");
-//                verificarRespuesta(3);
-//                // Acción a realizar cuando el temporizador termina
-//                // mostrarSiguientePregunta(null, puntuacion);
-//            }
-//        }.start();
-//    }
-//
-//    private void detenerTemporizador() {
-//        if (countDownTimer != null) {
-//            countDownTimer.cancel();
-//        }
-//    }
 
 }
 

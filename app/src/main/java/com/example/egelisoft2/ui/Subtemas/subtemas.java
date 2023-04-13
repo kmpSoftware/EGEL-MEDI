@@ -25,15 +25,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.egelisoft2.R;
-import com.example.egelisoft2.databinding.ActivityMainBinding;
-import com.example.egelisoft2.databinding.FragmentNotificationsBinding;
+
 import com.example.egelisoft2.ui.Preguntas.PreguntasActivity;
 import com.example.egelisoft2.ui.dashboard.DashboardFragment;
 import com.example.egelisoft2.ui.home.HomeFragment;
 import com.example.egelisoft2.ui.notifications.NotificationsFragment;
 import com.example.egelisoft2.ui.notifications.NotificationsViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+
 
 public class subtemas extends AppCompatActivity {
     Button button1;
@@ -42,7 +41,7 @@ public class subtemas extends AppCompatActivity {
     Button btnVolver;
 
     private BottomNavigationView bottomNavigationView;
-    private ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,17 +49,23 @@ public class subtemas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtemas);
 
+
         // Busca el botón por su id
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         btnVolver = findViewById(R.id.btnVolver);
 
+
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                NavController navController = Navigation.findNavController(view);
+            public void onClick(View v) {
+                //cerrar la actividad actual
+
+                // Navegar hacia el fragmento DashboardFragment
+                NavController navController = Navigation.findNavController(subtemas.this, R.id.nav_host_fragment_activity_main);
                 navController.navigate(R.id.navigation_dashboard);
+                finish();
             }
         });
 
@@ -75,6 +80,7 @@ public class subtemas extends AppCompatActivity {
                 intent.putExtra("BOTON_PRESIONADO", 1);
 
                 // Inicia la nueva actividad
+                finish();
                 startActivity(intent);
             }
         });
@@ -88,6 +94,7 @@ public class subtemas extends AppCompatActivity {
                 intent.putExtra("BOTON_PRESIONADO", 2);
 
                 // Inicia la nueva actividad
+                finish();
                 startActivity(intent);
             }
         });
@@ -101,6 +108,7 @@ public class subtemas extends AppCompatActivity {
                 intent.putExtra("BOTON_PRESIONADO", 3);
 
                 // Inicia la nueva actividad
+                finish();
                 startActivity(intent);
             }
         });
