@@ -3,12 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -19,9 +23,11 @@
         android:theme="@style/Theme.EGELISOFT2"
         tools:targetApi="31">
 
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX" />
+
 
         <activity
             android:name=".MainActivity"
@@ -93,6 +99,16 @@
                 android:value="" />
         </activity>
 
+
+        <receiver
+            android:name=".ui.configuracion.NotificacionReceiver"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedReceiver">
+        </receiver>
+
     </application>
+
+
 
 </manifest>
