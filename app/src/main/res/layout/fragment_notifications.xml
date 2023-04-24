@@ -1,50 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.configuracion.ConfiguracionFragment">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
 
     <TextView
-        android:id="@+id/text_notifications"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Configuración"
-        android:textSize="20dp"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+
+        android:text='¡Hola! ¡Bienvenido(a)!
+
+Aquí puedes configurar la hora en la que deseas recibir un recordatorio diario para estudiar. Solo tienes que presionar el botón "Seleccionar Hora" y elegir la hora que más te convenga.
+
+Si deseas desactivar estas notificaciones, solo tienes que presionar el botón "Desactivar" y no recibirás más recordatorios.
+
+¡Gracias por usar nuestra aplicación y esperamos que te sea de gran ayuda para tu rutina de estudio!'
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="seleccionar_hora_msg"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/selectTimeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="seleccionar_hora_button_text"
+    android:textSize="16sp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="desactivar_notificaciones_msg"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/disableNotificationsButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="desactivar_notificaciones_button_text"
+    android:textSize="16sp" />
 
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
-        android:visibility="invisible"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/selectTimeButton"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccionar hora"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@id/timePicker"/>
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

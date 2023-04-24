@@ -42,8 +42,6 @@ public class ConfiguracionFragment extends Fragment {
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        configuracionViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         Button selectTimeButton = binding.selectTimeButton;
         selectTimeButton.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +66,21 @@ public class ConfiguracionFragment extends Fragment {
                             }
                         }, hour, minute, false);
                 timePickerDialog.show();
+            }
+        });
+
+        Button disableNotificationsButton = binding.disableNotificationsButton;
+        disableNotificationsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cancelar la alarma de las notificaciones
+                AlarmManager alarmManager = (AlarmManager) requireActivity().getSystemService(Context.ALARM_SERVICE);
+                Intent intent = new Intent(requireContext(), NotificacionReceiver.class);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(), 0, intent, 0);
+                alarmManager.cancel(pendingIntent);
+
+                // Mostrar un toast para indicar que se han desactivado las notificaciones
+                Toast.makeText(getActivity(), "Notificaciones desactivadas", Toast.LENGTH_SHORT).show();
             }
         });
 
