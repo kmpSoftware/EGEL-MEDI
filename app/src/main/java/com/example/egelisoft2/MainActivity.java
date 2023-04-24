@@ -3,9 +3,11 @@ package com.example.egelisoft2;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
+import com.example.egelisoft2.ui.configuracion.NotificationService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        // Iniciar el servicio de notificaciones
+        Intent intent = new Intent(this, NotificationService.class);
+        startService(intent);
 
            // Crear el canal de notificación
         createNotificationChannel();
