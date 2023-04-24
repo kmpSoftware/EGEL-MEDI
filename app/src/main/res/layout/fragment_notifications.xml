@@ -9,22 +9,22 @@ android:padding="16dp">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:gravity="center"
+        android:textAlignment="viewStart"
 
-        android:text='¡Hola! ¡Bienvenido(a)!
-
-Aquí puedes configurar la hora en la que deseas recibir un recordatorio diario para estudiar. Solo tienes que presionar el botón "Seleccionar Hora" y elegir la hora que más te convenga.
-
-Si deseas desactivar estas notificaciones, solo tienes que presionar el botón "Desactivar" y no recibirás más recordatorios.
-
-¡Gracias por usar nuestra aplicación y esperamos que te sea de gran ayuda para tu rutina de estudio!'
+        android:text='Aquí puedes configurar la hora en la que deseas recibir un recordatorio diario para estudiar.
+        \nEsperamos que te sea de gran ayuda para tu rutina de estudio!'
         android:textSize="18sp"
         android:textStyle="bold" />
 
-<TextView
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="seleccionar_hora_msg"
+    android:text="seleccionar hora"
     android:textSize="18sp"
     android:textStyle="bold" />
 
@@ -33,14 +33,14 @@ Si deseas desactivar estas notificaciones, solo tienes que presionar el botón "
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
-    android:text="seleccionar_hora_button_text"
+    android:text="Activar notificaciones"
     android:textSize="16sp" />
 
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="32dp"
-    android:text="desactivar_notificaciones_msg"
+    android:text="Desactivar notificaciones "
     android:textSize="18sp"
     android:textStyle="bold" />
 
@@ -49,7 +49,7 @@ Si deseas desactivar estas notificaciones, solo tienes que presionar el botón "
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
-    android:text="desactivar_notificaciones_button_text"
+    android:text="Desactivar Notificaciones"
     android:textSize="16sp" />
 
     <TimePicker
@@ -57,7 +57,6 @@ Si deseas desactivar estas notificaciones, solo tienes que presionar el botón "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+    />
 
 </LinearLayout>

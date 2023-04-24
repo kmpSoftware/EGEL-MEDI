@@ -28,7 +28,7 @@ public class NotificacionReceiver extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("Recordatorio")
-                .setContentText("Es hora de hacer algo")
+                .setContentText("Es hora de estudiar")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
         // Crear un intent para abrir la app cuando se toque la notificación
