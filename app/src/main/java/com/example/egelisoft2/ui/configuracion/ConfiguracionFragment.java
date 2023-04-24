@@ -83,11 +83,8 @@ public class ConfiguracionFragment extends Fragment {
                 Toast.makeText(getActivity(), "Notificaciones desactivadas", Toast.LENGTH_SHORT).show();
             }
         });
-
         return root;
-
     }
-
 
     private void configurarAlarma(Calendar calendar) {
         AlarmManager alarmManager = (AlarmManager) requireActivity().getSystemService(Context.ALARM_SERVICE);
