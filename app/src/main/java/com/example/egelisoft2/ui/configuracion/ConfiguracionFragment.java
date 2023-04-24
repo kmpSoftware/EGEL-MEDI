@@ -58,11 +58,13 @@ public class ConfiguracionFragment extends Fragment {
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay,
                                                   int minute) {
-                                // Aquí guardamos la hora seleccionada en la variable horaSeleccionada
+                                c.set(Calendar.HOUR_OF_DAY, hourOfDay);
+                                c.set(Calendar.MINUTE, minute);
+                                c.set(Calendar.SECOND, 0);
+                                c.set(Calendar.MILLISECOND, 0);
                                 horaSeleccionada = String.format("%02d:%02d", hourOfDay, minute);
                                 configurarAlarma(c);
                                 Toast.makeText(getActivity(), "Hora seleccionada: " + horaSeleccionada, Toast.LENGTH_SHORT).show();
-
                             }
                         }, hour, minute, false);
                 timePickerDialog.show();
@@ -80,7 +82,8 @@ public class ConfiguracionFragment extends Fragment {
         Intent intent = new Intent(requireContext(), NotificacionReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(), 0, intent, 0);
 
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        // Configurar la alarma para que se repita todos los días a la hora seleccionada
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
     }
 
     @Override

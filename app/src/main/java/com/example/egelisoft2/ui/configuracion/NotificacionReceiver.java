@@ -34,16 +34,6 @@ public class NotificacionReceiver extends BroadcastReceiver {
         notificationManager.notify(1, builder.build());
     }
 
-    // Método para crear el canal de notificación (sólo es necesario una vez)
-    public static void createNotificationChannel(Context context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(
-                    CHANNEL_ID,
-                    CHANNEL_NAME,
-                    NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-        }
-    }
+
 }
 
