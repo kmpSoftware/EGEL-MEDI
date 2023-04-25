@@ -2,8 +2,11 @@ package com.example.egelisoft2;
 
 
 import android.app.ActionBar;
+import android.app.ActivityManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,6 +22,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.egelisoft2.databinding.ActivityMainBinding;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
@@ -32,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -44,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        // Iniciar el servicio de notificaciones
-        Intent intent = new Intent(this, NotificationService.class);
-        startService(intent);
 
            // Crear el canal de notificación
         createNotificationChannel();
@@ -62,5 +62,22 @@ public class MainActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Verificar si la aplicación está en segundo plano
+        ActivityManager am = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+        ComponentName componentName = taskInfo.get(0).topActivity;
+
+        if (!componentName.getPackageName().equals(getPackageName())) {
+            // La aplicación está en segundo plano, iniciar el servicio de notificaciones
+            Intent intent = new Intent(this, NotificationService.class);
+            startService(intent);
+        }
+    }
+
 
 }
