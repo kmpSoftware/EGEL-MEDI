@@ -14,6 +14,7 @@ import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageView;
@@ -73,7 +74,13 @@ public class PreguntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas);
 
+// Establecer el modo de pantalla completa
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        // Ocultar la barra de navegación
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
 
         //boton siguiente
         siguienteButton = findViewById(R.id.siguienteButton);
@@ -139,6 +146,15 @@ public class PreguntasActivity extends AppCompatActivity {
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        countDownTimer.cancel();
+        
+        finish(); // Destruye la actividad actual (ActivityB) y regresa a la anterior (ActivityA)
+    }
+
 
     private void mostrarPregunta(int indicePregunta) {
 
@@ -287,7 +303,9 @@ public class PreguntasActivity extends AppCompatActivity {
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
             }
-        }
+
+
+    }
 
         public void mostrarSiguientePregunta (View view,double puntuacion){
 
@@ -334,6 +352,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 }
             }.start();
         }
+
 
 
 }

@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 
 import android.content.Intent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.egelisoft2.R;
@@ -32,6 +33,14 @@ public class subtemas extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtemas);
+
+        // Establecer el modo de pantalla completa
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        // Ocultar la barra de navegación
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
 
 
         // Busca el botón por su id
