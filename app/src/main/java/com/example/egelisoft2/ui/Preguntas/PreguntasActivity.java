@@ -151,7 +151,7 @@ public class PreguntasActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         countDownTimer.cancel();
-        
+
         finish(); // Destruye la actividad actual (ActivityB) y regresa a la anterior (ActivityA)
     }
 
