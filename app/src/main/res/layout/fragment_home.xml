@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/fondo"
+    android:background="@drawable/fondo"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -43,7 +43,7 @@
                 android:layout_marginStart="82dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="72dp"
-                android:text="Bienvenide"
+                android:text="Bienvenida!"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"
@@ -55,27 +55,24 @@
                 android:id="@+id/instructions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="2dp"
-                android:textStyle="bold"
-
                 android:text='Aquí encontrarás preguntas basadas en la guía oficial para que puedas repasar y mejorar tus conocimientos.'
-
                 android:textColor="@color/black"
                 android:textSize="24sp"
+                android:textStyle="bold"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
 
 
-
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="168dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="0dp"
                 android:src="@mipmap/tema_foreground" />
 
             <TextView
@@ -83,24 +80,24 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:textStyle="bold"
-                android:textAlignment="center"
-                android:layout_marginBottom="32dp"
+
+                android:layout_marginBottom="0dp"
                 android:text='Para comenzar, haz clic en el botón "Temas" para acceder a las preguntas.'
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:src="@mipmap/noti_foreground" />
          <TextView
              android:layout_width="match_parent"
              android:layout_height="match_parent"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="32dp"
-             android:textAlignment="center"
+
              android:textStyle="bold"
              android:text='En la sección "Notificaciones" podrás activar las notificaciones para recibir recordatorios '
 

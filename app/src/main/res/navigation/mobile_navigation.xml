@@ -10,8 +10,9 @@
         android:name="com.example.egelisoft2.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home"
+       />
 
- 
+
 
     <fragment
         android:id="@+id/navigation_dashboard"

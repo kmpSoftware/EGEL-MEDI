@@ -26,20 +26,22 @@
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="404dp"
-        android:layout_height="76dp"
-        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/back"
         android:onClick="buttonClick"
-        android:text="VOLVER"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+         />
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:backgroundTint="@color/white"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,6 +57,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#2271b3"
+                android:drawableRight="@drawable/quizas"
                 android:onClick="buttonClick"
                 android:text="Tipos de requerimientos" />
 
@@ -67,10 +70,12 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#2271b3"
+                android:drawableRight="@drawable/quizas"
                 android:onClick="buttonClick"
                 android:text="Técnicas y herramientas para
 la obtención, análisis, priorización
 y validación de requerimientos " />
+
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
@@ -78,11 +83,11 @@ y validación de requerimientos " />
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="5dp"
-                android:onClick="buttonClick"
                 android:backgroundTint="#2271b3"
+                android:drawableRight="@drawable/quizas"
+                android:onClick="buttonClick"
                 android:text="Técnicas y herramientas
 de documentación de requerimientos " />
-
 
 
         </LinearLayout>

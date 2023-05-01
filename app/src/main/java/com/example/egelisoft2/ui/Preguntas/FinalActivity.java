@@ -15,12 +15,14 @@ import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.example.egelisoft2.R;
 import com.example.egelisoft2.ui.Subtemas.subtemas;
 import com.example.egelisoft2.ui.Subtemas.subtemas2;
+import com.example.egelisoft2.ui.Subtemas.subtemas3;
+import com.example.egelisoft2.ui.Subtemas.subtemas4;
+import com.example.egelisoft2.ui.Subtemas.subtemas5;
+import com.example.egelisoft2.ui.Subtemas.subtemas6;
 
 public class FinalActivity extends AppCompatActivity {
-
     Button button1;
     TextView textView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,8 +83,16 @@ public class FinalActivity extends AppCompatActivity {
             return new Intent(FinalActivity.this, subtemas.class);
         } else if (activityName.equals("preguntasActivity2")) {
             return new Intent(FinalActivity.this, subtemas2.class);
+        } else if (activityName.equals("preguntasActivity3")) {
+            return new Intent(FinalActivity.this, subtemas3.class);
+        } else if (activityName.equals("preguntasActivity4")) {
+            return new Intent(FinalActivity.this, subtemas4.class);
+        } else if (activityName.equals("preguntasActivity5")) {
+            return new Intent(FinalActivity.this, subtemas5.class);
+        } else if (activityName.equals("preguntasActivity6")) {
+            return new Intent(FinalActivity.this, subtemas6.class);
         } else {
-            return new Intent(FinalActivity.this, subtemas2.class);
+            return new Intent(FinalActivity.this, subtemas6.class);
         }
     }
 }

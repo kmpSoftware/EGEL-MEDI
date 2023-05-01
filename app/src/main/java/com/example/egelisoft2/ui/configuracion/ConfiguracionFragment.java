@@ -9,24 +9,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.Switch;
-import android.widget.TextView;
+import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.egelisoft2.MainActivity;
-import com.example.egelisoft2.R;
 import com.example.egelisoft2.databinding.FragmentNotificationsBinding;
-import com.example.egelisoft2.ui.Preguntas.PreguntasActivity;
 
 import java.util.Calendar;
 
@@ -44,7 +36,7 @@ public class ConfiguracionFragment extends Fragment {
         View root = binding.getRoot();
 
 
-        Button selectTimeButton = binding.selectTimeButton;
+        ImageButton selectTimeButton = binding.selectTimeButton;
         selectTimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,14 +62,14 @@ public class ConfiguracionFragment extends Fragment {
             }
         });
 
-        Button disableNotificationsButton = binding.disableNotificationsButton;
+        ImageButton disableNotificationsButton = binding.disableNotificationsButton;
         disableNotificationsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Cancelar la alarma de las notificaciones
                 AlarmManager alarmManager = (AlarmManager) requireActivity().getSystemService(Context.ALARM_SERVICE);
                 Intent intent = new Intent(requireContext(), NotificacionReceiver.class);
-                PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(), 0, intent, 0);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(),  0, intent, PendingIntent.FLAG_IMMUTABLE);
                 alarmManager.cancel(pendingIntent);
 
                 // Mostrar un toast para indicar que se han desactivado las notificaciones
@@ -91,7 +83,7 @@ public class ConfiguracionFragment extends Fragment {
         AlarmManager alarmManager = (AlarmManager) requireActivity().getSystemService(Context.ALARM_SERVICE);
 
         Intent intent = new Intent(requireContext(), NotificacionReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(), 0, intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(requireContext(),  0, intent, PendingIntent.FLAG_IMMUTABLE);
 
         // Configurar la alarma para que se repita todos los días a la hora seleccionada
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);

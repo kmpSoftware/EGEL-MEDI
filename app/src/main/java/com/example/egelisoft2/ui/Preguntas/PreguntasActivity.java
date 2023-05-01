@@ -1,52 +1,36 @@
 package com.example.egelisoft2.ui.Preguntas;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.example.egelisoft2.R;
-import com.example.egelisoft2.ui.Subtemas.subtemas;
-import com.example.egelisoft2.ui.Subtemas.subtemas2;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 
 public class PreguntasActivity extends AppCompatActivity {
-
-
-    public PreguntasActivity() {}
-
     private TextView preguntaTextView;
     private Button opcion1Button, opcion2Button, opcion3Button;
     private ProgressBar progressBar;
@@ -64,6 +48,7 @@ public class PreguntasActivity extends AppCompatActivity {
     private List<Integer> listaIndicesPreguntas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        cronometro();
 
         //guardar cual fue la ultima actividad
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
@@ -193,7 +178,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 verificarRespuesta(2);
             }
         });
-            cronometro();
+
     }
 
     private void verificarRespuesta(int opcionSeleccionada) {
@@ -204,11 +189,7 @@ public class PreguntasActivity extends AppCompatActivity {
         String respuestaCorrecta = preguntas[preguntaActual][4];
         String retroalimentacion = preguntas[preguntaActual][5];
 
-            if(opcionSeleccionada == -1) {
-                mostrarSiguientePregunta(null, puntuacion);
-
-
-            }else if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
+        if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
                 bottomSheetDialog.setContentView(R.layout.bottom_sheet);
@@ -303,10 +284,7 @@ public class PreguntasActivity extends AppCompatActivity {
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_red_light); // Establece el color de fondo a verde
             }
-
-
     }
-
         public void mostrarSiguientePregunta (View view,double puntuacion){
 
             puntuacionActual = puntuacion;
@@ -348,13 +326,10 @@ public class PreguntasActivity extends AppCompatActivity {
                         // Vibra el teléfono con el efecto creado
                         vibrator.vibrate(vibrationEffect);
                     }
-                    verificarRespuesta(3); // indica que no se seleccionó ninguna respuesta
+                    verificarRespuesta(-1); // indica que no se seleccionó ninguna respuesta
                 }
             }.start();
         }
-
-
-
 }
 
 
