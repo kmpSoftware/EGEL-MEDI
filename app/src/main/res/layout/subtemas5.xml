@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#2a9d8f"
     tools:context=".ui.dashboard.DashboardFragment"
     >
 
@@ -31,7 +31,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/back"
+        android:drawableLeft="@drawable/back5"
         android:onClick="buttonClick"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,6 +47,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:src="@drawable/subt4"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                />
 
             <Button
                 android:id="@+id/button1"
@@ -56,7 +63,10 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="0dp"
-                android:backgroundTint="#2271b3"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
+                android:textStyle="bold"
+                android:textSize="20dp"
                 android:drawableRight="@drawable/quizas"
                 android:onClick="buttonClick"
                 android:text="subtema5" />
@@ -70,7 +80,10 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="0dp"
                 android:drawableRight="@drawable/quizas"
-                android:backgroundTint="#2271b3"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
+                android:textStyle="bold"
+                android:textSize="20dp"
                 android:onClick="buttonClick"
                 android:text="subtema5" />
             <Button
@@ -82,7 +95,10 @@
                 android:drawableRight="@drawable/quizas"
                 android:layout_marginEnd="5dp"
                 android:onClick="buttonClick"
-                android:backgroundTint="#2271b3"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
+                android:textSize="20dp"
+                android:textStyle="bold"
                 android:text="subtema5" />
 
         </LinearLayout>

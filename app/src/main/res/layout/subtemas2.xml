@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#2a9d8f"
     tools:context=".ui.dashboard.DashboardFragment"
     >
 
@@ -26,14 +26,20 @@
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="394dp"
+        android:layout_height="100dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/back"
         android:clickable="true"
+        android:drawableLeft="@drawable/back5"
         android:onClick="buttonClick"
+     android:paddingStart="30dp"
+        android:text=""
+
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,42 +54,63 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:src="@drawable/subt4"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                />
+
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
+
                 android:layout_marginEnd="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
                 android:layout_marginBottom="0dp"
-                android:backgroundTint="#2271b3"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
                 android:drawableRight="@drawable/quizas"
                 android:onClick="buttonClick"
                 android:text="Diseño arquitectónico de software" />
-
+            />
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
                 android:layout_marginEnd="5dp"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
                 android:layout_marginBottom="0dp"
                 android:drawableRight="@drawable/quizas"
-                android:backgroundTint="#2271b3"
+
                 android:onClick="buttonClick"
                 android:text="Diseño de módulos, componentes
 y de datos de software" />
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
                 android:drawableRight="@drawable/quizas"
                 android:layout_marginEnd="5dp"
                 android:onClick="buttonClick"
-                android:backgroundTint="#2271b3"
+                android:backgroundTint="#264653"
+                android:textColor="#e9c46a"
                 android:text="Diseño de interfaces" />
 
 
