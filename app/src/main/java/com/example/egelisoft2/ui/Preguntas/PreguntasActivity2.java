@@ -50,6 +50,7 @@ public class PreguntasActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         //guardar cual fue la ultima actividad
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
@@ -130,6 +131,8 @@ public class PreguntasActivity2 extends AppCompatActivity {
 
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
+
+
     }
 
     @Override
@@ -142,7 +145,7 @@ public class PreguntasActivity2 extends AppCompatActivity {
 
 
     private void mostrarPregunta(int indicePregunta) {
-
+        cronometro();
         // Obtiene el índice de la pregunta a mostrar
         int indiceRealPregunta = listaIndicesPreguntas.get(indicePregunta);
 

@@ -48,7 +48,7 @@ public class PreguntasActivity extends AppCompatActivity {
     private List<Integer> listaIndicesPreguntas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        cronometro();
+//        cronometro();
 
         //guardar cual fue la ultima actividad
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
@@ -130,6 +130,7 @@ public class PreguntasActivity extends AppCompatActivity {
 
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
+
     }
 
     @Override
@@ -142,6 +143,7 @@ public class PreguntasActivity extends AppCompatActivity {
 
 
     private void mostrarPregunta(int indicePregunta) {
+        cronometro();
 
         // Obtiene el índice de la pregunta a mostrar
         int indiceRealPregunta = listaIndicesPreguntas.get(indicePregunta);
@@ -306,11 +308,6 @@ public class PreguntasActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        public void salir (View view){
-            countDownTimer.cancel();
-            finish();
-        }
-
         public void cronometro () {
             countDownTimer = new CountDownTimer(20000, 1000) {
                 public void onTick(long millisUntilFinished) {
@@ -330,6 +327,13 @@ public class PreguntasActivity extends AppCompatActivity {
                 }
             }.start();
         }
+
+
+    public void salir (View view){
+        countDownTimer.cancel();
+        finish();
+    }
+
 }
 
 

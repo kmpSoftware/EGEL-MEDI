@@ -11,9 +11,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
-
     <application
-
 
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -54,7 +52,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
@@ -210,7 +207,6 @@
                 android:value="" />
         </activity>
 
-
         <receiver
             android:name=".ui.configuracion.NotificacionReceiver"
             android:exported="true"
@@ -218,10 +214,6 @@
             tools:ignore="ExportedReceiver">
         </receiver>
 
-
-
     </application>
-
-
 
 </manifest>

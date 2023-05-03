@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
 
         <Button
@@ -33,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
 
         <Button
@@ -40,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
     </LinearLayout>
 
@@ -48,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siguiente"
+        android:backgroundTint="#e63946"
         android:layout_below="@id/opcionesLayout"
         android:layout_alignParentEnd="true"/>
 
@@ -62,6 +66,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="204dp"
+        android:backgroundTint="#e63946"
         android:onClick="salir"
         android:text="Salir" />
 
@@ -86,6 +91,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginStart="70dp"
         android:layout_marginTop="57dp"

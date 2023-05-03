@@ -130,6 +130,7 @@ public class PreguntasActivity5 extends AppCompatActivity {
 
         // Muestra la primera pregunta
         mostrarPregunta(preguntaActual);
+
     }
 
     @Override
@@ -142,7 +143,7 @@ public class PreguntasActivity5 extends AppCompatActivity {
 
 
     private void mostrarPregunta(int indicePregunta) {
-
+        cronometro();
         // Obtiene el índice de la pregunta a mostrar
         int indiceRealPregunta = listaIndicesPreguntas.get(indicePregunta);
 
