@@ -298,6 +298,7 @@ public class PreguntasActivity2 extends AppCompatActivity {
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntaActual);
         } else {
+            countDownTimer.cancel();
             finish();
             mostrarFinalActivity(null);
         }

@@ -6,28 +6,19 @@ android:orientation="vertical"
     android:background="@drawable/fondo"
 android:padding="16dp">
 
-
-    <TextView
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textAlignment="viewStart"
-
-        android:text='Aquí puedes configurar la hora en la que deseas recibir un recordatorio diario para estudiar.
-       '
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-
-
-
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/txt5" />
 
 
     <ImageButton
         android:id="@+id/selectTimeButton"
         android:layout_width="match_parent"
         android:layout_height="147dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="2dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
