@@ -47,6 +47,8 @@ public class PreguntasActivity extends AppCompatActivity {
     private int preguntaActual = 0;
     private TextView tiempoTextView;
     private Button siguienteButton;
+    private   String retroalimentacion;
+    private   String respuestaCorrecta;
 
     // Lista de índices de preguntas para mostrar en un orden aleatorio
     private List<Integer> listaIndicesPreguntas;
@@ -69,7 +71,8 @@ public class PreguntasActivity extends AppCompatActivity {
         siguienteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            verificarRespuesta(3);
+            verificarRespuesta(3, retroalimentacion, respuestaCorrecta);
+
             }
         });
 
@@ -84,16 +87,16 @@ public class PreguntasActivity extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 2 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 3 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 4 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 5 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 6 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 7 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 8 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 9 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 10 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"}
+                        {"¿Cuál es la diferencia entre un requisito funcional y un requisito no funcional? ", "Un requisito funcional define una función o característica específica que el sistema debe cumplir, mientras que un requisito no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional se refiere a una restricción o limitación del sistema, mientras que un requisito no funcional define una función o característica específica que el sistema debe cumplir.", "No hay diferencia entre un requisito funcional y un requisito no funcional.", "Un requisito funcional define una función o característica específica que el sistema debe cumplir, mientras que un requisito no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional es una descripción de las funciones o características que un sistema debe tener para cumplir con las necesidades del usuario, mientras que un requisito no funcional es una descripción de las restricciones o limitaciones que un sistema debe tener para cumplir con los requisitos del usuario. Es importante distinguir entre ambos tipos de requisitos para asegurar que el sistema cumpla con todas las necesidades y expectativas del usuario."},
+                        {"Pregunta 2", "2Opción 1", "2Opción 2", "2Opción 3","2respuesta correcta", "retroalimentacion2"},
+                        {"Pregunta 3", "3Opción 1", "3Opción 2", "3respuesta correcta","3respuesta correcta", "retroalimentacion3"},
+                        {"Pregunta 4", "4Opción 1", "4Opción 2", "4Opción 3","4respuesta correcta", "retroalimentacion4"},
+                        {"Pregunta 5", "5Opción 1", "5Opción 2", "5Opción 3","5respuesta correcta", "retroalimentacion5"},
+                        {"Pregunta 6", "6respuesta correcta", "6Opción 2", "6Opción 3","6respuesta correcta", "retroalimentacion6"},
+                        {"Pregunta 7", "7Opción 1", "7Opción 2", "7Opción 3","7respuesta correcta", "retroalimentacion7"},
+                        {"Pregunta 8", "8Opción 1", "8Opción 2", "8Opción 3","8respuesta correcta", "retroalimentacion8"},
+                        {"Pregunta 9", "9Opción 1", "9Opción 2", "9Opción 3","9respuesta correcta", "retroalimentacion9"},
+                        {"Pregunta 10","10Opción 1", "10Opción 2", "10Opción 3","10respuesta correcta", "retroalimentacion10"}
                 };
                 break;
             case 2:
@@ -137,15 +140,6 @@ public class PreguntasActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        countDownTimer.cancel();
-
-        finish(); // Destruye la actividad actual (ActivityB) y regresa a la anterior (ActivityA)
-    }
-
-
     private void mostrarPregunta(int indicePregunta) {
         cronometro();
 
@@ -161,39 +155,41 @@ public class PreguntasActivity extends AppCompatActivity {
         opcion1Button.setText(opciones.get(0));
         opcion2Button.setText(opciones.get(1));
         opcion3Button.setText(opciones.get(2));
+        retroalimentacion = preguntas[indiceRealPregunta][5];
+        respuestaCorrecta = preguntas[indiceRealPregunta][4];
+//        opcion4Button.setText(opciones.get(3));
 
         // Agrega onClickListeners a los botones de opción para manejar la selección de respuesta
         opcion1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                verificarRespuesta(0);
+                verificarRespuesta(0, retroalimentacion, respuestaCorrecta);
             }
         });
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                verificarRespuesta(1);
+                verificarRespuesta(1, retroalimentacion, respuestaCorrecta);
             }
         });
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                verificarRespuesta(2);
+                verificarRespuesta(2, retroalimentacion, respuestaCorrecta);
             }
         });
-
     }
 
-    private void verificarRespuesta(int opcionSeleccionada) {
+    private void verificarRespuesta(int opcionSeleccionada, String retroalimentacion, String respuestaCorrecta) {
         // Detener el cronómetro
         countDownTimer.cancel();
 
         // Verifica si la respuesta seleccionada es correcta
-        String respuestaCorrecta = preguntas[preguntaActual][4];
-        String retroalimentacion = preguntas[preguntaActual][5];
+//        String respuestaCorrecta = preguntas[preguntaActual][4];
+//        String retroalimentacion = preguntas[preguntaActual][5];
+
+//        String retroalimentacion;
+//        this.retroalimentacion = retroalimentacion;
 
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 
@@ -329,7 +325,7 @@ public class PreguntasActivity extends AppCompatActivity {
                         // Vibra el teléfono con el efecto creado
                         vibrator.vibrate(vibrationEffect);
                     }
-                    verificarRespuesta(-1); // indica que no se seleccionó ninguna respuesta
+                    verificarRespuesta(-1, retroalimentacion, respuestaCorrecta); // indica que no se seleccionó ninguna respuesta
                 }
             }.start();
         }
@@ -350,6 +346,15 @@ public class PreguntasActivity extends AppCompatActivity {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(UI_OPTIONS);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        countDownTimer.cancel();
+
+        finish(); // Destruye la actividad actual (ActivityB) y regresa a la anterior (ActivityA)
+    }
+
     public void salir (View view){
         countDownTimer.cancel();
         finish();

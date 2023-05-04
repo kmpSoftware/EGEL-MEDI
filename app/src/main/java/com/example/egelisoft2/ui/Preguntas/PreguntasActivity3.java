@@ -47,6 +47,8 @@ public class PreguntasActivity3 extends AppCompatActivity {
     private int preguntaActual = 0;
     private TextView tiempoTextView;
     private Button siguienteButton;
+    private   String retroalimentacion;
+    private   String respuestaCorrecta;
 
     // Lista de índices de preguntas para mostrar en un orden aleatorio
     private List<Integer> listaIndicesPreguntas;
@@ -69,7 +71,7 @@ public class PreguntasActivity3 extends AppCompatActivity {
         siguienteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verificarRespuesta(3);
+                verificarRespuesta(3, retroalimentacion, respuestaCorrecta);
             }
         });
 
@@ -180,39 +182,41 @@ public class PreguntasActivity3 extends AppCompatActivity {
         opcion1Button.setText(opciones.get(0));
         opcion2Button.setText(opciones.get(1));
         opcion3Button.setText(opciones.get(2));
+        retroalimentacion = preguntas[indiceRealPregunta][5];
+        respuestaCorrecta = preguntas[indiceRealPregunta][4];
 
         // Agrega onClickListeners a los botones de opción para manejar la selección de respuesta
         opcion1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                verificarRespuesta(0);
+                verificarRespuesta(0, retroalimentacion, respuestaCorrecta);
             }
         });
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                verificarRespuesta(1);
+                verificarRespuesta(1, retroalimentacion, respuestaCorrecta);
             }
         });
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                verificarRespuesta(2);
+                verificarRespuesta(2, retroalimentacion, respuestaCorrecta);
             }
         });
-        cronometro();
+
     }
 
-    private void verificarRespuesta(int opcionSeleccionada) {
+    private void verificarRespuesta(int opcionSeleccionada, String retroalimentacion, String respuestaCorrecta) {
         // Detener el cronómetro
         countDownTimer.cancel();
 
         // Verifica si la respuesta seleccionada es correcta
-        String respuestaCorrecta = preguntas[preguntaActual][4];
-        String retroalimentacion = preguntas[preguntaActual][5];
+         respuestaCorrecta = preguntas[preguntaActual][4];
+         retroalimentacion = preguntas[preguntaActual][5];
 
       if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 
@@ -370,7 +374,7 @@ public class PreguntasActivity3 extends AppCompatActivity {
                     // Vibra el teléfono con el efecto creado
                     vibrator.vibrate(vibrationEffect);
                 }
-                verificarRespuesta(-1); // indica que no se seleccionó ninguna respuesta
+                verificarRespuesta(-1, retroalimentacion, respuestaCorrecta); // indica que no se seleccionó ninguna respuesta
             }
         }.start();
     }
