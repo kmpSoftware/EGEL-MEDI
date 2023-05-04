@@ -157,7 +157,7 @@ public class PreguntasActivity3 extends AppCompatActivity {
         }
         // Inicializa la lista de índices de preguntas y la mezcla
         listaIndicesPreguntas = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < preguntas.length; i++) {
             listaIndicesPreguntas.add(i);
         }
         Collections.shuffle(listaIndicesPreguntas);
@@ -319,7 +319,7 @@ public class PreguntasActivity3 extends AppCompatActivity {
         //progres bar
         progressBar.setProgress(preguntaActual + 1);
         preguntaActual++;
-        if (preguntaActual < preguntas.length) {
+        if (preguntaActual < 10) {
             mostrarPregunta(preguntaActual);
         } else {
             countDownTimer.cancel();
