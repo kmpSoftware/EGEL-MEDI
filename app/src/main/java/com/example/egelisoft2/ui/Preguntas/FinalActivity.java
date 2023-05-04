@@ -40,17 +40,17 @@ public class FinalActivity extends AppCompatActivity {
         // Obtener la puntuación del Intent
         button1 = findViewById(R.id.buttonSalir);
         textView = findViewById(R.id.puntuacionTextView);
-        double puntuacion = getIntent().getDoubleExtra("puntuacion", 0.0);
+        double puntuacion = getIntent().getDoubleExtra("puntuacion", 0);
+        int puntuacionRedondeada = (int) Math.round(puntuacion);
 
-
-        textView.setText("Tu puntuación es: " + puntuacion);
+        textView.setText("Tu puntuación es:  " + puntuacionRedondeada);
 
         if (puntuacion >= 6) {
-            textView.setText("¡Felicidades! Has aprobado \nTu puntuación es: " + puntuacion);
+            textView.setText("¡Felicidades! Has aprobado \nTu puntuación es: " + puntuacionRedondeada);
             ImageView gifImageView = findViewById(R.id.gifImageView);
             Glide.with(this).load(R.raw.my_gif2).into(gifImageView);
         } else {
-            textView.setText("¡Lo siento! Has reprobado\nTu puntuación es: " + puntuacion);
+            textView.setText("¡Lo siento! Has reprobado\nTu puntuación es: " + puntuacionRedondeada);
             ImageView gifImageView = findViewById(R.id.gifImageView);
             Glide.with(this).load(R.raw.my_gif).into(gifImageView);
         }
