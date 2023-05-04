@@ -214,13 +214,6 @@ public class PreguntasActivity extends AppCompatActivity {
         // Detener el cronómetro
         countDownTimer.cancel();
 
-        // Verifica si la respuesta seleccionada es correcta
-//        String respuestaCorrecta = preguntas[preguntaActual][4];
-//        String retroalimentacion = preguntas[preguntaActual][5];
-
-//        String retroalimentacion;
-//        this.retroalimentacion = retroalimentacion;
-
         if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PreguntasActivity.this);
@@ -244,7 +237,6 @@ public class PreguntasActivity extends AppCompatActivity {
                 //set background color of bottom sheet
                 LinearLayout bottomSheetLayout = bottomSheetDialog.findViewById(R.id.bottom_sheet);
                 bottomSheetLayout.setBackgroundResource(android.R.color.holo_green_light); // Establece el color de fondo a verde
-
 
             } else if (opcionSeleccionada == 1 && opcion2Button.getText().equals(respuestaCorrecta)) {
 
@@ -320,11 +312,11 @@ public class PreguntasActivity extends AppCompatActivity {
         public void mostrarSiguientePregunta (View view,double puntuacion){
 
             puntuacionActual = puntuacion;
-            // Muestra la siguiente pregunta o finaliza la actividad
+
             //progres bar
             progressBar.setProgress(preguntaActual + 1);
             preguntaActual++;
-            if (preguntaActual < preguntas.length) {
+            if (preguntaActual < 10) {
                 mostrarPregunta(preguntaActual);
             } else {
                 countDownTimer.cancel();
