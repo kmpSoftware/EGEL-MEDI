@@ -87,21 +87,43 @@ public class PreguntasActivity extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"¿Cuál es la diferencia entre un requisito funcional y un requisito no funcional? ", "Un requisito funcional define una función o característica específica que el sistema debe cumplir, mientras que un requisito no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional se refiere a una restricción o limitación del sistema, mientras que un requisito no funcional define una función o característica específica que el sistema debe cumplir.", "No hay diferencia entre un requisito funcional y un requisito no funcional.", "Un requisito funcional define una función o característica específica que el sistema debe cumplir, mientras que un requisito no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional es una descripción de las funciones o características que un sistema debe tener para cumplir con las necesidades del usuario, mientras que un requisito no funcional es una descripción de las restricciones o limitaciones que un sistema debe tener para cumplir con los requisitos del usuario. Es importante distinguir entre ambos tipos de requisitos para asegurar que el sistema cumpla con todas las necesidades y expectativas del usuario."},
-                        {"Pregunta 2", "2Opción 1", "2Opción 2", "2Opción 3","2respuesta correcta", "retroalimentacion2"},
-                        {"Pregunta 3", "3Opción 1", "3Opción 2", "3respuesta correcta","3respuesta correcta", "retroalimentacion3"},
-                        {"Pregunta 4", "4Opción 1", "4Opción 2", "4Opción 3","4respuesta correcta", "retroalimentacion4"},
-                        {"Pregunta 5", "5Opción 1", "5Opción 2", "5Opción 3","5respuesta correcta", "retroalimentacion5"},
-                        {"Pregunta 6", "6respuesta correcta", "6Opción 2", "6Opción 3","6respuesta correcta", "retroalimentacion6"},
-                        {"Pregunta 7", "7Opción 1", "7Opción 2", "7Opción 3","7respuesta correcta", "retroalimentacion7"},
-                        {"Pregunta 8", "8Opción 1", "8Opción 2", "8Opción 3","8respuesta correcta", "retroalimentacion8"},
-                        {"Pregunta 9", "9Opción 1", "9Opción 2", "9Opción 3","9respuesta correcta", "retroalimentacion9"},
-                        {"Pregunta 10","10Opción 1", "10Opción 2", "10Opción 3","10respuesta correcta", "retroalimentacion10"}
+                        {"¿Cuál es la diferencia entre un requerimiento funcional y un requerimiento no funcional? ",
+                                "Un requerimiento funcional define una función o característica específica que el sistema debe cumplir, mientras que un requerimiento no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional se refiere a una restricción o limitación del sistema, mientras que un requisito no funcional define una función o característica específica que el sistema debe cumplir.", "No hay diferencia entre un requisito funcional y un requisito no funcional.", "Un requisito funcional define una función o característica específica que el sistema debe cumplir, mientras que un requisito no funcional se refiere a una restricción o limitación del sistema.", "Un requisito funcional es una descripción de las funciones o características que un sistema debe tener para cumplir con las necesidades del usuario, mientras que un requisito no funcional es una descripción de las restricciones o limitaciones que un sistema debe tener para cumplir con los Requerimientos del usuario. Es importante distinguir entre ambos tipos de Requerimientos para asegurar que el sistema cumpla con todas las necesidades y expectativas del usuario."},
+
+                        {"¿Qué tipo de requerimiento se refiere a las capacidades del sistema para interactuar con otros sistemas?",
+                                "requerimiento funcionales", "requerimiento no funcionales", "requerimiento de usuario","Requerimientos no funcionales", "Los Requerimientos no funcionales se refieren a los atributos de calidad del sistema, como la eficiencia, la escalabilidad, la seguridad, etc. En este caso, la capacidad del sistema para interactuar con otros sistemas es un requisito de interoperabilidad, que es un subtipo de Requerimientos no funcionales."},
+
+                        {" ¿Qué tipo de requisito se refiere a la capacidad del sistema para procesar grandes volúmenes de datos en poco tiempo?",
+                                "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de usuario","Requerimientos no funcionales.", "La capacidad del sistema para procesar grandes volúmenes de datos en poco tiempo es un requisito de rendimiento, que es un subtipo de Requerimientos no funcionales."},
+
+                        {"¿Qué tipo de requisito se refiere a las restricciones legales, regulatorias o contractuales que debe cumplir el sistema?",
+                                "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de dominio","Requerimientos de dominio",
+                                " Los Requerimientos de dominio se refieren a las restricciones legales, regulatorias o contractuales que debe cumplir el sistema, así como a las características específicas del dominio en el que se utilizará el sistema."},
+
+                        {"¿Qué tipo de requisito se refiere a la capacidad del sistema para adaptarse a diferentes tamaños de pantalla y dispositivos?",
+                                "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de usuario","Requerimientos no funcionales", "La capacidad del sistema para adaptarse a diferentes tamaños de pantalla y dispositivos es un requisito de portabilidad, que es un subtipo de Requerimientos no funcionales."},
+
+                        {"¿Qué tipo de requisito se refiere a la capacidad del sistema para manejar múltiples usuarios que acceden simultáneamente?",
+                                "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de usuario","Requerimientos no funcionales", "Retroalimentación: La capacidad del sistema para manejar múltiples usuarios que acceden simultáneamente es un requisito de escalabilidad, que es un subtipo de Requerimientos no funcionales."},
+
+                        {"¿Qué tipo de requisito se enfoca en la capacidad del software para cumplir con los estándares de la industria?",
+                                "Requerimientos de calidad", "Requerimientos regulatorios", "Requerimientos de interoperabilidad","Requerimientos regulatorios",
+                                "Los Requerimientos regulatorios se enfocan en la capacidad del software para cumplir con las regulaciones, leyes y estándares de la industria en la que se desarrolla."},
+
+                        {"¿Qué tipo de requisito se enfoca en la capacidad del software para recuperar los datos en caso de una falla del sistema?",
+                                "Requerimientos de confiabilidad", "Requerimientos de mantenimiento", "Requerimientos de seguridad"," Requerimientos de confiabilidad",
+                                "Los Requerimientos de confiabilidad se enfocan en la capacidad del software para funcionar sin fallas y para recuperarse de las fallas que puedan ocurrir."},
+
+                        {"¿Qué son los Requerimientos de calidad?", "Los Requerimientos que definen la calidad del software en términos de fiabilidad, mantenibilidad, usabilidad y rendimiento.",
+                                "Los Requerimientos que describen las características y funcionalidades que el software debe proporcionar.", "Los Requerimientos que especifican los límites de los recursos del hardware y del sistema operativo."," Los Requerimientos que definen la calidad del software en términos de fiabilidad, mantenibilidad, usabilidad y rendimiento.", "Los Requerimientos de calidad definen la calidad del software en términos de fiabilidad, mantenibilidad, usabilidad y rendimiento. Estos Requerimientos son importantes para garantizar que el software sea funcional, fácil de usar y de alta calidad."},
+
+                        {"¿Cuál es el propósito de los Requerimientos de usuario?","Describir las necesidades del usuario en términos de funciones y características del software.",
+                                "Proporcionar información detallada sobre la arquitectura del software.", "Describir las limitaciones del hardware y el sistema operativo.","Describir las necesidades del usuario en términos de funciones y características del software.", "Los Requerimientos de usuario describen las necesidades del usuario en términos de funciones y características del software. Estos Requerimientos son importantes porque ayudan a los desarrolladores a comprender las necesidades del usuario y a diseñar un software que satisfaga esas necesidades."}
                 };
                 break;
             case 2:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"Pregunta 1 del botón 2", "Opción 1", "Opción 2", "Opción 3", "opcion 2", "retroalimentacion"},
                         {"Pregunta 2 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
                         {"Pregunta 3 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
                         {"Pregunta 4 del botón 2", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
