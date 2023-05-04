@@ -100,9 +100,11 @@ public class PreguntasActivity extends AppCompatActivity {
                                 "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de usuario","Requerimientos funcionales",
                                 "Requerimiento funcional, ya que especifica una funcionalidad que el sistema debe tener."},
 
-                        {"¿Qué tipo de requerimiento se refiere a las restricciones legales, regulatorias o contractuales que debe cumplir el sistema?",
-                                "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de dominio","Requerimientos de dominio",
-                                "Los Requerimientos de dominio se refieren a las restricciones legales, regulatorias o contractuales que debe cumplir el sistema, así como a las características específicas del dominio en el que se utilizará el sistema."},
+                        {"¿Cuál de los siguientes es un ejemplo de un requerimiento de dominio en un software de contabilidad financiera??",
+                                "El software debe ser capaz de importar y exportar datos en formato CSV.", "El software debe permitir la edición de transacciones en una pantalla separada.", "El software debe cumplir con las regulaciones contables locales y tener un sistema de seguimiento de auditoría","El software debe cumplir con las regulaciones contables locales y tener un sistema de seguimiento de auditoría",
+                                "los requerimientos de dominio se refieren a las características y restricciones que se derivan del conocimiento del dominio de aplicación del software, es decir, de la industria, negocio, área de conocimiento o tecnología específica en la que se va a utilizar el software.\n" +
+                                        "\n" +
+                                        "Los requerimientos de dominio son importantes porque permiten asegurar que el software cumpla con las necesidades y expectativas de los usuarios y se adapte a las particularidades y restricciones del contexto en el que se va a utilizar."},
 
                         {"¿Qué tipo de requerimiento se refiere a la capacidad del sistema para adaptarse a diferentes tamaños de pantalla y dispositivos?",
                                 "Requerimientos funcionales", "Requerimientos no funcionales", "Requerimientos de usuario","Requerimientos no funcionales", "La capacidad del sistema para adaptarse a diferentes tamaños de pantalla y dispositivos es un requerimiento de portabilidad, que es un subtipo de Requerimientos no funcionales."},
