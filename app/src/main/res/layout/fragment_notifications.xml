@@ -8,10 +8,10 @@ android:padding="16dp">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="165dp"
         android:layout_gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/txt5" />
+
+        android:src="@drawable/noti5" />
 
 
     <ImageButton

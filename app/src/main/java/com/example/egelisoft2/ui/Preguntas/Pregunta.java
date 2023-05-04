@@ -1,18 +1,20 @@
 package com.example.egelisoft2.ui.Preguntas;
 
 public class Pregunta {
-    private String pregunta;
+    private String enunciado;
     private String[] opciones;
     private int respuestaCorrecta;
+    private String retroalimentacion;
 
-    public Pregunta(String pregunta, String[] opciones, int respuestaCorrecta) {
-        this.pregunta = pregunta;
+    public Pregunta(String enunciado, String[] opciones, int respuestaCorrecta, String retroalimentacion) {
+        this.enunciado = enunciado;
         this.opciones = opciones;
         this.respuestaCorrecta = respuestaCorrecta;
+        this.retroalimentacion = retroalimentacion;
     }
 
-    public String getPregunta() {
-        return pregunta;
+    public String getEnunciado() {
+        return enunciado;
     }
 
     public String[] getOpciones() {
@@ -21,5 +23,9 @@ public class Pregunta {
 
     public int getRespuestaCorrecta() {
         return respuestaCorrecta;
+    }
+
+    public String getRetroalimentacion() {
+        return retroalimentacion;
     }
 }
