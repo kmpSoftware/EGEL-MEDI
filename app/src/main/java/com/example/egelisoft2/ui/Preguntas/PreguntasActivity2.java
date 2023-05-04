@@ -88,16 +88,66 @@ public class PreguntasActivity2 extends AppCompatActivity {
         switch (botonPresionado) {
             case 1:
                 preguntas = new String[][]{
-                        {"Pregunta 1 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 2 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 3 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 4 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 5 del botón 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 6 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 7 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 8 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 9 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 10 del boton 1", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"}
+                        {"¿Cuál es el objetivo principal del diseño arquitectónico de software?",
+                                "Proporcionar una visión general de la estructura del software", "Escribir código para implementar características específicas", "Definir pruebas para validar el software", "Proporcionar una visión general de la estructura del software",
+                                "El diseño arquitectónico de software tiene como objetivo proporcionar una visión general de la estructura del software y su organización."},
+
+                        {"¿Qué tipo de patrón de diseño arquitectónico se utiliza para separar la presentación de la lógica de negocio en una aplicación web?",
+                                "Patrón Modelo-Vista-Controlador (MVC)", "Patrón Modelo de Negocio - Vista - Controlador (MNBC)", "Patrón Vista - Controlador - Modelo (VCM)", "Patrón Modelo-Vista-Controlador (MVC)",
+                                "El patrón Modelo-Vista-Controlador (MVC) se utiliza comúnmente para separar la presentación de la lógica de negocio en una aplicación web."},
+
+                        {"¿Qué es un componente en el diseño arquitectónico de software?",
+                                "Un módulo independiente que realiza una función específica", "Una librería de funciones utilizada por todo el sistema", "Un archivo que contiene código fuente", "Un módulo independiente que realiza una función específica",
+                                "Un componente en el diseño arquitectónico de software es un módulo independiente que realiza una función específica y puede ser reutilizado en diferentes partes del sistema."},
+
+                        {"¿Qué es la cohesión en el diseño arquitectónico de software?",
+                                "La medida en que los elementos de un módulo se relacionan entre sí", "La medida en que un módulo realiza una sola función", "La medida en que un módulo depende de otros módulos", "La medida en que un módulo realiza una sola función",
+                                "La cohesión en el diseño arquitectónico de software se refiere a la medida en que un módulo realiza una sola función y sus elementos están relacionados entre sí."},
+
+                        {"¿Qué es el acoplamiento en el diseño arquitectónico de software?",
+                                "La medida en que un módulo depende de otros módulos", "La medida en que los elementos de un módulo se relacionan entre sí", "La medida en que un módulo realiza una sola función", "La medida en que un módulo depende de otros módulos",
+                                "El acoplamiento en el diseño arquitectónico de software se refiere a la medida en que un módulo depende de otros módulos. Un bajo acoplamiento se considera deseable, ya que significa que los cambios en un módulo tienen poco efecto sobre otros módulos."},
+
+                        {"¿Qué patrón de diseño se utiliza para separar la lógica de presentación de la lógica de negocio en una aplicación web?", "Modelo-Vista-Controlador (MVC)", "Capas", "Flujo de Datos", "Modelo-Vista-Controlador (MVC)", "El patrón MVC es una técnica de diseño que separa la lógica de presentación de la lógica de negocio en una aplicación web."},
+
+                        {"¿Qué patrón de diseño se utiliza para dividir una aplicación en módulos interconectados?", "Arquitectura en capas", "Inyección de dependencias", "Patrón Decorador", "Arquitectura en capas", "La arquitectura en capas es un patrón de diseño que divide una aplicación en módulos interconectados."},
+
+                        {"¿Qué patrón de diseño se utiliza para construir sistemas distribuidos escalables y tolerantes a fallos?", "Arquitectura de Microservicios", "Arquitectura basada en Eventos", "Patrón Puente", "Arquitectura de Microservicios", "La arquitectura de Microservicios es un patrón de diseño que se utiliza para construir sistemas distribuidos escalables y tolerantes a fallos."},
+
+                        {"¿Qué patrón de diseño se utiliza para definir una interfaz para crear un objeto, pero permitiendo que las subclases decidan qué clase instanciar?", "Patrón Factory Method", "Patrón Singleton", "Patrón Decorador", "Patrón Factory Method", "El patrón Factory Method es utilizado para definir una interfaz para crear un objeto, pero permitiendo que las subclases decidan qué clase instanciar."},
+
+                        {"¿Qué patrón de diseño se utiliza para proporcionar una forma de acceder a un objeto sin exponer su implementación?", "Patrón Proxy", "Patrón Adaptador", "Patrón Decorador", "Patrón Proxy", "El patrón Proxy se utiliza para proporcionar una forma de acceder a un objeto sin exponer su implementación."},
+
+                        {"¿Qué patrón de arquitectura de software permite dividir el sistema en componentes y definir sus interacciones a través de interfaces?", "Arquitectura basada en componentes", "Arquitectura de microservicios", "Arquitectura cliente-servidor", "Arquitectura basada en componentes", "La arquitectura basada en componentes permite dividir el sistema en componentes autónomos y definir sus interacciones a través de interfaces bien definidas."},
+
+                        {"¿Qué patrón de arquitectura de software se enfoca en la creación de servicios independientes y autónomos que pueden ser escalados y actualizados de manera independiente?", "Arquitectura de microservicios", "Arquitectura basada en componentes", "Arquitectura cliente-servidor", "Arquitectura de microservicios", "La arquitectura de microservicios se enfoca en la creación de servicios independientes y autónomos que pueden ser escalados y actualizados de manera independiente, lo que permite una mayor flexibilidad y adaptabilidad del sistema."},
+
+                        {"¿Qué patrón de arquitectura de software se enfoca en la separación de las capas de presentación, lógica de negocio y almacenamiento de datos?", "Arquitectura en capas", "Arquitectura cliente-servidor", "Arquitectura basada en eventos", "Arquitectura en capas", "La arquitectura en capas se enfoca en la separación de las capas de presentación, lógica de negocio y almacenamiento de datos, lo que permite una mayor modularidad y mantenibilidad del sistema."},
+
+                        {"¿Qué patrón de arquitectura de software se enfoca en la creación de componentes reutilizables que pueden ser combinados para formar diferentes soluciones?", "Arquitectura orientada a servicios", "Arquitectura basada en eventos", "Arquitectura basada en componentes", "Arquitectura basada en componentes", "La arquitectura basada en componentes se enfoca en la creación de componentes reutilizables que pueden ser combinados para formar diferentes soluciones, lo que permite una mayor flexibilidad y adaptabilidad del sistema."},
+
+                        {"¿Qué patrón de arquitectura de software se enfoca en la creación de sistemas altamente escalables y tolerantes a fallos?", "Arquitectura basada en eventos", "Arquitectura de microservicios", "Arquitectura cliente-servidor", "Arquitectura de microservicios", "La arquitectura de microservicios se enfoca en la creación de sistemas altamente escalables y tolerantes a fallos, lo que permite una mayor confiabilidad y capacidad de respuesta del sistema."},
+
+                        {"¿Cuál de los siguientes es un patrón de diseño que se utiliza para limitar la creación de instancias de una clase a un solo objeto?",
+                                "Singleton", "Factory Method", "Observer","Singleton",
+                                "El patrón Singleton se utiliza para asegurarse de que solo se pueda crear una instancia de una clase en toda la aplicación."},
+
+                        {"¿Qué patrón de diseño se utiliza para separar la presentación de la lógica de negocio en una aplicación?",
+                                "MVC", "Adapter", "Decorator","MVC",
+                                "El patrón MVC (Modelo-Vista-Controlador) se utiliza para separar la lógica de negocio de una aplicación de su presentación."},
+
+                        {"¿Cuál de los siguientes patrones de diseño se utiliza para permitir que un objeto cambie su comportamiento cuando su estado interno cambia?",
+                                "State", "Strategy", "Template Method","State",
+                                "El patrón State se utiliza para permitir que un objeto cambie su comportamiento cuando su estado interno cambia."},
+
+                        {"¿Qué patrón de diseño se utiliza para separar el proceso de creación de un objeto complejo de su representación?",
+                                "Builder", "Prototype", "Abstract Factory","Builder",
+                                "El patrón Builder se utiliza para separar el proceso de creación de un objeto complejo de su representación, permitiendo diferentes representaciones para el mismo objeto."},
+
+                        {"¿Cuál de los siguientes patrones de diseño se utiliza para permitir que un objeto actúe como un proxy o representante de otro objeto?",
+                                "Proxy", "Adapter", "Facade","Proxy",
+                                "El patrón Proxy se utiliza para permitir que un objeto actúe como un proxy o representante de otro objeto, controlando el acceso a éste y añadiendo funcionalidad adicional si es necesario."}
+
                 };
                 break;
             case 2:
@@ -131,7 +181,7 @@ public class PreguntasActivity2 extends AppCompatActivity {
         }
         // Inicializa la lista de índices de preguntas y la mezcla
         listaIndicesPreguntas = new ArrayList<>();
-        for (int i = 0; i < preguntas.length; i++) {
+        for (int i = 0; i < 10; i++) {
             listaIndicesPreguntas.add(i);
         }
         Collections.shuffle(listaIndicesPreguntas);
@@ -189,9 +239,6 @@ public class PreguntasActivity2 extends AppCompatActivity {
         // Detener el cronómetro
         countDownTimer.cancel();
 
-        // Verifica si la respuesta seleccionada es correcta
-         respuestaCorrecta = preguntas[preguntaActual][4];
-         retroalimentacion = preguntas[preguntaActual][5];
 
       if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 

@@ -127,7 +127,7 @@ public class PreguntasActivity6 extends AppCompatActivity {
         }
         // Inicializa la lista de índices de preguntas y la mezcla
         listaIndicesPreguntas = new ArrayList<>();
-        for (int i = 0; i < preguntas.length; i++) {
+        for (int i = 0; i < 10; i++) {
             listaIndicesPreguntas.add(i);
         }
         Collections.shuffle(listaIndicesPreguntas);
@@ -191,13 +191,6 @@ public class PreguntasActivity6 extends AppCompatActivity {
     private void verificarRespuesta(int opcionSeleccionada, String retroalimentacion, String respuestaCorrecta) {
         // Detener el cronómetro
         countDownTimer.cancel();
-
-        // Verifica si la respuesta seleccionada es correcta
-        respuestaCorrecta = preguntas[preguntaActual][4];
-        retroalimentacion = preguntas[preguntaActual][5];
-
-
-
 
          if (opcionSeleccionada == 0 && opcion1Button.getText().equals(respuestaCorrecta)) {
 

@@ -26,6 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
             android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
 
@@ -34,6 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
             android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
 
@@ -42,6 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
             android:backgroundTint="#84a59d"
             android:onClick="opcionSeleccionada" />
     </LinearLayout>
