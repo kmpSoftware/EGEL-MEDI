@@ -43,7 +43,7 @@ public class PreguntasActivity2 extends AppCompatActivity {
     private ProgressBar progressBar;
     private CountDownTimer countDownTimer;
     private long tiempoRestante = TIEMPO_TOTAL;
-    private static final long TIEMPO_TOTAL = 3000;
+    private static final long TIEMPO_TOTAL = 4000;
     private double puntuacionActual = 0;
     double puntuacion = 0;
     private String[][] preguntas;
