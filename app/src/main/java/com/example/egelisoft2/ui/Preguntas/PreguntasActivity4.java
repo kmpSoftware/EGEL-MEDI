@@ -128,10 +128,10 @@ public class PreguntasActivity4 extends AppCompatActivity {
 
 
                         {"¿Qué es la norma ISO 9001 en relación con el software ?",
-                    "Una norma que establece los requisitos para un sistema de gestión de calidad en cualquier organización",
-                "Una norma que establece los requisitos específicos para la gestión de calidad en el desarrollo de software",
-                "Una norma que establece los requisitos específicos para la gestión de calidad en la producción de hardware",
-                "Una norma que establece los requisitos específicos para la gestión de calidad en el desarrollo de software",
+                                "Una norma que establece los requisitos para un sistema de gestión de calidad en cualquier organización",
+                                "Una norma que establece los requisitos específicos para la gestión de calidad en el desarrollo de software",
+                                "Una norma que establece los requisitos específicos para la gestión de calidad en la producción de hardware",
+                                "Una norma que establece los requisitos específicos para la gestión de calidad en el desarrollo de software",
                 "La norma ISO 9001 establece los requisitos para la gestión de calidad en cualquier organización, incluyendo requisitos específicos para el desarrollo de software",
 },
             {"¿Qué es el modelo de madurez de capacidad (CMM) en relación con el software?",
