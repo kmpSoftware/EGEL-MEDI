@@ -212,43 +212,98 @@ public class PreguntasActivity extends AppCompatActivity {
                 break;
             case 3:
                 preguntas = new String[][]{
-                        {"¿Qué técnica de documentación de requerimientos se enfoca en crear una representación visual de los requisitos y su relación?", "Diagramas de casos de uso", "Entrevistas", "Prototipos", "Diagramas de casos de uso", "Los diagramas de casos de uso son una técnica de documentación que permite crear una representación visual de los requisitos y su relación, lo que facilita su comprensión y análisis."},
+                        {"¿Qué técnica de documentación de requerimientos se enfoca en crear una representación visual de los requisitos y su relación?",
+                                "Diagramas de casos de uso", "Entrevistas", "Prototipos",
+                                "Diagramas de casos de uso",
+                                "Los diagramas de casos de uso son una técnica de documentación que permite crear una representación visual de los requisitos y su relación, lo que facilita su comprensión y análisis."},
 
-                        {"¿Qué herramienta de documentación de requerimientos permite especificar los requisitos de un software utilizando lenguaje natural estructurado?", "Lenguaje de Modelado Unificado (UML)", "Requisitos en lenguaje natural (NLR)", "Hojas de cálculo", "Requisitos en lenguaje natural (NLR)", "Los requisitos en lenguaje natural son una herramienta de documentación de requerimientos que permiten especificar los requisitos de un software utilizando lenguaje natural estructurado, lo que facilita su comprensión y análisis."},
+                        {"¿Qué herramienta de documentación de requerimientos permite especificar los requisitos de un software utilizando lenguaje natural estructurado?",
+                                "Lenguaje de Modelado Unificado (UML)", "Requisitos en lenguaje natural (NLR)", "Hojas de cálculo",
+                                "Requisitos en lenguaje natural (NLR)",
+                                "Los requisitos en lenguaje natural son una herramienta de documentación de requerimientos que permiten especificar los requisitos de un software utilizando lenguaje natural estructurado, lo que facilita su comprensión y análisis."},
 
-                        {"¿Qué técnica de documentación de requerimientos se enfoca en identificar las entradas, salidas y procesos de un sistema?", "Diagramas de flujo de datos", "Casos de uso", "Prototipos", "Diagramas de flujo de datos", "Los diagramas de flujo de datos son una técnica de documentación que permite identificar las entradas, salidas y procesos de un sistema, lo que facilita su comprensión y análisis."},
+                        {"¿Qué técnica de documentación de requerimientos se enfoca en identificar las entradas, salidas y procesos de un sistema?",
+                                "Diagramas de flujo de datos", "Casos de uso", "Prototipos",
+                                "Diagramas de flujo de datos",
+                                "Los diagramas de flujo de datos son una técnica de documentación que permite identificar las entradas, salidas y procesos de un sistema, lo que facilita su comprensión y análisis."},
 
-                        {"¿Qué herramienta de documentación de requerimientos permite crear un modelo visual de los requisitos utilizando iconos y símbolos estandarizados?", "Lenguaje de Modelado Unificado (UML)", "Lenguaje de descripción de interfaces de usuario (UIDL)", "Hojas de cálculo", "Lenguaje de Modelado Unificado (UML)", "El Lenguaje de Modelado Unificado (UML) es una herramienta de documentación de requerimientos que permite crear un modelo visual de los requisitos utilizando iconos y símbolos estandarizados, lo que facilita su comprensión y análisis."},
+                        {"¿Qué herramienta de documentación de requerimientos permite crear un modelo visual de los requisitos utilizando iconos y símbolos estandarizados?",
+                                "Lenguaje de Modelado Unificado (UML)", "Lenguaje de descripción de interfaces de usuario (UIDL)", "Hojas de cálculo",
+                                "Lenguaje de Modelado Unificado (UML)",
+                                "El Lenguaje de Modelado Unificado (UML) es una herramienta de documentación de requerimientos que permite crear un modelo visual de los requisitos utilizando iconos y símbolos estandarizados, lo que facilita su comprensión y análisis."},
 
-                        {"¿Qué técnica de documentación de requerimientos se enfoca en identificar y describir los requisitos funcionales y no funcionales de un sistema?", "Especificación de requisitos", "Diagramas de flujo de datos", "Casos de uso", "Especificación de requisitos", "La especificación de requisitos es una técnica de documentación que se enfoca en identificar y describir los requisitos funcionales y no funcionales de un sistema, lo que facilita su comprensión y análisis."},
+                        {"¿Qué técnica de documentación de requerimientos se enfoca en identificar y describir los requisitos funcionales y no funcionales de un sistema?",
+                                "Especificación de requisitos", "Diagramas de flujo de datos", "Casos de uso",
+                                "Especificación de requisitos", "La especificación de requisitos es una técnica de documentación que se enfoca en identificar y describir los requisitos funcionales y no funcionales de un sistema, lo que facilita su comprensión y análisis."},
 
-                        {"¿Cuál es el propósito de la técnica de casos de uso en la documentación de requerimientos?", "Para representar cómo los usuarios interactúan con el sistema", "Para identificar los requerimientos no funcionales", "Para definir el alcance del proyecto", "Para representar cómo los usuarios interactúan con el sistema", "La técnica de casos de uso se utiliza para representar cómo los usuarios interactúan con el sistema y para definir los objetivos y necesidades del usuario."},
+                        {"¿Cuál es el propósito de la técnica de casos de uso en la documentación de requerimientos?",
+                                "Para representar cómo los usuarios interactúan con el sistema", "Para identificar los requerimientos no funcionales", "Para definir el alcance del proyecto",
+                                "Para representar cómo los usuarios interactúan con el sistema",
+                                "La técnica de casos de uso se utiliza para representar cómo los usuarios interactúan con el sistema y para definir los objetivos y necesidades del usuario."},
 
-                        {"¿Cuál de las siguientes herramientas es útil para la documentación de requerimientos en un entorno colaborativo?", "Diagramas de flujo", "Tablas de especificación", "Tableros Kanban", "Tableros Kanban", "Los tableros Kanban son herramientas visuales que permiten a los equipos de desarrollo de software colaborar y coordinar las tareas de manera eficiente."},
+                        {"¿Cuál de las siguientes herramientas es útil para la documentación de requerimientos en un entorno colaborativo?",
+                                "Diagramas de flujo", "Tablas de especificación", "Tableros Kanban",
+                                "Tableros Kanban",
+                                "Los tableros Kanban son herramientas visuales que permiten a los equipos de desarrollo de software colaborar y coordinar las tareas de manera eficiente."},
 
-                        {"¿Qué es una matriz de trazabilidad de requerimientos?", "Una herramienta que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto", "Una herramienta para identificar los requerimientos no funcionales", "Una herramienta para definir el alcance del proyecto", "Una herramienta que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto", "La matriz de trazabilidad de requerimientos es una herramienta útil que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto, como los casos de prueba, el diseño y la implementación."},
+                        {"¿Qué es una matriz de trazabilidad de requerimientos?",
+                                "Una herramienta que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto", "Una herramienta para identificar los requerimientos no funcionales", "Una herramienta para definir el alcance del proyecto",
+                                "Una herramienta que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto",
+                                "La matriz de trazabilidad de requerimientos es una herramienta útil que ayuda a rastrear la relación entre los requerimientos y otras áreas del proyecto, como los casos de prueba, el diseño y la implementación."},
 
-                        {"¿Cuál es la principal diferencia entre los documentos de requerimientos funcionales y no funcionales?", "Los requerimientos funcionales se centran en lo que debe hacer el sistema, mientras que los no funcionales se centran en cómo debe hacerlo", "Los requerimientos funcionales se centran en cómo debe hacerlo el sistema, mientras que los no funcionales se centran en lo que debe hacer", "No hay diferencia", "Los requerimientos funcionales se centran en lo que debe hacer el sistema, mientras que los no funcionales se centran en cómo debe hacerlo, como la eficiencia, la usabilidad y la seguridad."},
 
-                        {"¿Qué es un prototipo de software?", "Una representación temprana y simplificada de un sistema que ayuda a validar los requerimientos", "Una lista de requerimientos de alto nivel", "Un documento detallado que describe los requerimientos", "Una representación temprana y simplificada de un sistema que ayuda a validar los requerimientos", "Un prototipo de software es una versión temprana y simplificada de un sistema que se utiliza para validar los requerimientos y recibir retroalimentación temprana de los usuarios."},
 
-                        {"¿Qué técnica de documentación de requerimientos es útil para mostrar la estructura jerárquica de un conjunto de requerimientos?", "Diagrama de estructura de requerimientos (DSR)", "Matriz de trazabilidad", "Diagrama de flujo de datos (DFD)", "Diagrama de estructura de requerimientos (DSR)", "El DSR es una técnica que muestra la estructura jerárquica de un conjunto de requerimientos, proporcionando una visión general del sistema."},
+                        {"¿Qué es un prototipo de software?",
+                                "Una representación temprana y simplificada de un sistema que ayuda a validar los requerimientos", "Una lista de requerimientos de alto nivel", "Un documento detallado que describe los requerimientos",
+                                "Una representación temprana y simplificada de un sistema que ayuda a validar los requerimientos",
+                                "Un prototipo de software es una versión temprana y simplificada de un sistema que se utiliza para validar los requerimientos y recibir retroalimentación temprana de los usuarios."},
 
-                        {"¿Qué herramienta de documentación de requerimientos se utiliza para capturar, rastrear y gestionar los cambios en los requerimientos?", "Herramientas de gestión de requerimientos", "Hojas de cálculo", "Diagramas de flujo", "Herramientas de gestión de requerimientos", "Estas herramientas permiten capturar, rastrear y gestionar los cambios en los requerimientos, y garantizan la trazabilidad de los mismos."},
+                        {"¿Qué técnica de documentación de requerimientos es útil para mostrar la estructura jerárquica de un conjunto de requerimientos?",
+                                "Diagrama de estructura de requerimientos (DSR)", "Matriz de trazabilidad", "Diagrama de flujo de datos (DFD)", "Diagrama de estructura de requerimientos (DSR)",
+                                "El DSR es una técnica que muestra la estructura jerárquica de un conjunto de requerimientos, proporcionando una visión general del sistema."},
 
-                        {"¿Qué técnica de documentación de requerimientos se utiliza para describir las acciones que el usuario puede realizar en el sistema?", "Casos de uso", "Diagrama de flujo de datos (DFD)", "Modelado de procesos de negocio (BPM)", "Casos de uso", "Los casos de uso se utilizan para describir las acciones que el usuario puede realizar en el sistema y cómo el sistema responde a ellas."},
+                        {"¿Qué herramienta de documentación de requerimientos se utiliza para capturar, rastrear y gestionar los cambios en los requerimientos?",
+                                "Herramientas de gestión de requerimientos", "Hojas de cálculo", "Diagramas de flujo",
+                                "Herramientas de gestión de requerimientos",
+                                "Estas herramientas permiten capturar, rastrear y gestionar los cambios en los requerimientos, y garantizan la trazabilidad de los mismos."},
 
-                        {"¿Qué herramienta de documentación de requerimientos se utiliza para definir y clasificar los requerimientos de manera estructurada?", "Esquemas de clasificación de requerimientos", "Herramientas de gestión de configuración", "Matrices de trazabilidad", "Esquemas de clasificación de requerimientos", "Los esquemas de clasificación de requerimientos se utilizan para definir y clasificar los requerimientos de manera estructurada, lo que facilita su gestión y seguimiento."},
+                        {"¿Qué técnica de documentación de requerimientos se utiliza para describir las acciones que el usuario puede realizar en el sistema?",
+                                "Casos de uso", "Diagrama de flujo de datos (DFD)", "Modelado de procesos de negocio (BPM)",
+                                "Casos de uso",
+                                "Los casos de uso se utilizan para describir las acciones que el usuario puede realizar en el sistema y cómo el sistema responde a ellas."},
 
-                        {"¿Qué técnica de documentación de requerimientos se utiliza para representar los requerimientos en términos de entradas, procesos y salidas?", "Diagrama de flujo de datos (DFD)", "Casos de uso", "Matriz de trazabilidad", "Diagrama de flujo de datos (DFD)", "Los DFD se utilizan para representar los requerimientos en términos de entradas, procesos y salidas, lo que ayuda a visualizar el sistema desde una perspectiva funcional."},
-                        {"¿Qué técnica se utiliza para representar gráficamente los flujos de trabajo y la interacción entre los usuarios y el sistema?", "Diagrama de flujo", "Diagrama de casos de uso", "Diagrama de secuencia", "Diagrama de casos de uso", "El diagrama de casos de uso se utiliza para representar los flujos de trabajo y la interacción entre los usuarios y el sistema, mostrando los actores involucrados y las funcionalidades del sistema."},
-                        {"¿Qué herramienta se utiliza para crear modelos de requerimientos y documentación de especificaciones de software?", "Microsoft Word", "Microsoft Excel", "Microsoft Visio", "Microsoft Visio", "Microsoft Visio es una herramienta utilizada para crear modelos de requerimientos y documentación de especificaciones de software, permitiendo crear diagramas de flujo, diagramas de clases, entre otros."},
+                        {"¿Qué herramienta de documentación de requerimientos se utiliza para definir y clasificar los requerimientos de manera estructurada?",
+                                "Esquemas de clasificación de requerimientos", "Herramientas de gestión de configuración", "Matrices de trazabilidad",
+                                "Esquemas de clasificación de requerimientos",
+                                "Los esquemas de clasificación de requerimientos se utilizan para definir y clasificar los requerimientos de manera estructurada, lo que facilita su gestión y seguimiento."},
 
-                        {"¿Qué técnica se utiliza para identificar los requerimientos mediante la observación de los usuarios y su entorno?", "Entrevistas", "Encuestas", "Observación", "Observación", "La observación es una técnica utilizada para identificar los requerimientos mediante la observación directa de los usuarios y su entorno, permitiendo identificar sus necesidades y comportamientos."},
+                        {"¿Qué técnica de documentación de requerimientos se utiliza para representar los requerimientos en términos de entradas, procesos y salidas?",
+                                "Diagrama de flujo de datos (DFD)", "Casos de uso", "Matriz de trazabilidad",
+                                "Diagrama de flujo de datos (DFD)",
+                                "Los DFD se utilizan para representar los requerimientos en términos de entradas, procesos y salidas, lo que ayuda a visualizar el sistema desde una perspectiva funcional."},
+                        {"¿Qué técnica se utiliza para representar gráficamente los flujos de trabajo y la interacción entre los usuarios y el sistema?",
+                                "Diagrama de flujo", "Diagrama de casos de uso", "Diagrama de secuencia",
+                                "Diagrama de casos de uso",
+                                "El diagrama de casos de uso se utiliza para representar los flujos de trabajo y la interacción entre los usuarios y el sistema, mostrando los actores involucrados y las funcionalidades del sistema."},
+                        {"¿Qué herramienta se utiliza para crear modelos de requerimientos y documentación de especificaciones de software?",
+                                "Microsoft Word", "Microsoft Excel", "Microsoft Visio",
+                                "Microsoft Visio",
+                                "Microsoft Visio es una herramienta utilizada para crear modelos de requerimientos y documentación de especificaciones de software, permitiendo crear diagramas de flujo, diagramas de clases, entre otros."},
 
-                        {"¿Qué técnica se utiliza para identificar los requerimientos mediante la discusión y el debate entre los miembros del equipo de desarrollo y los stakeholders?", "Entrevistas", "Reuniones de grupo", "Entrevistas a grupos", "Reuniones de grupo", "Las reuniones de grupo son una técnica utilizada para identificar los requerimientos mediante la discusión y el debate entre los miembros del equipo de desarrollo y los stakeholders, permitiendo llegar a un consenso sobre los requerimientos."},
+                        {"¿Qué técnica se utiliza para identificar los requerimientos mediante la observación de los usuarios y su entorno?",
+                                "Entrevistas", "Encuestas", "Observación",
+                                "Observación",
+                                "La observación es una técnica utilizada para identificar los requerimientos mediante la observación directa de los usuarios y su entorno, permitiendo identificar sus necesidades y comportamientos."},
 
-                        {"¿Qué herramienta se utiliza para gestionar y trazar los requerimientos durante todo el ciclo de vida del software?", "Microsoft Excel", "Microsoft Word", "JIRA", "JIRA", "JIRA es una herramienta utilizada para gestionar y trazar los requerimientos durante todo el ciclo de vida del software, permitiendo asignar tareas, hacer seguimiento y priorizar los requerimientos."}
+                        {"¿Qué técnica se utiliza para identificar los requerimientos mediante la discusión y el debate entre los miembros del equipo de desarrollo y los stakeholders?",
+                                "Entrevistas", "Reuniones de grupo", "Entrevistas a grupos",
+                                "Reuniones de grupo",
+                                "Las reuniones de grupo son una técnica utilizada para identificar los requerimientos mediante la discusión y el debate entre los miembros del equipo de desarrollo y los stakeholders, permitiendo llegar a un consenso sobre los requerimientos."},
+
+                        {"¿Qué herramienta se utiliza para gestionar y trazar los requerimientos durante todo el ciclo de vida del software?",
+                                "Microsoft Excel", "Microsoft Word", "JIRA",
+                                "JIRA",
+                                "JIRA es una herramienta utilizada para gestionar y trazar los requerimientos durante todo el ciclo de vida del software, permitiendo asignar tareas, hacer seguimiento y priorizar los requerimientos."}
                 };
                 break;
         }
