@@ -126,7 +126,6 @@ public class PreguntasActivity4 extends AppCompatActivity {
                                 "Un modelo para medir la calidad de los procesos de desarrollo de software",
                                 "El modelo de madurez de capacidad (CMM) es un modelo para medir la calidad de los procesos de desarrollo de software, basado en cinco niveles de madurez que van desde el inicial hasta el optimizado."},
 
-
                         {"¿Qué es la norma ISO 9001 en relación con el software ?",
                                 "Una norma que establece los requisitos para un sistema de gestión de calidad en cualquier organización",
                                 "Una norma que establece los requisitos específicos para la gestión de calidad en el desarrollo de software",
@@ -179,6 +178,68 @@ public class PreguntasActivity4 extends AppCompatActivity {
                 break;
             case 3:
                 preguntas = new String[][]{
+
+                        {"¿Cuál de las siguientes metodologías se enfoca en la entrega continua de software y la colaboración estrecha entre desarrolladores y clientes?",
+
+                    "Metodología Scrum",
+                "Modelo en cascada",
+                "Metodología ágil",
+                "Metodología Scrum",
+                "La metodología Scrum se enfoca en la entrega continua de software, la colaboración entre los miembros del equipo y los clientes, y la adaptación a los cambios en los requerimientos del proyecto."},
+
+                        {"¿Cuál de las siguientes metodologías se enfoca en la planificación detallada del proyecto antes de comenzar la etapa de desarrollo?",
+                                "Modelo en cascada",
+                "Metodología ágil",
+                "Metodología Scrum",
+                "Modelo en cascada",
+                "El modelo en cascada se enfoca en la planificación detallada del proyecto antes de comenzar la etapa de desarrollo, lo que puede ser útil en proyectos con requerimientos estables y bien definidos."},
+
+                        {"¿Cuál de las siguientes metodologías se enfoca en la entrega temprana y frecuente de pequeñas partes funcionales del software?",
+                                "Modelo en cascada",
+                "Metodología Scrum",
+                "Metodología ágil",
+                "Metodología ágil",
+                "Las metodologías ágiles se enfocan en la entrega temprana y frecuente de pequeñas partes funcionales del software, la colaboración entre los miembros del equipo y los clientes, y la adaptación a los cambios en los requerimientos del proyecto."},
+
+                        {"¿Cuál de las siguientes metodologías se enfoca en la mejoramiento continuo del proceso de desarrollo de software?",
+                                "Modelo en cascada",
+                "Metodología Scrum",
+                "Metodología cascada",
+                "Metodología ágil",
+                                "metodo agil",
+                "Las metodologías ágiles se enfocan en la mejora continua del proceso de desarrollo de software, lo que puede ayudar a incrementar la eficiencia y calidad del equipo de desarrollo."},
+
+                        {"¿Cuál de las siguientes metodologías se enfoca en la definición y validación de los requerimientos del proyecto antes de comenzar la etapa de desarrollo?",
+                                "Modelo en agil",
+                "Metodología cascada",
+                "Metodología Scrum",
+                "Modelo en cascada",
+                "El modelo en cascada se enfoca en la definición y validación de los requerimientos del proyecto antes de comenzar la etapa de desarrollo, lo que puede ser útil en proyectos con requerimientos estables y bien definidos."},
+
+                        {"¿Cuál es la principal ventaja de la metodología en espiral en la gestión de proyectos de software?",
+                                "Mayor eficiencia en el uso de recursos",
+                "Mayor capacidad de adaptación a los cambios",
+                "Reducción del costo total del proyecto",
+                "Mayor capacidad de adaptación a los cambios",
+                "La metodología en espiral se centra en la adaptabilidad y la flexibilidad del proceso de desarrollo de software, lo que permite una mayor capacidad de adaptación a los cambios durante todo el ciclo de vida del proyecto."},
+
+                        {"¿Cuál es la principal diferencia entre la metodología Scrum y la metodología Kanban?",
+                                "La metodología Scrum es más adecuada para equipos pequeños y Kanban para equipos grandes",
+                "La metodología Scrum se centra en entregables específicos y Kanban en el flujo de trabajo continuo",
+                "La metodología Scrum utiliza reuniones diarias y Kanban no",
+                "La metodología Scrum se centra en entregables específicos y Kanban en el flujo de trabajo continuo",
+                "La metodología Scrum se centra en entregables específicos y Kanban en el flujo de trabajo continuo"},
+
+                        {"¿Cuál es el enfoque de desarrollo que se caracteriza por una secuencia de etapas lineales y secuenciales?", "Flujo de proceso iterativo", "Flujo de proceso evolutivo", "Flujo de proceso lineal", "Flujo de proceso lineal", "El flujo de proceso lineal es una secuencia de etapas en orden secuencial."},
+                        {"¿Qué enfoque de desarrollo implica un proceso continuo de planificación, diseño, construcción y evaluación?", "Flujo de proceso en cascada", "Flujo de proceso iterativo", "Flujo de proceso en espiral", "Flujo de proceso iterativo", "El flujo de proceso iterativo implica un ciclo continuo de planificación, diseño, construcción y evaluación."},
+                        {"¿Qué flujo de proceso involucra múltiples ciclos de desarrollo, cada uno de los cuales agrega funcionalidad al sistema?", "Flujo de proceso en cascada", "Flujo de proceso iterativo", "Flujo de proceso evolutivo", "Flujo de proceso evolutivo", "El flujo de proceso evolutivo implica múltiples ciclos de desarrollo que agregan funcionalidad al sistema en cada iteración."},
+                        {"¿Cuál es el enfoque de desarrollo que implica la repetición de ciclos de planificación, diseño, construcción y evaluación?", "Flujo de proceso iterativo", "Flujo de proceso en cascada", "Flujo de proceso en espiral", "Flujo de proceso iterativo", "El flujo de proceso iterativo implica la repetición de ciclos de planificación, diseño, construcción y evaluación."},
+                        {"¿Qué enfoque de desarrollo se centra en la identificación temprana y la corrección de problemas?", "Flujo de proceso en cascada", "Flujo de proceso en espiral", "Flujo de proceso evolutivo", "Flujo de proceso en espiral", "El flujo de proceso en espiral se centra en la identificación temprana y la corrección de problemas a través de múltiples ciclos de desarrollo."},
+                        {"¿Qué flujo de proceso implica una serie de etapas de desarrollo en las que se agregan y prueban nuevas funcionalidades en cada iteración?", "Flujo de proceso en cascada", "Flujo de proceso evolutivo", "Flujo de proceso iterativo", "Flujo de proceso iterativo", "El flujo de proceso iterativo implica la adición y prueba de nuevas funcionalidades en cada iteración de desarrollo."},
+                        {"¿Qué enfoque de desarrollo implica una planificación cuidadosa de las fases del proyecto y una secuencia de etapas lineales?", "Flujo de proceso en cascada", "Flujo de proceso en espiral", "Flujo de proceso evolutivo", "Flujo de proceso en cascada", "El flujo de proceso en cascada implica una planificación cuidadosa y una secuencia de etapas lineales para completar un proyecto de software."},
+
+
+
                         {"4Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
                         {"4Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
                         {"4Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},

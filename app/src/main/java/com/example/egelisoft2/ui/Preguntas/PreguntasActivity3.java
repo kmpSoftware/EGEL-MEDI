@@ -269,8 +269,55 @@ public class PreguntasActivity3 extends AppCompatActivity {
                                 "Eliminación de dependencias múltiples entre columnas", "Eliminación de redundancia de datos", "Creación de tablas adicionales",
                                 "Eliminación de dependencias múltiples entre columnas",
                                 "La 4FN busca evitar la existencia de dependencias múltiples, es decir, aquellas en las que una columna depende de varias columnas no clave, para evitar redundancias innecesarias en la base de datos."},
-                };
+
+                        {"¿Qué tipo de base de datos es más adecuada para almacenar y procesar grandes cantidades de datos en línea?",
+                                "Base de datos relacional",
+                               "Base de datos NoSQL",
+                               "Base de datos de red",
+                               "Base de datos NoSQL",
+
+                "Retroalimentación: Las bases de datos NoSQL son ideales para manejar grandes cantidades de datos en línea, ya que están diseñadas para escalar horizontalmente y ofrecen una mayor flexibilidad en el manejo de datos no estructurados."},
+
+                                { "¿Cuál de los siguientes tipos de bases de datos está diseñada para manejar datos geoespaciales?",
+                "Base de datos jerárquica",
+                "Base de datos espacial",
+                "Base de datos de grafo",
+                "Base de datos espacial",
+                "Las bases de datos espaciales son utilizadas para manejar datos geoespaciales como coordenadas geográficas, polígonos, mapas y otros tipos de información geográfica."},
+
+
+                                {"¿Cuál de los siguientes tipos de bases de datos es conocida por su alta disponibilidad y escalabilidad?",
+                    "Base de datos relacional",
+                "Base de datos NoSQL",
+                "Base de datos de red",
+                "Base de datos NoSQL",
+                "Las bases de datos NoSQL son altamente escalables y ofrecen una alta disponibilidad debido a su diseño distribuido y tolerancia a fallos."},
+
+                                {"¿Qué tipo de base de datos utiliza un modelo de datos basado en objetos?",
+                "Base de datos relacional",
+                "Base de datos orientada a objetos",
+                "Base de datos de red",
+                "Base de datos orientada a objetos",
+                "Las bases de datos orientadas a objetos utilizan un modelo de datos basado en objetos en lugar de un modelo basado en tablas como las bases de datos relacionales."},
+
+                                {"¿Qué tipo de base de datos es más adecuada para almacenar y consultar grandes cantidades de datos relacionados?",
+                "Base de datos jerárquica",
+                "Base de datos relacional",
+                "Base de datos de grafo",
+                "Base de datos relacional",
+                "Las bases de datos relacionales son ideales para manejar grandes cantidades de datos relacionales y para realizar consultas complejas."},
+
+                                {"¿Qué tipo de base de datos utiliza una estructura de datos de tipo árbol?",
+                "Base de datos jerárquica",
+                "Base de datos relacional",
+                "Base de datos de red",
+                "Base de datos jerárquica",
+                "Las bases de datos jerárquicas utilizan una estructura de datos de tipo árbol para organizar los datos y establecer las relaciones entre ellos."}
+
+                        };
                 break;
+
+
             case 5:
                 preguntas = new String[][]{
                         {"pregunta",
