@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -90,7 +91,10 @@ public class PreguntasActivity3 extends AppCompatActivity {
                         {"¿Cuál es el lenguaje de programación utilizado para la creación de hojas de estilo en la web?", "HTML", "CSS", "JavaScript", "CSS", "CSS (Cascading Style Sheets) es el lenguaje de programación utilizado para la creación de hojas de estilo en la web, permitiendo la separación de la presentación y el contenido de una página web."},
                         {"¿Qué lenguaje de programación es más adecuado para el análisis de datos?", "R", "Python", "Java", "R", "R es un lenguaje de programación especializado en estadística y análisis de datos, y se utiliza en una amplia variedad de aplicaciones en campos como la biología, la economía y la ingeniería."},
                         {"¿Cuál es el lenguaje de programación utilizado para el desarrollo de videojuegos?", "C++", "Java", "Python", "C++", "C++ es uno de los lenguajes de programación más populares y utilizados en el desarrollo de videojuegos, gracias a su eficiencia y capacidad para trabajar con gráficos y animaciones."},
-                        {"¿Qué lenguaje de programación se utiliza comúnmente para el desarrollo de aplicaciones de escritorio?", "C#", "Java", "Python", "Java", "Java es un lenguaje de programación popular para el desarrollo de aplicaciones de escritorio, especialmente en el ámbito empresarial."},
+                        {"¿Qué lenguaje de programación se utiliza comúnmente para el desarrollo de aplicaciones de escritorio?",
+                                "C#", "Java", "Python",
+                                "Java",
+                                "Java es un lenguaje de programación popular para el desarrollo de aplicaciones de escritorio, especialmente en el ámbito empresarial."},
                         {"¿Cuál de los siguientes lenguajes de programación se utiliza mejor para desarrollar aplicaciones de escritorio en Windows?", "Java", "C#", "Python", "C#", "C# es un lenguaje de programación específico para la plataforma Windows, mientras que Java y Python son lenguajes multiplataforma."},
                         {"¿Cuál de los siguientes lenguajes de programación es el más utilizado en el desarrollo de sitios web?", "HTML", "CSS", "JavaScript", "JavaScript", "JavaScript es un lenguaje de programación que se utiliza para hacer sitios web interactivos y dinámicos."},
                         {"¿Para qué tipo de aplicaciones se recomienda utilizar el lenguaje de programación Swift?", "Desarrollo de aplicaciones para iOS", "Programación de juegos", "Creación de aplicaciones para Android", "Desarrollo de aplicaciones para iOS", "Swift es un lenguaje de programación desarrollado por Apple para la creación de aplicaciones para iOS."},
@@ -131,7 +135,10 @@ public class PreguntasActivity3 extends AppCompatActivity {
 
                         {"¿Cuál es el paradigma de programación que se enfoca en la gestión de flujos de datos?", "Programación reactiva", "Programación orientada a objetos", "Programación funcional", "Programación reactiva", "La programación reactiva se enfoca en la gestión de flujos de datos y eventos, y se basa en el uso de observables y streams para modelar la interacción con el usuario y otros sistemas."},
 
-                        {"¿Qué paradigma de programación se basa en la definición de acciones y efectos secundarios?", "Programación imperativa", "Programación orientada a objetos", "Programación funcional", "Programación imperativa", "La programación imperativa se basa en la definición de acciones y efectos secundarios, y se enfoca en el uso de variables y bucles para controlar el flujo del programa."},
+                        {"¿Qué paradigma de programación se basa en la definición de acciones y efectos secundarios?",
+                                "Programación imperativa", "Programación orientada a objetos", "Programación funcional",
+                                "Programación imperativa",
+                                "La programación imperativa se basa en la definición de acciones y efectos secundarios, y se enfoca en el uso de variables y bucles para controlar el flujo del programa."},
 
                         {"¿Cuál es el paradigma de programación que se enfoca en la definición de comportamientos a través de la interacción con el entorno?", "Programación conductual", "Programación orientada a objetos", "Programación funcional", "Programación conductual", "La programación conductual se enfoca en la definición de comportamientos a través de la interacción con el entorno, y se basa en el uso de estímulos y respuestas para modelar la interacción con el usuario."}
                 };
@@ -144,31 +151,74 @@ public class PreguntasActivity3 extends AppCompatActivity {
 
                         {"¿Cuál de los siguientes IDE es más utilizado para el desarrollo de aplicaciones móviles en la plataforma iOS?", "Xcode", "Android Studio", "Visual Studio", "Xcode", "Xcode es el IDE desarrollado por Apple para el desarrollo de aplicaciones móviles en la plataforma iOS."},
 
-                        {"¿Qué es un depurador en un IDE?", "Una herramienta que permite identificar y solucionar errores en el código", "Un asistente virtual que ayuda a los programadores a escribir código más rápido", "Un sistema para proteger el código fuente de los ataques de hackers", "Una herramienta que permite identificar y solucionar errores en el código", "El depurador es una herramienta que permite a los programadores identificar y solucionar errores en el código de una aplicación mientras se está ejecutando."},
-
                         {"¿Cuál es el IDE más utilizado para el desarrollo de aplicaciones en lenguaje C++?", "Visual Studio", "Eclipse", "Code::Blocks", "Visual Studio", "Visual Studio es uno de los IDE más utilizados para el desarrollo de aplicaciones en lenguaje C++, con una amplia variedad de herramientas y funcionalidades integradas."},
 
                         {"¿Cuál es el IDE más utilizado para el desarrollo de aplicaciones web?", "Visual Studio Code", "NetBeans", "PHPStorm", "Visual Studio Code", "Visual Studio Code es un IDE de código abierto muy popular para el desarrollo de aplicaciones web, con una gran cantidad de extensiones y herramientas disponibles."},
 
-                        {"¿Qué es un plugin en un IDE?", "Una extensión que añade funcionalidades adicionales al IDE", "Un tipo de archivo ejecutable que se utiliza para crear aplicaciones", "Un archivo que contiene información sobre el código fuente de una aplicación", "Una extensión que añade funcionalidades adicionales al IDE", "Los plugins son extensiones que se pueden agregar a un IDE para añadir funcionalidades adicionales, como la integración con sistemas de control de versiones, la realización de pruebas unitarias y la implementación de herramientas de análisis de código."},
+                        {"¿Qué es un plugin en un IDE?",
+                                "Una extensión que añade funcionalidades adicionales al IDE", "Un tipo de archivo ejecutable que se utiliza para crear aplicaciones", "Un archivo que contiene información sobre el código fuente de una aplicación",
+                                "Una extensión que añade funcionalidades adicionales al IDE",
+                                "Los plugins son extensiones que se pueden agregar a un IDE para añadir funcionalidades adicionales, como la integración con sistemas de control de versiones, la realización de pruebas unitarias y la implementación de herramientas de análisis de código."},
 
-                        {"¿Cuál es el IDE más utilizado para el desarrollo de aplicaciones en lenguaje Python?", "PyCharm", "Visual Studio Code", "Atom", "PyCharm", "PyCharm es uno de los IDE más utilizados para el desarrollo de aplicaciones en lenguaje Python, con una amplia variedad de herramientas y funcionalidades integradas."},
+                        {"¿Cuál es el IDE más utilizado para el desarrollo de aplicaciones en lenguaje Python?",
+                                "PyCharm", "Visual Studio Code", "Atom",
+                                "PyCharm",
+                                "PyCharm es uno de los IDE más utilizados para el desarrollo de aplicaciones en lenguaje Python, con una amplia variedad de herramientas y funcionalidades integradas."},
 
-                        {"¿Qué es un entorno de desarrollo integrado (IDE)?", "Un software que ofrece un conjunto de herramientas para la programación y desarrollo de aplicaciones.", "Un entorno de desarrollo integrado (IDE) es un software que proporciona herramientas para facilitar el proceso de programación y desarrollo de aplicaciones."},
+                        {"¿Cuál de los siguientes no es un tipo de entorno de desarrollo?",
+                                "IDE", "API", "CLI",
+                                "API",
+                                "Los IDE (Integrated Development Environment) son entornos de desarrollo integrados que ofrecen herramientas para la edición, compilación, depuración y ejecución de programas."},
 
-                        {"¿Cuál es la función principal de un IDE?", "Proporcionar herramientas y servicios para el desarrollo de software.", "La función principal de un IDE es facilitar el proceso de desarrollo de software mediante la provisión de herramientas y servicios para la programación, depuración, compilación y gestión de proyectos."},
+                        {"¿Qué es un lenguaje de programación utilizado para desarrollar entornos de desarrollo?",
+                                "C#", "Java", "Python",
+                                "Java",
+                                "Java es un lenguaje de programación popularmente utilizado para desarrollar entornos de desarrollo debido a su facilidad de uso, robustez y portabilidad."},
 
-                        {"¿Cuál es la diferencia entre un editor de texto y un IDE?", "Un editor de texto es un software básico para la edición de texto, mientras que un IDE ofrece herramientas avanzadas para el desarrollo de software.", "A diferencia de un editor de texto, un IDE proporciona herramientas avanzadas para la programación y desarrollo de software, como la depuración, compilación y gestión de proyectos."},
+                        {"¿Cuál es el objetivo principal de un entorno de desarrollo integrado (IDE)?",
+                                "Desarrollar software", "Gestionar proyectos", "Facilitar el desarrollo de software",
+                                "Facilitar el desarrollo de software",
+                                "Un IDE es una herramienta que integra múltiples funciones en una sola interfaz de usuario para facilitar el desarrollo de software."},
 
-                        {"¿Qué es un depurador?", "Una herramienta que permite encontrar y corregir errores en el código.", "Un depurador es una herramienta que permite encontrar y corregir errores en el código, facilitando el proceso de desarrollo y mantenimiento del software."},
+                        {"¿Qué es un depurador?",
+                                "Un programa que detecta y corrige errores de código", "Un programa que compila código fuente", "Un programa que ejecuta código fuente",
+                                "Un programa que detecta y corrige errores de código",
+                                "Un depurador es una herramienta que ayuda a detectar y corregir errores en el código fuente mientras se está desarrollando un programa."},
 
-                        {"¿Cuál es la función de un compilador?", "Transformar el código fuente en código ejecutable para el sistema operativo de destino.", "La función del compilador es transformar el código fuente escrito por el programador en código ejecutable para el sistema operativo de destino, como Windows, macOS o Linux."},
+                        {"¿Cuál de los siguientes no es una característica de un entorno de desarrollo?",
+                                "Interfaz de usuario amigable", "Compilación automática de código fuente", "Edición de código fuente solo en texto plano",
+                                "Edición de código fuente solo en texto plano",
+                                "Un entorno de desarrollo debe permitir la edición de código fuente de manera gráfica y no solo en texto plano."},
 
-                        {"¿Qué es un sistema de control de versiones?", "Un software que permite gestionar el historial y las versiones de un proyecto de software.", "Un sistema de control de versiones es un software que permite gestionar el historial y las versiones de un proyecto de software, permitiendo a los desarrolladores trabajar de manera colaborativa y realizar seguimiento de los cambios realizados en el código."},
+                        {"¿Qué es un control de versiones?",
+                                "Una herramienta para la gestión de proyectos", "Un sistema para rastrear cambios en el código fuente", "Un lenguaje de programación",
+                                "Un sistema para rastrear cambios en el código fuente",
+                                "Un control de versiones es un sistema que permite rastrear y controlar los cambios realizados en el código fuente de un proyecto."},
 
-                        {"¿Cuál es la diferencia entre un entorno de desarrollo local y uno en la nube?", "Un entorno de desarrollo local se ejecuta en la computadora del usuario, mientras que uno en la nube se ejecuta en servidores remotos.", "A diferencia de un entorno de desarrollo local que se ejecuta en la computadora del usuario, un entorno de desarrollo en la nube se ejecuta en servidores remotos, lo que permite una mayor escalabilidad y flexibilidad para el desarrollo de software."},
+                        {"¿Qué es un sistema de compilación?",
+                                "Un sistema para la gestión de proyectos", "Un sistema para automatizar el proceso de compilación", "Un lenguaje de programación",
+                                "Un sistema para automatizar el proceso de compilación",
+                                "Un sistema de compilación es una herramienta que automatiza el proceso de compilación del código fuente de un proyecto."},
 
-                        {"¿Qué es una herramienta de automatización de pruebas?", "Una herramienta que permite realizar pruebas de software de forma automatizada.", "Una herramienta de automatización de pruebas es una herramienta que permite realizar pruebas de software de forma automatizada, acelerando el proceso de pruebas y mejorando la calidad del software."},
+                        {"¿Cuál es el objetivo principal de un sistema de integración continua?",
+                                "Automatizar la compilación y pruebas de un proyecto", "Gestionar el código fuente de un proyecto", "Facilitar el desarrollo de software",
+                                "Automatizar la compilación y pruebas de un proyecto",
+                                "Un sistema de integración continua es una herramienta que automatiza la compilación y pruebas de un proyecto para detectar errores tempranamente."},
+                        {"¿Qué es Git?",
+                                "Un sistema de control de versiones distribuido.", "Un IDE.", "Un lenguaje de programación.",
+                                "Un sistema de control de versiones distribuido.", "Correcto: Git es un sistema de control de versiones distribuido."},
+
+                        {"¿Qué es un repositorio en Git?",
+                                "Un lugar donde se almacena el código fuente y los cambios realizados.", "Un archivo que contiene el código fuente de un programa.", "Una herramienta para hacer copias de seguridad del código.",
+                                "Un lugar donde se almacena el código fuente y los cambios realizados.",
+                                "Correcto: Un repositorio en Git es un lugar donde se almacena el código fuente y los cambios realizados."},
+                        {"¿Qué es un pull request en Git?",
+                                "Una solicitud para fusionar cambios realizados en una rama con otra.", "Una solicitud para revertir cambios realizados en una rama.", "Una solicitud para eliminar una rama.",
+                                "Una solicitud para fusionar cambios realizados en una rama con otra.",
+                                "Correcto: Un pull request en Git es una solicitud para fusionar cambios realizados en una rama con otra."},
+                        {"¿Qué es un flujo de trabajo (workflow) en Git?",
+                                "Una serie de pasos que se siguen para gestionar cambios en el código.", "Una herramienta para depurar el código.", "Una herramienta para ejecutar pruebas unitarias.",
+                                "Una serie de pasos que se siguen para gestionar cambios en el código.", "Correcto: Un flujo de trabajo en Git es una serie de pasos que se siguen para gestionar cambios en el código."}
                 };
                 break;
             case 4:
@@ -181,7 +231,10 @@ public class PreguntasActivity3 extends AppCompatActivity {
 
                         {"¿Cuál es la diferencia entre una base de datos relacional y una base de datos no relacional?", "Una base de datos relacional utiliza tablas para almacenar datos y una no relacional utiliza documentos o grafos.", "Una base de datos relacional solo permite el acceso de un usuario a la vez y una no relacional permite el acceso simultáneo de varios usuarios.", "Una base de datos relacional solo permite el acceso a través de una conexión de red y una no relacional permite el acceso local y remoto.", "Una base de datos relacional utiliza tablas para almacenar datos y una no relacional utiliza documentos o grafos.", "La principal diferencia entre una base de datos relacional y una no relacional es la forma en que almacenan y organizan los datos."},
 
-                        {"¿Qué es una consulta SQL?", "Una solicitud de información a una base de datos relacional.", "Una herramienta de programación para el desarrollo de software.", "Un programa para la gestión de proyectos.", "Una solicitud de información a una base de datos relacional.", "Una consulta SQL es una solicitud de información a una base de datos relacional utilizando el lenguaje de programación SQL (Structured Query Language)."},
+                        {"¿Qué es una consulta SQL?",
+                                "Una solicitud de información a una base de datos relacional.", "Una herramienta de programación para el desarrollo de software.", "Un programa para la gestión de proyectos.",
+                                "Una solicitud de información a una base de datos relacional.",
+                                "Una consulta SQL es una solicitud de información a una base de datos relacional utilizando el lenguaje de programación SQL (Structured Query Language)."},
 
                         {"¿Qué es la normalización de bases de datos?", "Un proceso para reducir la redundancia y mejorar la eficiencia de una base de datos.", "Un proceso para crear copias de seguridad de una base de datos.", "Un proceso para eliminar la información obsoleta de una base de datos.", "Un proceso para reducir la redundancia y mejorar la eficiencia de una base de datos.", "La normalización es un proceso utilizado para reducir la redundancia de los datos y mejorar la eficiencia de una base de datos mediante la eliminación de duplicados y la organización de los datos en diferentes tablas."},
                         {"¿Cuál es el propósito de un modelo entidad-relación (ER)?", "Representar la estructura lógica de una base de datos y las relaciones entre sus entidades.", "Representar la estructura física de una base de datos y las relaciones entre sus tablas.", "Generar consultas complejas en una base de datos.", "Representar la estructura lógica de una base de datos y las relaciones entre sus entidades.", "Un modelo entidad-relación es una herramienta para diseñar y representar la estructura lógica de una base de datos, y visualizar las relaciones entre las entidades que la conforman."},
@@ -191,7 +244,12 @@ public class PreguntasActivity3 extends AppCompatActivity {
                         {"¿Qué es la integridad referencial en una base de datos?", "Garantía de que los datos en una tabla que se refieren a los datos en otra tabla son válidos y consistentes.", "Capacidad de la base de datos para manejar múltiples usuarios simultáneamente.", "Capacidad de la base de datos para recuperar datos rápidamente.", "Garantía de que los datos en una tabla que se refieren a los datos en otra tabla son válidos y consistentes.", "La integridad referencial en una base de datos es importante para garantizar la coherencia y consistencia de los datos, asegurando que los datos en una tabla que se refieren a los datos en otra tabla son válidos."},
 
                         {"¿Qué es una clave primaria en una base de datos?", "Un campo que identifica de forma única cada registro en una tabla.", "Un campo que establece una relación entre dos tablas.", "Un campo que se utiliza para ordenar los registros de una tabla.", "Un campo que identifica de forma única cada registro en una tabla.", "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada registro en una tabla y se utiliza para establecer relaciones con otras tablas."},
-                        {"¿Qué es una transacción en una base de datos?", "Una secuencia de operaciones que se realizan como una unidad atómica e indivisible.", "Una solicitud de datos realizada por un usuario o una aplicación.", "Una operación que modifica la estructura de una tabla.", "Una secuencia de operaciones que se realizan como una unidad atómica e indivisible.", "Una transacción es una secuencia de operaciones que se realizan como una unidad atómica e indivisible, lo que significa que todas las operaciones se realizan o ninguna de ellas se realiza."},
+
+                        {"¿Qué es una transacción en una base de datos?",
+                                "Una secuencia de operaciones que se realizan como una unidad atómica e indivisible.", "Una solicitud de datos realizada por un usuario o una aplicación.", "Una operación que modifica la estructura de una tabla.",
+                                "Una secuencia de operaciones que se realizan como una unidad atómica e indivisible.",
+                                "Una transacción es una secuencia de operaciones que se realizan como una unidad atómica e indivisible, lo que significa que todas las operaciones se realizan o ninguna de ellas se realiza."},
+
                         {"¿Qué es un índice en una base de datos?", "Una estructura de datos que mejora la velocidad de búsqueda de registros en una tabla.", "Una restricción que limita los valores que se pueden insertar en una tabla.", "Una tabla que se utiliza para almacenar datos temporales.", "Una estructura de datos que mejora la velocidad de búsqueda de registros en una tabla.", "Un índice es una estructura de datos que mejora la velocidad de búsqueda de registros en una tabla, acelerando las operaciones de consulta y ordenación de datos."},
 
                         {"¿Qué es una llave compuesta?", "Una clave primaria que consta de varios atributos.", "Una clave foránea que hace referencia a varias tablas.", "Una clave que consta de un solo atributo.", "Una clave primaria que consta de varios atributos.", "Una llave compuesta es una clave primaria que consta de varios atributos, lo que permite identificar de forma única una fila en una tabla."},
@@ -200,15 +258,25 @@ public class PreguntasActivity3 extends AppCompatActivity {
 
                         {"¿Qué es una vista materializada en una base de datos?", "Una vista que se actualiza automáticamente cuando se modifican los datos subyacentes.", "Una vista que se almacena como una tabla física en lugar de como una definición lógica.", "Una vista que permite a los usuarios editar los datos directamente.", "Una vista que se almacena como una tabla física en lugar de como una definición lógica.", "Una vista materializada es una vista que se almacena como una tabla física en lugar de como una definición lógica, lo que mejora el rendimiento de las consultas y reduce la carga en el servidor de la base de datos."},
 
-                        {"¿Qué es la primera forma normal (1FN) en la normalización de bases de datos?", "Cada tabla debe tener una clave primaria", "No se permite la existencia de valores nulos", "Los valores deben estar en un formato específico", "Cada tabla debe tener una clave primaria", "La 1FN exige que cada tabla tenga un identificador único o clave primaria que permita identificar de manera unívoca cada registro en la tabla."},
+                        {"¿Qué es la primera forma normal (1FN) en la normalización de bases de datos?",
+                                "Cada tabla debe tener una clave primaria", "No se permite la existencia de valores nulos", "Los valores deben estar en un formato específico",
+                                "Cada tabla debe tener una clave primaria",
+                                "La 1FN exige que cada tabla tenga un identificador único o clave primaria que permita identificar de manera unívoca cada registro en la tabla."},
                         {"¿Qué es la tercera forma normal (3FN) en la normalización de bases de datos?", "Eliminación de dependencias transitivas entre columnas", "Eliminación de redundancia de datos", "Creación de tablas adicionales", "Eliminación de dependencias transitivas entre columnas", "La 3FN busca eliminar dependencias transitivas, lo que significa que una columna no debe depender de otra que a su vez dependa de otra, sino que debe depender únicamente de la clave primaria."},
                         {"¿Qué es la forma normal de Boyce-Codd (BCNF) en la normalización de bases de datos?", "Eliminación de dependencias funcionales no triviales", "Eliminación de redundancia de datos", "Creación de tablas adicionales", "Eliminación de dependencias funcionales no triviales", "La BCNF es una forma normal que busca eliminar las dependencias funcionales no triviales, es decir, aquellas en las que una columna no clave depende de otra no clave."},
-                        {"¿Qué es la cuarta forma normal (4FN) en la normalización de bases de datos?", "Eliminación de dependencias múltiples entre columnas", "Eliminación de redundancia de datos", "Creación de tablas adicionales", "Eliminación de dependencias múltiples entre columnas", "La 4FN busca evitar la existencia de dependencias múltiples, es decir, aquellas en las que una columna depende de varias columnas no clave, para evitar redundancias innecesarias en la base de datos."},
+
+                        {"¿Qué es la cuarta forma normal (4FN) en la normalización de bases de datos?",
+                                "Eliminación de dependencias múltiples entre columnas", "Eliminación de redundancia de datos", "Creación de tablas adicionales",
+                                "Eliminación de dependencias múltiples entre columnas",
+                                "La 4FN busca evitar la existencia de dependencias múltiples, es decir, aquellas en las que una columna depende de varias columnas no clave, para evitar redundancias innecesarias en la base de datos."},
                 };
                 break;
             case 5:
                 preguntas = new String[][]{
-                        {"3Pregunta 1 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
+                        {"pregunta",
+                                "Opción 1", "Opción 2", "Opción 3",
+                                "repetir opcion correcta",
+                                "retroalimentacion"},
                         {"3Pregunta 2 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
                         {"3Pregunta 3 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
                         {"3Pregunta 4 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
@@ -255,23 +323,37 @@ public class PreguntasActivity3 extends AppCompatActivity {
         // Agrega onClickListeners a los botones de opción para manejar la selección de respuesta
         opcion1Button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
 
-                verificarRespuesta(0, retroalimentacion, respuestaCorrecta);
+
+            public void onClick(View v) {
+                try {
+                    verificarRespuesta(0, retroalimentacion, respuestaCorrecta);
+                }catch (Exception e){
+                    Toast.makeText(PreguntasActivity3.this, "Error en indices", Toast.LENGTH_SHORT).show();
+                }
+
             }
+
+
         });
         opcion2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                try {
                 verificarRespuesta(1, retroalimentacion, respuestaCorrecta);
+                }catch (Exception e){
+                    Toast.makeText(PreguntasActivity3.this, "Error en indices", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         opcion3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                    try {
                 verificarRespuesta(2, retroalimentacion, respuestaCorrecta);
+                    }catch (Exception e){
+                        Toast.makeText(PreguntasActivity3.this, "Error en indices", Toast.LENGTH_SHORT).show();
+                    }
             }
         });
 
