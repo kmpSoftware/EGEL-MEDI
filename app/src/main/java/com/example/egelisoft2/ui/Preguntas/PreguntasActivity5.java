@@ -335,7 +335,7 @@ public class PreguntasActivity5 extends AppCompatActivity {
     }
 
     public void cronometro () {
-        countDownTimer = new CountDownTimer(20000, 1000) {
+        countDownTimer = new CountDownTimer(30000, 1000) {
             public void onTick(long millisUntilFinished) {
                 tiempoTextView.setText("Tiempo restante: " + millisUntilFinished / 1000);
             }
