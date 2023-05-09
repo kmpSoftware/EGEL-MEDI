@@ -76,7 +76,6 @@ public class PreguntasActivity extends AppCompatActivity {
             }
         });
 
-
         Glide.with(this).load(R.raw.timer).into(gifImageView);
 
         // Lee el identificador del botón presionado del Intent
