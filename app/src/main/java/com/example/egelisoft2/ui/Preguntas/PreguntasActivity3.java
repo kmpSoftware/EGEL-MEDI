@@ -101,7 +101,23 @@ public class PreguntasActivity3 extends AppCompatActivity {
                         {"¿Cuál de los siguientes lenguajes de programación se utiliza principalmente en el procesamiento de datos y la estadística?", "Java", "C++", "R", "R", "R es un lenguaje de programación que se utiliza principalmente en el análisis de datos y la estadística."},
                         {"¿Cuál de los siguientes lenguajes de programación se utiliza principalmente en el desarrollo de aplicaciones de inteligencia artificial?", "Python", "Java", "C++", "Python", "Python es un lenguaje de programación popular para el desarrollo de aplicaciones de inteligencia artificial, aprendizaje automático y minería de datos debido a sus bibliotecas y frameworks especializados."},
                         {"¿Cuál es el lenguaje de programación utilizado para la creación de aplicaciones de realidad virtual?", "C#", "Java", "Python", "C#", "C# es uno de los lenguajes de programación más utilizados en la creación de aplicaciones de realidad virtual, gracias a sus bibliotecas y herramientas especializadas."},
+                        {"¿Cuál es la principal diferencia entre PHP y JavaScript?",
+                                "PHP es un lenguaje de programación de backend y JavaScript es un lenguaje de programación de frontend", "PHP es un lenguaje de programación de frontend y JavaScript es un lenguaje de programación de backend", "PHP y JavaScript son lenguajes de programación de backend",
+                                "PHP es un lenguaje de programación de backend y JavaScript es un lenguaje de programación de frontend",
+                                "La principal diferencia entre PHP y JavaScript es que PHP es un lenguaje de programación de backend diseñado específicamente para el desarrollo web, mientras que JavaScript es un lenguaje de programación de frontend utilizado principalmente para crear interacciones dinámicas en la web."},
+                        {"¿Qué es PHP?", "Un lenguaje de programación de backend", "Un lenguaje de programación de frontend", "Un lenguaje de programación de bases de datos", "Un lenguaje de programación de backend", "PHP es un lenguaje de programación de backend diseñado específicamente para el desarrollo web."},
 
+                        {"¿Qué es JavaScript?", "Un lenguaje de programación de frontend", "Un lenguaje de programación de bases de datos", "Un lenguaje de programación de backend", "Un lenguaje de programación de frontend", "JavaScript es un lenguaje de programación de frontend que se utiliza principalmente para crear interacciones dinámicas en la web."},
+
+                        {"¿Cuál es la principal diferencia entre Python y C++?", "Python es un lenguaje de programación interpretado y C++ es un lenguaje compilado", "Python es un lenguaje de programación compilado y C++ es un lenguaje interpretado", "Python y C++ son lenguajes de programación compilados", "Python es un lenguaje de programación interpretado y C++ es un lenguaje compilado", "Python ejecuta el código directamente sin una etapa de compilación previa, mientras que C++ requiere una compilación previa antes de la ejecución."},
+
+                        {"¿En qué aspectos es superior Python a Perl?", "Legibilidad y mantenibilidad de código", "Velocidad de ejecución y uso de memoria", "Flexibilidad y capacidad de programación concurrente", "Legibilidad y mantenibilidad de código", "Python tiene una sintaxis limpia y legible, lo que facilita la escritura y mantenimiento de código, mientras que Perl puede tener una sintaxis más compleja. Además, Python tiene mejores características integradas para la programación orientada a objetos y el manejo de excepciones."},
+
+                        {"¿Cuál es la principal ventaja de Python sobre Java?", "Facilidad de uso y legibilidad de código", "Rendimiento y eficiencia en el uso de recursos", "Capacidad de programación concurrente y distribuida", "Facilidad de uso y legibilidad de código", "Python tiene una sintaxis más clara y legible que Java, lo que facilita la escritura y mantenimiento de código. Además, Python tiene un conjunto de bibliotecas y herramientas más completo y diverso que Java."},
+
+                        {"¿Qué características comparten Python y Ruby?", "Interpretación, orientación a objetos y manejo de excepciones", "Compilación, programación estructurada y eficiencia", "Capacidad de programación concurrente y distribuida", "Interpretación, orientación a objetos y manejo de excepciones", "Tanto Python como Ruby son lenguajes de programación interpretados y tienen una fuerte orientación a objetos. Además, ambos tienen características integradas para el manejo de excepciones y la programación funcional."},
+
+                        {"¿En qué aspectos es inferior Python a Lisp?", "Manejo de macros y programación funcional avanzada", "Velocidad de ejecución y eficiencia en el uso de memoria", "Facilidad de uso y mantenibilidad de código", "Manejo de macros y programación funcional avanzada", "Lisp es un lenguaje de programación que tiene una sintaxis más abstracta, pero es muy flexible en cuanto a la programación funcional y la capacidad de definir macros para extender la sintaxis del lenguaje. Python tiene una sintaxis más fácil de usar y una mayor disponibilidad de bibliotecas y herramientas."},
                 };
                 break;
             case 2:
@@ -320,10 +336,42 @@ public class PreguntasActivity3 extends AppCompatActivity {
 
             case 5:
                 preguntas = new String[][]{
-                        {"pregunta",
-                                "Opción 1", "Opción 2", "Opción 3",
-                                "repetir opcion correcta",
-                                "retroalimentacion"},
+                        {"¿Qué es una plataforma de desarrollo de bajo código?", "Una plataforma que permite a los usuarios crear aplicaciones sin escribir mucho código", "Una plataforma que solo admite ciertos lenguajes de programación", "Una plataforma que solo se usa para aplicaciones móviles", "Una plataforma que permite a los usuarios crear aplicaciones sin escribir mucho código", "Una plataforma de desarrollo de bajo código es una herramienta que permite a los usuarios crear aplicaciones con un mínimo de programación manual y se enfoca en la visualización y la automatización de procesos."},
+                        {"¿Cuál de las siguientes es una plataforma de desarrollo para aplicaciones móviles?",
+                                "Android Studio",
+                                "Visual Studio Code",
+                                "Eclipse",
+                                "Android Studio",
+                                "Android Studio es una plataforma de desarrollo para aplicaciones móviles. Es la herramienta oficial para desarrollar aplicaciones para Android."},
+
+                        {"¿Qué plataforma de desarrollo de software es conocida por su uso en la creación de videojuegos?",
+                                "Unity",
+                                "React",
+                                "Django",
+                                "Unity",
+                                "Unity es una plataforma de desarrollo de software conocida por su uso en la creación de videojuegos."},
+
+                        {"¿Cuál es una plataforma de desarrollo de software para la creación de aplicaciones web en tiempo real?",
+                                "Firebase",
+                                "Angular",
+                                "Flask",
+                                "Firebase",
+                                "Firebase es una plataforma de desarrollo de software para la creación de aplicaciones web en tiempo real."},
+
+                        {"¿Cuál es una plataforma de desarrollo de software para la creación de aplicaciones de escritorio multiplataforma?",
+                                "Electron",
+                                "Xcode",
+                                "Android Studio",
+                                "Electron",
+                                "Electron es una plataforma de desarrollo de software para la creación de aplicaciones de escritorio multiplataforma utilizando tecnologías web como HTML, CSS y JavaScript."},
+
+                        {"¿Qué plataforma de desarrollo de software se utiliza para crear aplicaciones empresariales?",
+                                "Salesforce",
+                                "Ruby on Rails",
+                                "Express",
+                                "Salesforce",
+                                "Salesforce es una plataforma de desarrollo de software utilizada para crear aplicaciones empresariales y aplicaciones de gestión de relaciones con los clientes (CRM)."},
+
                         {"3Pregunta 2 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
                         {"3Pregunta 3 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
                         {"3Pregunta 4 del botón 5", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
