@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -36,7 +37,7 @@ public class ConfiguracionFragment extends Fragment {
         View root = binding.getRoot();
 
 
-        ImageButton selectTimeButton = binding.selectTimeButton;
+        Button selectTimeButton = binding.selectTimeButton;
         selectTimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +63,7 @@ public class ConfiguracionFragment extends Fragment {
             }
         });
 
-        ImageButton disableNotificationsButton = binding.disableNotificationsButton;
+        Button disableNotificationsButton = binding.disableNotificationsButton;
         disableNotificationsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
