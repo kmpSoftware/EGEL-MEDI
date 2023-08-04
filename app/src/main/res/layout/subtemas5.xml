@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a9d8f"
-    tools:context=".ui.dashboard.DashboardFragment"
+    tools:context="com.kmpegel.medi.ui.dashboard.DashboardFragment"
     >
 
 

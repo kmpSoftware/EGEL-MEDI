@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a9d8f"
-    tools:context=".ui.dashboard.DashboardFragment"
+    tools:context="com.kmpegel.medi.ui.dashboard.DashboardFragment"
     >
 
     <LinearLayout
@@ -31,7 +31,7 @@
         android:layout_marginEnd="2dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/back5"
-        android:onClick="buttonClick"
+        android:onClick="volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/scrollView2"
@@ -53,7 +53,7 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="90dp"
-                android:src="@drawable/subt4"
+                android:src="@drawable/subtemas2"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"
                 />
@@ -63,52 +63,81 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="0dp"
-
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Tipos de requerimientos" />
+                android:text="Identificación del problema de salud" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
+                android:background="@drawable/rounded_button"
                 android:textSize="20dp"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Técnicas y herramientas para
-la obtención, análisis, priorización
-y validación de requerimientos " />
+                android:text="Diagnóstico " />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
+                android:background="@drawable/rounded_button"
                 android:textSize="20dp"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Técnicas y herramientas
-de documentación de requerimientos " />
+                android:text="Terapéutica" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#2271b3"
+                android:drawableLeft="@drawable/tarjeta"
+                android:onClick="buttonClick"
+                android:text="Tarjetas"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:cornerRadius="25dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:clickable="true"
+                android:onClick="abrirDialogo"
+                android:src="@drawable/ayuda" />
+
 
 
         </LinearLayout>

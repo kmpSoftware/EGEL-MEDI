@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a9d8f"
-    tools:context=".ui.dashboard.DashboardFragment"
+    tools:context="com.kmpegel.medi.ui.dashboard.DashboardFragment"
     >
-
 
     <LinearLayout
         android:id="@+id/hidden_layout"
@@ -46,78 +45,90 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:backgroundTint="@color/white"
-        android:layout_height="match_parent">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="69dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="90dp"
-                android:src="@drawable/subt4"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center"
-                />
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/subtemas2"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            />
 
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-
-                android:layout_marginEnd="5dp"
-                android:textStyle="bold"
-                android:textSize="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="0dp"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Diseño arquitectónico de software" />
+                android:text="Prevención"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
             />
+
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:textStyle="bold"
-                android:textSize="20dp"
-
-                android:layout_marginEnd="5dp"
-                android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="0dp"
-                android:drawableRight="@drawable/quizas"
-
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#264653"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Diseño de módulos, componentes
-y de datos de software" />
+                android:text="Protección específica"
+                android:textColor="#000000"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:textStyle="bold"
-                android:textSize="20dp"
-
-                android:drawableRight="@drawable/quizas"
-                android:layout_marginEnd="5dp"
-                android:onClick="buttonClick"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
-                android:text="Diseño de interfaces" />
+                android:drawableRight="@drawable/start3"
+                android:onClick="buttonClick"
+                android:text="Educación para la salud"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:clickable="true"
+                android:onClick="abrirDialogo"
+                android:src="@drawable/ayuda" />
 
 
         </LinearLayout>
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

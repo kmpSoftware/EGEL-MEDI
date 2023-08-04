@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".ui.home.HomeFragment">
+    tools:context="com.kmpegel.medi.ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/text_home"
@@ -35,46 +35,94 @@
             android:orientation="vertical"
             android:padding="16dp">
             <ImageView
-                android:layout_width="300dp"
-                android:layout_height="90dp"
-                android:src="@drawable/guias"
-                android:scaleType="fitCenter"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:src="@drawable/medilogo"
+
                 android:layout_gravity="center"
                 />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="211dp"
-                android:layout_gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/txt1" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectTimeButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#2271b3"
+                android:textStyle="bold"
+                android:clickable="false"
+                app:cornerRadius="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:text="¡Bienvenido a tu guia para tu examen profesional!"
+                />
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="211dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/txt1" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="168dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:src="@mipmap/tema_foreground" />-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="211dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/txt2" />-->
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="168dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="0dp"
-                android:src="@mipmap/tema_foreground" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="211dp"
-                android:layout_gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/txt2" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="220dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:src="@mipmap/noti_foreground" />
+                android:src="@drawable/test2" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="182dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/txt3" />-->
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectTimeButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#2271b3"
+                android:textStyle="bold"
+                android:clickable="false"
+                android:textSize="20dp"
+                app:cornerRadius="25dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+
+                android:text="¡Mucha suerte! "
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="182dp"
-                android:layout_gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/txt3" />
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:clickable="true"
+                android:src="@drawable/ayuda" />
 
             <Button
                 android:layout_width="wrap_content"

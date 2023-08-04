@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.egelisoft2'
+    namespace 'com.kmpegel.egelmedi'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.egelisoft2"
+        applicationId "com.kmpegel.egelmedi"
         minSdk 26
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,8 +46,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.0"
     implementation "androidx.navigation:navigation-ui-ktx:2.4.0"
-
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.codesgood:justifiedtextview:1.1.0'
+
 }

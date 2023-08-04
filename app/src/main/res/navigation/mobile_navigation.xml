@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.egelisoft2.ui.home.HomeFragment"
+        android:name="com.kmpegel.medi.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home"
        />
@@ -16,13 +16,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.egelisoft2.ui.dashboard.DashboardFragment"
+        android:name="com.kmpegel.medi.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.egelisoft2.ui.configuracion.ConfiguracionFragment"
+        android:name="com.kmpegel.medi.ui.configuracion.ConfiguracionFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

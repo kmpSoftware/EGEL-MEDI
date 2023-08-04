@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context="com.kmpegel.medi.ui.dashboard.DashboardFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,12 +15,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="2dp"
                 android:onClick="buttonClick"
@@ -29,10 +30,10 @@
                 android:drawableLeft="@drawable/subtopic"
                 android:textSize="18dp"
                 android:backgroundTint="#2271b3"
-                android:text="Análisis de Sistemas
-de Software" />
+                app:cornerRadius="25dp"
+                android:text="Abordaje clínico" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -46,9 +47,9 @@ de Software" />
                 android:drawableLeft="@drawable/subtopic"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:text="Diseño de Sistemas
-de Software" />
-            <Button
+                app:cornerRadius="25dp"
+                android:text="Promoción de la salud" />
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -62,10 +63,11 @@ de Software" />
                 android:layout_marginBottom="2dp"
                 android:onClick="buttonClick"
                 android:backgroundTint="#2271b3"
-                android:text="Desarrollo de Sistemas
-de Software" />
+                app:cornerRadius="25dp"
+                android:text=" Fundamento
+de las decisiones médicas" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -79,6 +81,8 @@ de Software" />
                 android:textSize="18dp"
                 android:onClick="buttonClick"
                 android:backgroundTint="#2271b3"
+                app:cornerRadius="25dp"
+                android:visibility="gone"
                 android:text="Gestión de Proyectos
 de Software" />
             <Button
@@ -93,6 +97,7 @@ de Software" />
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="18dp"
+                android:visibility="gone"
                 android:onClick="buttonClick"
                 android:backgroundTint="#2271b3"
                 android:text="Comprensión lectora" />
@@ -108,9 +113,45 @@ de Software" />
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/subtopic"
                 android:textSize="18dp"
+                android:visibility="gone"
                 android:onClick="buttonClick"
                 android:backgroundTint="#2271b3"
                 android:text="Redacción indirecta" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#2271b3"
+                android:drawableLeft="@drawable/start3"
+                android:onClick="buttonClick"
+                android:text="Examen Completo"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:cornerRadius="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#2271b3"
+                android:drawableLeft="@drawable/tarjeta"
+                android:onClick="buttonClick"
+                android:text="Tarjetas"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:cornerRadius="25dp"
+                android:textStyle="bold" />
 
 
 

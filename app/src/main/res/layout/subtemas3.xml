@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a9d8f"
-    tools:context=".ui.dashboard.DashboardFragment"
+    tools:context="com.kmpegel.medi.ui.dashboard.DashboardFragment"
     >
 
 
@@ -53,86 +53,102 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="90dp"
-                android:src="@drawable/subt4"
+                android:src="@drawable/subtemas2"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"
                 />
+
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="0dp"
-                android:drawableRight="@drawable/quizas"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
-                android:textStyle="bold"
-                android:textSize="20dp"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Lenguajes de desarrollo de software" />
+                android:text="Investigación en Ciencias Médicas"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
-                android:text="Paradigmas de programación " />
+                android:text="Medicina basada en evidencias " />
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:onClick="buttonClick"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
 
-                android:text="Entornos de desarrollo" />
+                android:text="Bioética y marco legal de la medicina" />
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
-
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="buttonClick"
-                android:drawableRight="@drawable/quizas"
+                android:drawableRight="@drawable/start3"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="Gestión de datos" />
+                android:text="Salud pública y global" />
             <Button
                 android:id="@+id/button5"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="5dp"
-
-                android:drawableRight="@drawable/quizas"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
+                android:drawableRight="@drawable/start3"
                 android:onClick="buttonClick"
                 android:backgroundTint="#264653"
-                android:textColor="#e9c46a"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:text="Plataformas de desarrollo" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:clickable="true"
+                android:onClick="abrirDialogo"
+                android:src="@drawable/ayuda" />
         </LinearLayout>
     </ScrollView>
 

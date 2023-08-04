@@ -1,128 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_preguntas"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/preguntaTextView"
+    <RelativeLayout
+        android:id="@+id/activity_preguntas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:background="#FFFFFF"
+        android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/opcionesLayout"
-        android:layout_width="378dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/preguntaTextView"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical">
+        <TextView
+            android:id="@+id/preguntaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/opcionesLayout"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preguntaTextView"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/opcion1Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#84a59d"
+                app:cornerRadius="25dp"
+                android:onClick="opcionSeleccionada" />
+
+            <Button
+                android:id="@+id/opcion2Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:cornerRadius="25dp"
+                android:backgroundTint="#84a59d"
+                android:onClick="opcionSeleccionada" />
+
+            <Button
+                android:id="@+id/opcion3Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:cornerRadius="25dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#84a59d"
+                android:onClick="opcionSeleccionada" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/opcion1Button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:backgroundTint="#84a59d"
-            android:onClick="opcionSeleccionada" />
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/opcionesLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="204dp"
+            android:backgroundTint="#e63946"
+            android:onClick="salir"
+            app:cornerRadius="25dp"
+            android:text="Salir" />
 
         <Button
-            android:id="@+id/opcion2Button"
+            android:id="@+id/siguienteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/opcionesLayout"
+            android:backgroundTint="#e63946"
+            android:text="Siguiente" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/siguienteButton"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tiempoTextView"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="15dp"
-            android:backgroundTint="#84a59d"
-            android:onClick="opcionSeleccionada" />
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="70dp"
+            android:text="Tiempo: 20" />
 
-        <Button
-            android:id="@+id/opcion3Button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/black"
-            android:backgroundTint="#84a59d"
-            android:onClick="opcionSeleccionada" />
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="313dp"
+            android:layout_height="176dp"
+            android:layout_below="@+id/tiempoTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="16dp" />
 
-
-
-    <Button
-        android:id="@+id/btnSalir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@id/opcionesLayout"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="204dp"
-        android:backgroundTint="#e63946"
-        android:onClick="salir"
-        android:text="Salir" />
-
-    <Button
-        android:id="@+id/siguienteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="0dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-
-        android:layout_below="@id/opcionesLayout"
-
-        android:backgroundTint="#e63946"
-        android:text="Siguiente" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/siguienteButton"
-        android:indeterminate="false"
-        android:max="10"
-        android:progress="0"
-
-        />
-
-    <TextView
-        android:id="@+id/tiempoTextView"
-        android:layout_width="252dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/progressBar"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="70dp"
-        android:text="Tiempo: 20" />
-
-    <ImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="313dp"
-        android:layout_height="176dp"
-        android:layout_below="@+id/tiempoTextView"
-        android:layout_alignParentStart="true"
-
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="16dp" />
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

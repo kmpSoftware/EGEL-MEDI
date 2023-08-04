@@ -1,17 +1,34 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@drawable/fondo"
-android:padding="16dp">
+    android:padding="16dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="165dp"
-        android:layout_gravity="center"
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="165dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/noti5" />-->
 
-        android:src="@drawable/noti5" />
+<!--    <Button-->
+<!--        android:id="@+id/selectTimeButton2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#ffffff "-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:clickable="false"-->
+
+<!--        android:backgroundTint="#2271b3"-->
+
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20dp"-->
+<!--        android:scaleType="centerCrop"-->
+
+<!--        android:text="Activa las notificaciones para recibir un recordatorio diario para estudiar"-->
+<!--        />-->
 
 
     <Button
@@ -20,12 +37,14 @@ android:padding="16dp">
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
         android:drawableLeft="@drawable/notification"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#2271b3"
         android:textStyle="bold"
         android:textSize="20dp"
         android:scaleType="centerCrop"
+        app:cornerRadius="25dp"
         android:src="@mipmap/noti5_foreground"
         android:text="Activar notificaciones"
         />
@@ -43,13 +62,30 @@ android:padding="16dp">
         android:backgroundTint="#2271b3"
         android:textStyle="bold"
         android:textSize="20dp"
+        app:cornerRadius="25dp"
         android:layout_marginTop="30dp"
         android:drawableLeft="@drawable/silent"
         android:scaleType="centerCrop"
         android:src="@mipmap/noti4_foreground"
-        android:text="Desactivar"
+        android:text="Desactivar notificaciones"
         />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:src="@drawable/ayuda" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+android:layout_marginTop="30dp"
+        android:src="@drawable/test3" />
 
     <TimePicker
         android:id="@+id/timePicker"

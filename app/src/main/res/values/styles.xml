@@ -8,4 +8,9 @@
         <item name="colorControlHighlight">@color/red</item>
         <item name="android:navigationBarColor">@color/red</item>
     </style>
+
+    <style name="RoundedButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_background</item>
+    </style>
+
 </resources>

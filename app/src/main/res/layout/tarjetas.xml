@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_preguntas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/preguntaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amarillo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/opcionesLayout"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preguntaTextView"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opcionesLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="204dp"
+        android:backgroundTint="#e63946"
+        android:onClick="salir"
+        app:cornerRadius="25dp"
+        android:text="Salir" />
+
+
+    <ImageView
+        android:id="@+id/rojo"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/verRespuesta"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="182dp"
+        android:clickable="true"
+        android:src="@drawable/rojo" />
+
+
+    <ImageView
+        android:id="@+id/amarillo"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/verRespuesta"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_gravity="right"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="190dp"
+        android:clickable="true"
+        android:src="@drawable/amarillo" />
+
+    <ImageView
+        android:id="@+id/verde"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/verRespuesta"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="192dp"
+        android:clickable="true"
+        android:src="@drawable/verde"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/verRespuesta"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="91dp"
+        android:backgroundTint="#84a59d"
+        android:text="Mostrar Respuesta"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="25dp" />
+
+
+</RelativeLayout>
