@@ -70,14 +70,6 @@
         android:text="Desactivar notificaciones"
         />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="64dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="right"
-        android:clickable="true"
-        android:src="@drawable/ayuda" />
 
 
     <ImageView
@@ -86,6 +78,18 @@
         android:layout_height="220dp"
 android:layout_marginTop="30dp"
         android:src="@drawable/test3" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="140dp"
+
+        android:clickable="true"
+        android:src="@drawable/ayuda" />
 
     <TimePicker
         android:id="@+id/timePicker"
