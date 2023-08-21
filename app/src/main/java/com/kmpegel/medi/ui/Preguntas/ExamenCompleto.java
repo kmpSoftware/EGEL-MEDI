@@ -380,6 +380,7 @@ public class ExamenCompleto  extends AppCompatActivity {
                                 "ofrecer distintas opciones de tratamiento de tipo paliativo, en tanto respeta su decisión y  autodeterminación",
                                 "ofrecer distintas opciones de tratamiento de tipo paliativo, en tanto respeta su decisión y  autodeterminación"
                         }
+                        
                 };
                 break;
             case 2:
