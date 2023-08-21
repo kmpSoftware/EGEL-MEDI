@@ -232,8 +232,154 @@ public class ExamenCompleto  extends AppCompatActivity {
                 "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable",
                 "Administrar antibióticos de amplio espectro, manejo con betabloqueadores y ligadura.",
                 "Terapia farmacológica con terlipresina y antibióticos profilácticos, escleroterapia endoscópica.",
-                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable"}
+                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable"},
 
+
+
+                        {
+                                "Un paciente de 28 años es llevado al Servicio de Urgencias debido a que cerca de la clínica sufrió un colapso súbito. La primera valoración es que está inconsciente, con movimientos respiratorios de lucha, cianótico y con pulso carotídeo presente. ¿Cuál es la prioridad terapéutica en este caso? ",
+                                "Colocar en plano duro e iniciar compresiones torácicas",
+                                "Verificar que la vía aérea esté permeable",
+                                "Iniciar respiración con bolsa-válvula-mascarilla",
+                                "Verificar que la vía aérea esté permeable",
+                                "Verificar que la vía aérea esté permeable"
+                        },
+                        {
+                                "Al revisar una investigación se identifica la siguiente información: \"Para evaluar el efecto del tabaco en la aparición de la enfermedad se crearon dos grupos uno de pacientes del Hospital General de México con tiroiditis de Hashimoto, que fumaban y que acudieron a la consulta del Servicio de Endocrinología, y otro control de pacientes de la misma población, pero que no presentaban el factor de riesgo”. ¿Cuál es el sesgo en este estudio? ",
+                                "Selección",
+                                "Información",
+                                "Confusión",
+                                "Selección",
+                                "Selección"
+                        },
+                        {
+                                "Con base en las mediciones de glucosa capilar de las personas con diabetes en una población, un médico detecta que la mayoría de las tomas de uno de sus pacientes (X) se encuentran por encima del promedio general. La media general de la población es de 85.5 mg/dL de glucosa con una desviación estándar de 4.65 mg/dl mientras que la última toma del paciente x es de 110 mg/dL. ¿Cuál es el valor Z del paciente x con base en los datos de la población?",
+                                "2.118",
+                                "3.118 ",
+                                "4.118",
+                                "4.118",
+                                "4.118"
+                        },
+                        {
+                                "En un estudio se aplicó una prueba de anticuerpos IgM/IgG para detectar Covid-19. La confirmación del diagnóstico fue mediante PCR, con una n=45, la tasa total de detección de anticuerpos fue de 92%, en pacientes hospitalizados, y de 79% en los no hospitalizados. Los resultados mostraron que la detección total de las inmunoglobulinas IgM e IgG fue de 63% en pacientes con < 2 semanas desde el inicio de la enfermedad, de 85% en los no hospitalizados con > 2 semanas de duración de la enfermedad, y de 91% en hospitalizados con > 2 semanas de duración de la enfermedad. Como resultado final, se determinó que la especificidad de la prueba de anticuerpos fue de 97% en 69 muestras de suero/plasma. Identifique la opción que interpreta los resultados del estudio",
+                                "Proporciona una validación de la prueba de covid-19 IgM/IgG y, a su vez, determina que existe mayor especificidad en el diagnóstico por RT-PCR",
+                                "Muestra que la prueba de covid-19 IgM/IgG puede aplicarse para evaluar el estado de la enfermedad tanto a nivel individual como poblacional",
+                                "Demuestra que la detección de anticuerpos de covid-19 IgM/IgG tiene mayor especificidad y sensibilidad en los pacientes con una evolución menor a 2 semanas",
+                                "Muestra que la prueba de covid-19 IgM/IgG puede aplicarse para evaluar el estado de la enfermedad tanto a nivel individual como poblaciona",
+                                "Muestra que la prueba de covid-19 IgM/IgG puede aplicarse para evaluar el estado de la enfermedad tanto a nivel individual como poblaciona"
+                        },
+                        {
+                                "Se realizó un estudio en el que se registró el peso al nacimiento de una muestra de 300 bebés que a su vez, fueron divididos en dos grupos, los nacidos de madres que tomaron un complemento vitamínico especial y aquellos cuya madre solo tomo el recomendado por su médico tratante. Se desea determinar si hay diferencia entre el peso al nacimiento y el uso del multivitamínico especial. Tome en cuenta que, al analizar los datos de peso en los grupos, este tiene una distribución normal y se asumen varianzas iguales. ¿Qué prueba estadística se debe implementar?",
+                                "Prueba paramétrica t de student",
+                                "Prueba estadística U de Mann-Whitney",
+                                "El test de Kruskal-Wallis",
+                                "Prueba paramétrica t de student",
+                                "Prueba paramétrica t de student"
+                        },
+                        {
+                                "Un grupo de estudiantes de medicina lleva a cabo una investigación con la que pretende evaluar la prevalencia de tabaquismo en una universidad pública. Hasta este momento, han realizado el protocolo, que presentaron ante el comité de ética en investigación, aplicaron los instrumentos para la recolección de datos y comenzaron el análisis estadístico. Dado el avance de trabajo. ¿Cuál es el tipo de reporte de investigación por presentar?",
+                                "Cartel",
+                                "Ponencia",
+                                "Artículo",
+                                "Artículo",
+                                "Artículo"
+                        },
+                        {
+                                "Se planea realizar un ensayo clínico multicéntrico para comprobar la eficacia de una nueva vacuna en la población adulta. Se reclutarán 20 000 adultos de entre 18 y 59 años, sin que las mujeres que participen estén embarazadas. Se asignarán a uno de tres grupos; en dos se administrarán esquemas diferentes con la sustancia activa y en el tercero se suministrará placebo como control. Se empleará el método doble ciego para minimizar la posibilidad de que algún sesgo interfiera en los resultados. ¿Qué estrategia de muestreo se debe emplear en el estudio?",
+                                "Sistemático",
+                                "Estratificado",
+                                "Aleatorio simple",
+                                "Aleatorio simple",
+                                "Aleatorio simple"
+                        },
+                        {
+                                "En el Servicio de Neurología de un hospital de segundo nivel de atención, se ha observado un aumento de la consulta de pacientes con migraña Crónica. El reporte del último semestre demuestra que cada mes se diagnostican por lo menos 50 nuevos casos. La edad oscila entre 35 y 50 años. El medicamento que se utiliza como profilaxis para evitar los episodios migrañosos es un anticonvulsivante llamado topiramato. la enfermedad tanto a nivel individual como poblacional Para sustentar la decisión del uso del fármaco en la investigación basada en evidencia, ¿qué estrategia debe seguirse?",
+                                "O Revisión sistemática en Cochrane de diez estudios controlados aleatorizados, con 100 pacientes ",
+                                " Análisis de 20 artículos de revistas indexadas y diez libros de texto especializados en neurología ",
+                                "Revisión basada en la experiencia y la evidencia de los resultados de los 300 pacientes atendidos por los profesionales ",
+                                "Revisión basada en la experiencia y la evidencia de los resultados de los 300 pacientes atendidos por los profesionales ",
+                                "Revisión basada en la experiencia y la evidencia de los resultados de los 300 pacientes atendidos por los profesionales "
+                        },
+                        {
+                                "El 31 de diciembre de 2019 se identificó un nuevo coronavirus (SARS-CoV. 2), que causa la enfermedad clínica covid-19. Si se desea conocer las características de todas las pruebas de diagnóstico disponibles para el SARS-CoV-2, incluidos los parámetros de sensibilidad y especificidad, así como cocientes de probabilidad positivos y negativos, ¿qué estudio se debe consultar?",
+                                "Descriptivo",
+                                "De casos y controles",
+                                "Metaanálisis",
+                                "De casos y controles",
+                                "De casos y controles"
+                        },
+                        {
+                                "Una paciente de 20 años asiste a consulta médica debido a que hace 1 año su madre fue diagnosticada con cáncer de mama en etapa clínica IV y falleció hace 3 meses a causa de éste. Su abuela materna, también falleció de cáncer de mama, por lo que está preocupada y quiere saber qué riesgo tiene ella de padecer la enfermedad. Se requiere realizar una búsqueda de información al respecto. ¿Qué medio se debe utilizar para la búsqueda de información y orientar a la paciente? ",
+                                "PubMed",
+                                "Cochrane",
+                                "UptoDate",
+                                "Cochrane",
+                                "Cochrane"
+                        },
+                        {
+                                " Una mujer de 25 años con disuria, polaquiuria y urgencia miccional es diagnosticada por el médico con infección de vías urinarias. Con base en la revisión de resultados de intervención se le receta un tratamiento con trimetoprim por únicamente 3 días y se le explica que las revisiones sistemáticas de ensayos clínicos con información al respecto indican que el tratamiento de 3 días es tan efectivo como el de 7 días y tienen muy poco riesgo de sesgo. ¿Qué nivel de evidencia tiene la decisión terapéutica del médico?",
+                                "II",
+                                "Ib",
+                                "Ia",
+                                "Ib",
+                                "Ib"
+                        },
+                        {
+                                "Un hombre de 56 años acude a consulta por acúfenos y cefalea de 1 mes de evolución. Tiene antecedente do ser fumador y manejar mucho estrés laboral. Su padre es finado por IAM. La toma de TA es de 160/90 mmHg y los laboratorios reportan glucosa capilar de 125 mg/dL, albúmina de 150 mg/dL en orina y tasa de filtración glomerular (calculado) de 50 ml/min Con base en las manifestaciones clínicas y hallazgos de laboratorio, ¿cuál es el diagnóstico según la Guía de Practica Clínica sobre el diagnóstico y tratamiento de la hipertensión arterial en el primer nivel de atención?",
+                                "Hipertensión arterial sistémica y diabetes mellitus tipo 2 de reciente diagnóstico con macroalbuminuria",
+                                "Urgencia hipertensiva con intolerancia a la glucosa y síndrome nefrítico por la elevación de la tasa de filtración glomerular (calculado). ",
+                                "Emergencia hipertensiva con daño renal por la microalbuminuria y disminución de la tasa de filtración glomerular",
+                                "Urgencia hipertensiva con intolerancia a la glucosa y síndrome nefrítico por la elevación de la tasa de filtración glomerular (calculado). ",
+                                "Urgencia hipertensiva con intolerancia a la glucosa y síndrome nefrítico por la elevación de la tasa de filtración glomerular (calculado). "
+                        },
+                        {
+                                "Una mujer de 45 años acude a consulta debido a un cuadro de 1 mes de evolución caracterizado por polidipsia, poliuria y pérdida de peso. Manifiesta antecedentes de diabetes mellitus en padre y madre y tíos maternos. En la exploración física se encuentran acantosis nigricans en el cuello y un IMC de 29 kg/m2. La sospecha diagnóstica es diabetes mellitus. Se le toma glucosa al azar y se obtiene un resultado de 200 mg/dL. De acuerdo con la evidencia médica que existe, ¿cuál es el criterio para confirmar el diagnóstico de la paciente? ",
+                                "Glucosa en ayuno superior a 100 mg/dL",
+                                "Hemoglobina glucosilada mayor a 6.5%",
+                                " Curva de tolerancia a la glucosa de 2 horas mayor o igual a 140 mg/dl",
+                                "Hemoglobina glucosilada mayor a 6.5%",
+                                "Hemoglobina glucosilada mayor a 6.5%"
+                        },
+                        {
+                                "Un hombre de 71 años llega al Servicio de Urgencias con dolor precordial de 3 horas de evolución que se ha ido intensificando hasta llegar a 10/10 en la escala visual analógica y que irradia hacia el brazo izquierdo. El paciente se encuentra diaforético y taquicárdico, en los estudios de laboratorio se detecta elevación de troponinas y en el electrocardiograma, elevación del segmento ST. Para integrar la mejor evidencia que sustente el manejo farmacológico del paciente, ¿qué acción se debe realizar según la metodología de la medicina basada en evidencia?",
+                                "Aplicar la evidencia a la experiencia clínica y a las características del paciente",
+                                "Identificar y jerarquizar la evidencia disponible",
+                                " Evaluar la evidencia por calidad, relevancia y aplicabilidad",
+                                "Identificar y jerarquizar la evidencia disponible",
+                                "Identificar y jerarquizar la evidencia disponible"
+                        },
+                        {
+                                "Una mujer de 38 años acude a consulta anual al centro de salud de su localidad. Como antecedentes menciona que su madre y su hermana tienen diabetes mellitus tipo 2. Su IMC es de 31 kg/m2 y tiene una glucemia en ayunas de 115 mg/dL. ¿Qué acción de formación le permite al médico integrar la evidencia de mayor impacto para el manejo del caso?",
+                                "Revisar el material presentado en un congreso nacional ",
+                                "Analizar información de la industria farmacéutica",
+                                "Hacer una lectura crítica de metaanálisis sobre el tema clínico",
+                                "Hacer una lectura crítica de metaanálisis sobre el tema clínico",
+                                "Hacer una lectura crítica de metaanálisis sobre el tema clínico"
+                        },
+                        {
+                                "Un paciente de 79 años es ingresado al servicio de Urgencias por presentar dolor y debilidad en las piernas que en los últimos días le imposibilita caminar e incluso moverlas. Su familiar informa que en la última semana presentó de forma súbita incontinencia urinaria e intestinal y pérdida de peso. En los resultados de laboratorio destaca hipercalcemia y en la radiografía de tórax se observan masas con aspecto irregular que indican malignidad y que orientan a la sospecha de cáncer o metástasis ósea. Se requiere solicitar biopsia para confirmar y estudios adicionales para la estatificación. A informar al paciente, se percibe agobiado y éste rechaza los procedimientos exploratorios adicionales. De acuerdo con el principio de no maleficencia del acto médico, ¿qué decisión se debe tomar?",
+                                "Consultar con el familiar y enfatizar los riesgos de no realizar las pruebas ",
+                                "Acatar la negativa del paciente de primera intención y comunicar al familiar",
+                                "Reiterar la necesidad de realizar más pruebas y aceptar la decisión del paciente",
+                                "Acatar la negativa del paciente de primera intención y comunicar al familiar",
+                                "Acatar la negativa del paciente de primera intención y comunicar al familiar"
+                        },
+                        {
+                                "Un paciente de 55 años, con tabaquismo positivo (de cinco a siete cigarrillos al día desde hace 30 años), obesidad, sedentarismo, consumo de alcohol positivo de dos a tres copas diariamente además de llegar a la intoxicación etílica una o dos veces a la semana) e ingesta de carne 5 días por semana, presenta hipertensión arterial, hiperuricemia y gota. El hombre se niega a modificar su estilo de vida y prefiere un manejo médico exclusivamente. ¿Cuál es la conducta ética en este caso?",
+                                " Llevar a cabo exclusivamente el manejo médico y respetar ante todo la autonomía del paciente.",
+                                "Negar los medicamentos al paciente con la premisa de que el tratamiento abarca tanto lo médico como los cambios de estilo de vida",
+                                "Establecer una estrategia médica integral que incluya grupos de apoyo y manejo nutricional.",
+                                "Establecer una estrategia médica integral que incluya grupos de apoyo y manejo nutricional.",
+                                "Establecer una estrategia médica integral que incluya grupos de apoyo y manejo nutricional."
+                        },
+                        {
+                                "Una mujer de 65 años con antecedente de cáncer de mama hace 3 años que requirió manejo con quimioterapia y radioterapia, actualmente presenta cáncer de mama recurrente. Se informa a la paciente su diagnóstico, pronóstico y tratamiento. Se le propone reiniciar el manejo con quimioterapia, pero ella lo rechaza e indica que ya no quiere recibir tratamiento alguno y solicita el alta hospitalaria. ¿Cuál es la decisión médica que privilegia el derecho de la paciente? O Dar de alta a la paciente para que tome las decisiones que más le convengan sin involucrar al personal de salud",
+                                "ofrecer distintas opciones de tratamiento de tipo paliativo, en tanto respeta su decisión y  autodeterminación",
+                                "Administrar la quimioterapia como una medida de atención en correspondencia con el principio de respeto a la vida",
+                                "Dar de alta a la paciente para que tome las decisiones que más le convengan sin  involucrar al personal de salud ",
+                                "ofrecer distintas opciones de tratamiento de tipo paliativo, en tanto respeta su decisión y  autodeterminación",
+                                "ofrecer distintas opciones de tratamiento de tipo paliativo, en tanto respeta su decisión y  autodeterminación"
+                        }
                 };
                 break;
             case 2:
@@ -250,12 +396,7 @@ public class ExamenCompleto  extends AppCompatActivity {
                         {"Pregunta 1 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
                         {"Pregunta 2 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
                         {"Pregunta 3 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 4 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 5 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 6 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
-                        {"Pregunta 7 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
-                        {"Pregunta 8 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 3", "retroalimentacion"},
-                        {"Pregunta 9 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 1", "retroalimentacion"},
+
                         {"Pregunta 10 del botón 3", "Opción 1", "Opción 2", "Opción 3", "Opción 2", "retroalimentacion"},
                 };
                 break;
