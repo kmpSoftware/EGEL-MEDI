@@ -18,6 +18,7 @@ import com.kmpegel.medi.ui.Subtemas.subtemas3;
 import com.kmpegel.medi.ui.Subtemas.subtemas4;
 import com.kmpegel.medi.ui.Subtemas.subtemas5;
 import com.kmpegel.medi.ui.Subtemas.subtemas6;
+import com.kmpegel.medi.ui.dashboard.DashboardFragment;
 
 public class FinalActivity extends AppCompatActivity {
     Button button1;
@@ -100,7 +101,7 @@ public class FinalActivity extends AppCompatActivity {
     // Obtiene el Intent de la siguiente actividad según el nombre de la actividad anterior
     private Intent getNextActivityIntent(String activityName) {
         if (activityName.equals("preguntasActivity")) {
-            return new Intent(FinalActivity.this, subtemas.class);
+            return new Intent(FinalActivity.this, DashboardFragment.class);
         } else if (activityName.equals("preguntasActivity2")) {
             return new Intent(FinalActivity.this, subtemas2.class);
         } else if (activityName.equals("preguntasActivity3")) {

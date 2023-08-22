@@ -15,6 +15,9 @@ import androidx.lifecycle.ViewModelProvider;
 import com.kmpegel.egelmedi.R;
 import com.kmpegel.egelmedi.databinding.FragmentDashboardBinding;
 import com.kmpegel.medi.ui.Preguntas.ExamenCompleto;
+import com.kmpegel.medi.ui.Preguntas.PreguntasActivity;
+import com.kmpegel.medi.ui.Preguntas.PreguntasActivity2;
+import com.kmpegel.medi.ui.Preguntas.PreguntasActivity3;
 import com.kmpegel.medi.ui.Subtemas.subtemas;
 import com.kmpegel.medi.ui.Subtemas.subtemas2;
 import com.kmpegel.medi.ui.Subtemas.subtemas3;
@@ -55,32 +58,47 @@ public class DashboardFragment extends Fragment {
 
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                // Crea un intent para abrir la nueva actividad
+                Intent intent = new Intent(getActivity(), PreguntasActivity.class);
 
-                //abrir nueva actividad con varios botones para seleccionar el tipo de reporte
-                Intent intent = new Intent(getActivity(), subtemas.class);
+                // Agrega un identificador al Intent para indicar que se presionó el botón 1
+                intent.putExtra("BOTON_PRESIONADO", 1);
+
+                // Inicia la nueva actividad
+               // finish();
                 startActivity(intent);
             }
         });
 
     Button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        @Override
+        public void onClick(View v) {
+            // Crea un intent para abrir la nueva actividad
+            Intent intent = new Intent(getActivity(), PreguntasActivity2.class);
 
-                //abrir nueva actividad con varios botones para seleccionar el tipo de reporte
-                Intent intent = new Intent(getActivity(), subtemas2.class);
-                startActivity(intent);
-            }
+            // Agrega un identificador al Intent para indicar que se presionó el botón 1
+            intent.putExtra("BOTON_PRESIONADO", 2);
+
+            // Inicia la nueva actividad
+            // finish();
+            startActivity(intent);
+        }
         });
 
     Button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        @Override
+        public void onClick(View v) {
+            // Crea un intent para abrir la nueva actividad
+            Intent intent = new Intent(getActivity(), PreguntasActivity3.class);
 
-                //abrir nueva actividad con varios botones para seleccionar el tipo de reporte
-                Intent intent = new Intent(getActivity(), subtemas3.class);
-                startActivity(intent);
-            }
+            // Agrega un identificador al Intent para indicar que se presionó el botón 1
+            intent.putExtra("BOTON_PRESIONADO", 3);
+
+            // Inicia la nueva actividad
+            // finish();
+            startActivity(intent);
+        }
         });
 
     Button4.setOnClickListener(new View.OnClickListener() {
