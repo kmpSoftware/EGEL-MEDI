@@ -523,7 +523,6 @@ public class PreguntasActivity extends AppCompatActivity {
 
         finish(); // Destruye la actividad actual (ActivityB) y regresa a la anterior (ActivityA)
     }
-
     public void salir (View view){
         countDownTimer.cancel();
         finish();
