@@ -203,62 +203,62 @@ public class ExamenCompleto  extends AppCompatActivity {
 
                         {"Un paciente de 8 meses sin antecedentes de importancia para su padecimiento actual presenta hace 3 días rinorrea hialina y rechazo parcial a la vía oral con remisión espontánea. Hoy por la madrugada inicia de forma súbita tos referida como perruna, fiebre y disfonía. En la exploración física, se encuentra orofaringe con hiperemia, estridor laringeo y dificultad respiratoria a expensas de aleteo nasal. El resto de la exploración, sin datos patológicos aparentes.¿Cuál es el diagnóstico presuntivo?",
                                 "Laringotraqueitis",
-                        "Epiglotitis",
-                        "Cuerpo extraño en la vía aérea",
-                        "Laringotraqueitis",
-                        "El diagnóstico presuntivo en este caso es laringotraqueitis. Los síntomas de tos perruna, fiebre y estridor laringeo son característicos de esta enfermedad viral que afecta las vías respiratorias superiores, comúnmente conocida como la tos ferina. Es importante realizar una evaluación médica para confirmar el diagnóstico y brindar el tratamiento adecuado para aliviar los síntomas y evitar complicaciones."
-                },
+                                "Epiglotitis",
+                                "Cuerpo extraño en la vía aérea",
+                                "Laringotraqueitis",
+                                "El diagnóstico presuntivo en este caso es laringotraqueitis. Los síntomas de tos perruna, fiebre y estridor laringeo son característicos de esta enfermedad viral que afecta las vías respiratorias superiores, comúnmente conocida como la tos ferina. Es importante realizar una evaluación médica para confirmar el diagnóstico y brindar el tratamiento adecuado para aliviar los síntomas y evitar complicaciones."
+                        },
 
-            {"En una localidad de 10,000 habitantes se realizó un estudio para conocer la  prevalencia de insuficiencia renal y sus factores asociados en personas o más. Se recolectó información sobre variables sociodemográficas, sexo, edad, estado civil y nivel socioeconómico. Si en la descripción estadística se representa la distribución por edad, se midió en 'años cumplidos', se puede utilizar el grafico…",
-                "Diagrama de dispersión",
-                    "Barras simples",
-                        "Polígono de frecuencia",
-                        "Polígono de frecuencia",
-                        "Polígono de frecuencia"},
-
-
-            {"Una mujer de 35 años con diagnóstico de depresión y ansiedad en tratamiento con sertralina y clonazepam tiene dolor en el cuello después de haber cargado una bolsa pesada. Después de la exploración física, el médico concluye que se trata de un dolor muscular e inicia tratamiento con meloxicam y cansoprodol.¿Cuál es el riesgo más frecuente de combinar los fármacos de base con el medicamento recetado?",
-                "Depresión del sistema nervioso central",
-                        "Sangrado de tubo digestivo alto",
-                        "Insomnio de mantenimiento",
-                    "Insomnio de mantenimiento",
-                        "Insomnio de mantenimiento"},
-
-            {"Un paciente de 7 años acude con la madre por 3 días con fiebre de 38 °C, que no cede con paracetamol, presenta disfagia, rinorrea, mialgias, artralgias y anorexia. En la exploración física se observa peso 22 kg, talla 90 cm, temperatura 38.5°C cuello con adenomegalias de 0.5 mm, en la cadena cervical, oídos normales, orofaringe hiperémica edematosa, exudado purulento, grisáceo y amígdalas Hipertróficas III.¿Cuál es el tratamiento farmacológico en este paciente, según el Centor score?",
-                    "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única.",
-                "Trimetoprim sulfametoxazol, 10 mg/kg/día por 10 días o amoxicilina, 50 mg/kg/día por 7 días",
-                        "Cefotaxima, 50 mg/kg/día por 5 días o azitromicina, 40 mg/kg/día por 5 días",
-                        "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única.",
-                        "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única."},
-
-            {"Un paciente de 40 años acude a consulta porque ha sentido, desde hace 1 mes, una masa en la espalda que ha incrementado de tamaño y que actualmente lo produce dolor al acostarse en la exploración física se palpa tumoración subcutánea esférica blanda en región infraescapular izquierda, móvil y de aproximadamente 8 cm. No se observan cambios de coloración ni temperatura en la piel Se realiza ultrasonido, en el que se reporta imagen hipogénica subcutánea, elíptica bien delimitada, compresible y con estrías lineales reflectantes cortas paralelas a la piel.¿Cuál es el plan inicial de manejo quirúrgico para el paciente?",
-                "Resección completa",
-                        "Biopsia por incisión",
-                        "Resección con márgenes quirúrgicos",
-                        "Resección completa",
-                        "Resección completa"},
-
-            {"Una paciente de 31 años acude al servicio de Urgencias por presentar odinofagia, cefalea y ataque al estado general, además de fiebre no cuantificada de 2 días de evolución entre sus antecedentes comenta que su abuela es diabética, menciona tener alergia a AINE y aumento de peso desde hace 2 años atribuido al sedentarismo. En la exploración física se registra TA de 130/85 mmHg: FC de 80/min, FR de 18/min, T de 37 5 °C IMC 30.3 kg/m2 y circunferencia abdominal de 90 cm. Se observa hiperemia conjuntival, labios y mucosa oral secos, faringe y amígdalas hiperémicas, criptas amigdalinas con secreción purulenta y se palpan ganglios submaxilares bilaterales. En los resultados de laboratorio se reportan leucocitos de 10.500/mm, neutrófilos de 62%, hemoglobina de 12.7 mg/dL, hematocrito de 37.2%, glucosa de 100 mg/dL, HbA1c de 6%, colesterol total de 181 mg/dL, HDL de 48 mg/dL, LDL de 120 mg/dL y triglicéridos de 187 mg/dL. Se inicia manejo para cuadro de faringoamigdalitis y se indican medidas higiénico-dietéticas de actividad física y metformina.",
-                "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso",
-                "Monitorear cada 5 años la progresión metabólica de la glucosa para revalorar riesgos",
-                        "Establecer un objetivo de peso y considerar terapia dual para control de glucosa",
-                    "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso",
-                        "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso"},
+                        {"En una localidad de 10,000 habitantes se realizó un estudio para conocer la  prevalencia de insuficiencia renal y sus factores asociados en personas o más. Se recolectó información sobre variables sociodemográficas, sexo, edad, estado civil y nivel socioeconómico. Si en la descripción estadística se representa la distribución por edad, se midió en 'años cumplidos', se puede utilizar el grafico…",
+                                "Diagrama de dispersión",
+                                "Barras simples",
+                                "Polígono de frecuencia",
+                                "Polígono de frecuencia",
+                                "Polígono de frecuencia"},
 
 
-            {"Niño de 4 años, previamente sano y con esquema de inmunizaciones completo, inicia padecimiento hace 4 días con hipertermia cuantificada en 38.5 °C, odinofagia y tos escasa no productiva. En la EF se encuentra hiperemia faríngea, exudado blanquecino amigdalino y sin datos de dificultad respiratoria, el resto, sin aparente alteración. Inicia tratamiento empírico a base de amoxicilina. A las 48 horas, el cultivo faríngeo muestra estreptococo beta hemolítico",
-                "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días",
-                        "Cambiar a eritromicina vía oral de 30 a 50 mg/kg/día, durante 10 días",
-                        "Cambiar a amikacina intramuscular de 7.5 mg/kg cada 12 horas por 3 días",
-                        "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días",
-                        "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días"},
+                        {"Una mujer de 35 años con diagnóstico de depresión y ansiedad en tratamiento con sertralina y clonazepam tiene dolor en el cuello después de haber cargado una bolsa pesada. Después de la exploración física, el médico concluye que se trata de un dolor muscular e inicia tratamiento con meloxicam y cansoprodol.¿Cuál es el riesgo más frecuente de combinar los fármacos de base con el medicamento recetado?",
+                                "Depresión del sistema nervioso central",
+                                "Sangrado de tubo digestivo alto",
+                                "Insomnio de mantenimiento",
+                                "Insomnio de mantenimiento",
+                                "Insomnio de mantenimiento"},
 
-            {"Una paciente de 58 años acude al servicio de Urgencias porque presenta hematemesis franca abundante en dos ocasiones con presencia de coágulos, se acompaña de dolor abdominal de intensidad 8/10, diaforesis, astenia y adinamia. Menciona haber presentado datos de evacuaciones melénicas hace 5 días. Entre sus antecedentes refiere tabaquismo positivo, enfermedad ácido péptica con Helicobacter pylori diagnosticada hace 3 años, pero sin manejo médico, En la exploración física se registra TA de 100/50, FC de 120/min, FR de 18/min, T de 36 ºC y SaO2 de 94%. Se observa con mucosas pálidas ++, diaforética, con abdomen blando, dolor generalizado a la palpación, más acentuado en epigastrio e hipocondrio derecho, peristalsis disminuida, sin datos de irritación peritoneal y tacto rectal positivo a sangrado. Además de iniciar reanimación hídrica, ¿Cuál es el plan inicial para el manejo médico de la paciente?",
-                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable",
-                "Administrar antibióticos de amplio espectro, manejo con betabloqueadores y ligadura.",
-                "Terapia farmacológica con terlipresina y antibióticos profilácticos, escleroterapia endoscópica.",
-                    "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable",
-                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable"},
+                        {"Un paciente de 7 años acude con la madre por 3 días con fiebre de 38 °C, que no cede con paracetamol, presenta disfagia, rinorrea, mialgias, artralgias y anorexia. En la exploración física se observa peso 22 kg, talla 90 cm, temperatura 38.5°C cuello con adenomegalias de 0.5 mm, en la cadena cervical, oídos normales, orofaringe hiperémica edematosa, exudado purulento, grisáceo y amígdalas Hipertróficas III.¿Cuál es el tratamiento farmacológico en este paciente, según el Centor score?",
+                                "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única.",
+                                "Trimetoprim sulfametoxazol, 10 mg/kg/día por 10 días o amoxicilina, 50 mg/kg/día por 7 días",
+                                "Cefotaxima, 50 mg/kg/día por 5 días o azitromicina, 40 mg/kg/día por 5 días",
+                                "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única.",
+                                "Penicilina V, 250 mg vía oral por 7 días o penicilina benzatínica, 600 000 de unidad IM dosis única."},
+
+                        {"Un paciente de 40 años acude a consulta porque ha sentido, desde hace 1 mes, una masa en la espalda que ha incrementado de tamaño y que actualmente lo produce dolor al acostarse en la exploración física se palpa tumoración subcutánea esférica blanda en región infraescapular izquierda, móvil y de aproximadamente 8 cm. No se observan cambios de coloración ni temperatura en la piel Se realiza ultrasonido, en el que se reporta imagen hipogénica subcutánea, elíptica bien delimitada, compresible y con estrías lineales reflectantes cortas paralelas a la piel.¿Cuál es el plan inicial de manejo quirúrgico para el paciente?",
+                                "Resección completa",
+                                "Biopsia por incisión",
+                                "Resección con márgenes quirúrgicos",
+                                "Resección completa",
+                                "Resección completa"},
+
+                        {"Una paciente de 31 años acude al servicio de Urgencias por presentar odinofagia, cefalea y ataque al estado general, además de fiebre no cuantificada de 2 días de evolución entre sus antecedentes comenta que su abuela es diabética, menciona tener alergia a AINE y aumento de peso desde hace 2 años atribuido al sedentarismo. En la exploración física se registra TA de 130/85 mmHg: FC de 80/min, FR de 18/min, T de 37 5 °C IMC 30.3 kg/m2 y circunferencia abdominal de 90 cm. Se observa hiperemia conjuntival, labios y mucosa oral secos, faringe y amígdalas hiperémicas, criptas amigdalinas con secreción purulenta y se palpan ganglios submaxilares bilaterales. En los resultados de laboratorio se reportan leucocitos de 10.500/mm, neutrófilos de 62%, hemoglobina de 12.7 mg/dL, hematocrito de 37.2%, glucosa de 100 mg/dL, HbA1c de 6%, colesterol total de 181 mg/dL, HDL de 48 mg/dL, LDL de 120 mg/dL y triglicéridos de 187 mg/dL. Se inicia manejo para cuadro de faringoamigdalitis y se indican medidas higiénico-dietéticas de actividad física y metformina.",
+                                "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso",
+                                "Monitorear cada 5 años la progresión metabólica de la glucosa para revalorar riesgos",
+                                "Establecer un objetivo de peso y considerar terapia dual para control de glucosa",
+                                "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso",
+                                "Escalar progresivamente el programa de ejercicio aeróbico para mantener la pérdida de peso"},
+
+
+                        {"Niño de 4 años, previamente sano y con esquema de inmunizaciones completo, inicia padecimiento hace 4 días con hipertermia cuantificada en 38.5 °C, odinofagia y tos escasa no productiva. En la EF se encuentra hiperemia faríngea, exudado blanquecino amigdalino y sin datos de dificultad respiratoria, el resto, sin aparente alteración. Inicia tratamiento empírico a base de amoxicilina. A las 48 horas, el cultivo faríngeo muestra estreptococo beta hemolítico",
+                                "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días",
+                                "Cambiar a eritromicina vía oral de 30 a 50 mg/kg/día, durante 10 días",
+                                "Cambiar a amikacina intramuscular de 7.5 mg/kg cada 12 horas por 3 días",
+                                "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días",
+                                "Cambiar a penicilina G 50.000 unidades/kg por dosis IV cada 12 horas por 10 días"},
+
+                        {"Una paciente de 58 años acude al servicio de Urgencias porque presenta hematemesis franca abundante en dos ocasiones con presencia de coágulos, se acompaña de dolor abdominal de intensidad 8/10, diaforesis, astenia y adinamia. Menciona haber presentado datos de evacuaciones melénicas hace 5 días. Entre sus antecedentes refiere tabaquismo positivo, enfermedad ácido péptica con Helicobacter pylori diagnosticada hace 3 años, pero sin manejo médico, En la exploración física se registra TA de 100/50, FC de 120/min, FR de 18/min, T de 36 ºC y SaO2 de 94%. Se observa con mucosas pálidas ++, diaforética, con abdomen blando, dolor generalizado a la palpación, más acentuado en epigastrio e hipocondrio derecho, peristalsis disminuida, sin datos de irritación peritoneal y tacto rectal positivo a sangrado. Además de iniciar reanimación hídrica, ¿Cuál es el plan inicial para el manejo médico de la paciente?",
+                                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable",
+                                "Administrar antibióticos de amplio espectro, manejo con betabloqueadores y ligadura.",
+                                "Terapia farmacológica con terlipresina y antibióticos profilácticos, escleroterapia endoscópica.",
+                                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable",
+                                "Valorar hemotransfusión, administrar inhibidores de bomba de protones y mantener vía aérea permeable"},
 
 
 
@@ -320,7 +320,7 @@ public class ExamenCompleto  extends AppCompatActivity {
                         },
                         {
                                 "En el Servicio de Neurología de un hospital de segundo nivel de atención, se ha observado un aumento de la consulta de pacientes con migraña Crónica. El reporte del último semestre demuestra que cada mes se diagnostican por lo menos 50 nuevos casos. La edad oscila entre 35 y 50 años. El medicamento que se utiliza como profilaxis para evitar los episodios migrañosos es un anticonvulsivante llamado topiramato. la enfermedad tanto a nivel individual como poblacional Para sustentar la decisión del uso del fármaco en la investigación basada en evidencia, ¿qué estrategia debe seguirse?",
-                                "O Revisión sistemática en Cochrane de diez estudios controlados aleatorizados, con 100 pacientes ",
+                                "Revisión sistemática en Cochrane de diez estudios controlados aleatorizados, con 100 pacientes ",
                                 " Análisis de 20 artículos de revistas indexadas y diez libros de texto especializados en neurología ",
                                 "Revisión basada en la experiencia y la evidencia de los resultados de los 300 pacientes atendidos por los profesionales ",
                                 "Revisión basada en la experiencia y la evidencia de los resultados de los 300 pacientes atendidos por los profesionales ",
@@ -408,19 +408,19 @@ public class ExamenCompleto  extends AppCompatActivity {
                         },
                         {
                                 "Una paciente de 40 años, con IMC de 35 kg/m2, acude a consulta para solicitar un análisis general a fin de atender su problema de obesidad. Comenta que hace 4 semanas acudió a su centro de salud y fue remitida al Servicio de Nutrición, donde le aplicaron un protocolo consistente en cambios a su estilo de vida. En la misma consulta le realizaron un perfil lipídico, una medición de glucosa y un perfil tiroideo, y los resultados fueron normales. Como ya pasó 1 mes y no perdió peso, la paciente pide que se le vuelvan a hacer todos los análisis para solucionar su problema. Atendiendo al principio de justicia, ¿cómo se debe proceder?",
-                                "O Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve",
-                                "O Respetando la decisión de la paciente, se le debe repetir el análisis",
-                                "O con el objetivo de analizar detalladamente su padecimiento, se deben agregar los mismos estudios",
-                                "O Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve",
-                                "O Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve"
+                                "Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve",
+                                "Respetando la decisión de la paciente, se le debe repetir el análisis",
+                                "con el objetivo de analizar detalladamente su padecimiento, se deben agregar los mismos estudios",
+                                "Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve",
+                                "Al tener un análisis similar realizado recientemente, no se debe repetir después de un lapso tan breve"
                         },
                         {
                                 "Una paciente de 17 años acude a consulta por ausencia de menstruación desde hace 35 días. Manifiesta ciclos regulares de 28 x 5. La paciente es sexualmente activa, no utiliza ningún método de planificación familiar, cuenta con una prueba positiva de embarazo y desea interrumpirlo. Esto ocurre en la Ciudad de México, donde el aborto es legal, libre y a petición antes de las 12 SDG. El médico tratante no está de acuerdo con la decisión de la paciente, por lo que decide no intervenir en el procedimiento y la canaliza al grupo de especialistas correspondiente. ¿Cuál es la justificación que sustenta la decisión del médico?",
-                                "O Aludir a la omisión médica",
-                                "O Salvaguardar su prestigio profesional",
-                                "O Apelar a la objeción de conciencia",
-                                "O Aludir a la omisión médica",
-                                "O Aludir a la omisión médica"
+                                "Aludir a la omisión médica",
+                                "Salvaguardar su prestigio profesional",
+                                "Apelar a la objeción de conciencia",
+                                "Aludir a la omisión médica",
+                                "Aludir a la omisión médica"
                         },
                         {
                                 "En el Servicio de Ginecología y Obstetricia de un hospital hay un incremento en la atención de pacientes, por lo que se toma la decisión de que los médicos internos de pregrado valoren y atiendan todos los partos normales, mientras que los médicos residentes valorarán y atenderán a todas las pacientes con partos anormales y cesáreas. En la última guardia, una mujer fue valorada con una evolución normal, sin embargo, al momento de la atención del parto, se encontró un bebé macrosómico, lo que derivó en una distocia y atención de parto complicado. ¿Cuál es el aspecto que dio origen a la mala praxis?",
@@ -432,19 +432,19 @@ public class ExamenCompleto  extends AppCompatActivity {
                         },
                         {
                                 "Acude a consulta a un centro de salud un paciente con síndrome ulceroso que cumple criterios para iniciar tratamiento con omeprazol. En días previos, el médico tratante recibió la indicación por parte de la Dirección de únicamente prescribir medicamentos bloqueadores de H2 en pacientes con esta patología, ya que en farmacia hay un lote próximo a caducar. lapso tan breve ¿Cuál es el derecho del médico que se vulnera en este caso?",
-                                "O Ejercer la profesión en forme libre y sin presiones de cualquier naturaleza",
-                                "O Tener a su disposición los recursos que requiere su práctica profesional",
-                                "O Salvaguardar su prestigio profesional",
-                                "O Tener a su disposición los recursos que requiere su práctica profesional",
-                                "O Tener a su disposición los recursos que requiere su práctica profesional"
+                                "Ejercer la profesión en forme libre y sin presiones de cualquier naturaleza",
+                                "Tener a su disposición los recursos que requiere su práctica profesional",
+                                "Salvaguardar su prestigio profesional",
+                                "Tener a su disposición los recursos que requiere su práctica profesional",
+                                "Tener a su disposición los recursos que requiere su práctica profesional"
                         },
                         {
                                 "Un paciente de 42 años es llevado por personal del Servicio de Urgencias Médicas a una unidad hospitalaria pública. Se reporta en calidad de desconocido y que al deambular por la vía pública fue atropellado por un vehículo automotor (un camión), Pierde el estado de alerta de forma inmediata y personal de Urgencias lo atiende, lo intuban por Glasgow de 7, se canaliza vena periférica y lo llevan al hospital. Se solicita tomografía de cráneo por traumatismo craneoencefálico severo. Tiene un hematoma epidural occipitotemporal derecho, con desplazamiento de estructuras de línea media. Requiere manejo quirúrgico de urgencia. ¿Cuál es la obligación del médico en este caso?",
-                                "O Solicitar de forma urgente apoyo a Trabajo Social para localizar a familiares que autoricen el evento quirúrgico, para respetar en todo momento los principios de autonomía y beneficencia",
-                                "O iniciar el apoyo con cuidados paliativos con el objetivo de respetar el principio de beneficencia, ya que el pronóstico es malo para el paciente y no se cuenta con familiares",
-                                "O Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia",
-                                "O Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia",
-                                "O Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia"
+                                "Solicitar de forma urgente apoyo a Trabajo Social para localizar a familiares que autoricen el evento quirúrgico, para respetar en todo momento los principios de autonomía y beneficencia",
+                                "iniciar el apoyo con cuidados paliativos con el objetivo de respetar el principio de beneficencia, ya que el pronóstico es malo para el paciente y no se cuenta con familiares",
+                                "Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia",
+                                "Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia",
+                                "Autorizar al Cirujano el tratamiento quirúrgico debido a la urgencia que representa, a pesar de no contar con familiares de modo que se respete el principio de beneficencia"
                         },
                         {
                                 "Al valorar a una persona en el triage respiratorio de una unidad de reconversión covid, se encuentra que el paciente tiene una prueba positiva a SARS-CoV-2 sin embargo, también presenta un cuadro compatible con apendicitis aguda. Se indica que se debe canalizar al paciente a otra unidad que cuente con el servicio de cirugía general, por lo que sus padres deciden llevarlo por sus propios medios. Como parte del expediente clínico, la nota que se debe dar al paciente es de...",
@@ -456,315 +456,315 @@ public class ExamenCompleto  extends AppCompatActivity {
                         },
                         {
                                 "Una paciente de 55 años fue derivada al Servicio de Ginecología por sospecha de cáncer de mama. El médico especialista le confirma el diagnóstico y de acuerdo con los resultados es necesario programarla para una mastectomía, por lo que se le pide que firme el consentimiento informado. La mujer se muestra abrumada ante las noticias y, al ser analfabeta funcional, no comprende claramente los términos empleados ni lo indicado en el consentimiento escrito de manera que se niega a firmar. ¿Cómo debe proceder el médico ante esta situación?",
-                                "O Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar",
-                                "O Explicar nuevamente a la paciente tanto el diagnostico como las opciones terapéuticas con palabras sencillas y, una vez que comprenda la información, solicitar que firme el consentimiento",
-                                "O Solicitar al Departamento de Psicología acompañamiento para la paciente en su proceso de toma de decisiones para su tratamiento",
-                                "O Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar",
-                                "O Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar"
+                                "Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar",
+                                "Explicar nuevamente a la paciente tanto el diagnostico como las opciones terapéuticas con palabras sencillas y, una vez que comprenda la información, solicitar que firme el consentimiento",
+                                "Solicitar al Departamento de Psicología acompañamiento para la paciente en su proceso de toma de decisiones para su tratamiento",
+                                "Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar",
+                                "Llamar a un familiar para explicarle con detalle el diagnóstico, así como los riesgos y beneficios de las opciones terapéuticas, posteriormente solicitar la firma del consentimiento informado por la paciente y su familiar"
                         },
                         {
                                 "Una mujer de 20 años, originaria de Chiapas acude a un hospital de la Ciudad de México para realizarse la interrupción legal del embarazo (ILE). Es atendida por un médico urgenciólogo quien calcula 11 SDG por FUM; le entrega la hoja de consentimiento informado e inmediatamente la ingresa para realizarle el procedimiento con técnica médica. Al término, se realiza dictamen médico de anomalías genéticas o congénitas y la refiere al módulo de consejería. El expediente clínico fue conformado por la historia clínica, hoja de ingreso y egreso hospitalarios, nota medica de atención de Urgencias y carta de consentimiento informado Con base en el artículo 144 del Código Penal de la Ciudad de México, ¿qué acciones de la práctica médica son legales?",
-                                "O Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica",
-                                "O Calcular las SDG por FUM, realizar el procedimiento inmediatamente y al término hacer un dictamen médico de anomalías genéticas o congénitas",
-                                "O Ser atendida por un médico urgenciólogo, canalizarla al módulo de consejería al término del procedimiento y conformar su expediente clínico.",
-                                "O Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica",
-                                "O Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica"
+                                "Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica",
+                                "Calcular las SDG por FUM, realizar el procedimiento inmediatamente y al término hacer un dictamen médico de anomalías genéticas o congénitas",
+                                "Ser atendida por un médico urgenciólogo, canalizarla al módulo de consejería al término del procedimiento y conformar su expediente clínico.",
+                                "Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica",
+                                "Realizar la ILE a las 11 SDG, entregar la hoja de consentimiento informado y llevar a cabo el procedimiento con técnica médica"
                         },
                         {
                                 "En julio de 2020, ingresa al Servicio de Urgencias en estado comatoso una paciente de 50 años. Tiene antecedentes de diabetes mellitus tipo 2 desde hace 20 años y obesidad mórbida hace 30. A las 48 horas del internamiento, inicio con insuficiencia respiratoria aguda y falleció minutos después, asimismo, había presentado neumonía atípica las 24 horas previas. El cuadro clínico y debido al contexto epidemiológico, sugería una infección por el virus SARS-CoV-2, pero falleció antes de la prueba confirmatoria. ¿Qué enfermedad debe anotarse como causa básica de la muerte, con base en las características del certificado de defunción y la normativa vigente?",
-                                "O Neumonía atípica",
-                                "O Probable SARS-CoV-2",
-                                "O Diabetes mellitus tipo 2",
-                                "O Probable SARS-CoV-2",
-                                "O Probable SARS-CoV-2"
+                                "Neumonía atípica",
+                                "Probable SARS-CoV-2",
+                                "Diabetes mellitus tipo 2",
+                                "Probable SARS-CoV-2",
+                                "Probable SARS-CoV-2"
                         },
                         {
                                 "Una paciente de 23 años, primigesta, con 39 SDG, acude a centro de salud con actividad uterina regular de 2 horas. Tras ser evaluada se decide que el médico responsable del centro de salud le brinde atención del trabajo de parto, pues el hospital más cercano se encuentra a 2 horas; se obtiene un recién nacido de sexo masculino. ¿Quién debe expedir el certificado de nacimiento?",
-                                "O La unidad médica de segundo nivel",
-                                "O El médico tratante que acredita el nacimiento",
-                                "O El médico pediatra que decida la madre",
-                                "O El médico tratante que acredita el nacimiento",
-                                "O El médico tratante que acredita el nacimiento"
+                                "La unidad médica de segundo nivel",
+                                "El médico tratante que acredita el nacimiento",
+                                "El médico pediatra que decida la madre",
+                                "El médico tratante que acredita el nacimiento",
+                                "El médico tratante que acredita el nacimiento"
                         },
                         {
                                 "Se presenta en el Servicio de Urgencias una pareja que indica que su hijo de 2 meses lleva 15 minutos sin respirar. Se confirman la falta de signos vitales y se inician las maniobras de resucitación, que se extienden por 40 minutos, sin haber respuesta. Al ser interrogados, los padres mencionan que el lactante no tenía ninguna enfermedad previa diagnosticada y llevaba un seguimiento de niño sano normal en sus consultas de medicina familiar ¿Cómo se clasifica la muerte del infante según la medicina forense?",
-                                "O Muerte real",
-                                "O Muerte súbita",
-                                "O Muerte natural",
-                                "O Muerte súbita",
-                                "O Muerte súbita"
+                                "Muerte real",
+                                "Muerte súbita",
+                                "Muerte natural",
+                                "Muerte súbita",
+                                "Muerte súbita"
                         },
                         {
                                 "Un lactante de 7 meses presentó fiebre, malestar general y pérdida del apetito; fue tratado en casa con acetaminofén. A la mañana siguiente presentó fiebre alta, rash cutáneo, rechazo del alimento y de líquidos, y sus padres no pudieron despertarlo. Entonces, acudieron a consulta con un médico en una farmacia popular, el doctor, al término de su turno y ya por retirarse, los atendió de manera rápida y diagnosticó infección respiratoria alta, lo trato con medicación antifebril y les indicó que consultaran al Departamento de Emergencias si los síntomas empeoraban. En la tarde presentó convulsiones y fue llevado al Servicio de Urgencias. Se diagnosticó meningitis por neumococo que tuvo como secuela una sordera definitiva Con base en el caso ¿cuál es el tipo de responsabilidad civil del profesional en salud?",
-                                "O Negligencia",
-                                "O Impericia",
-                                "O Por dolo",
-                                "O Negligencia",
-                                "O Negligencia"
+                                "Negligencia",
+                                "Impericia",
+                                "Por dolo",
+                                "Negligencia",
+                                "Negligencia"
                         },
                         {
                                 "En una comunidad, una paciente de 34 años acude por presentar dolor abdominal agudo, intenso y persistente localizado en el epigastrio, el hipocondrio izquierdo y el derecho, que se irradia a la espalda. El dolor se acompaña de nausea y vómito que ha continuado hasta el momento. En la EF se encuentra diaforética, TA de 130/90 mm/Hg FC de 98/min, FR de 22/min y el abdomen doloroso a la palpación en toda la porción superior sin rigidez ni rebote. La sospecha diagnostica es pancreatitis. La paciente no es derechohabiente de ninguna institución y no Cuenta con los recursos para recibir atención médica privada. De acuerdo con el sistema de salud en México dirigido a las personas sin seguridad social, ¿a qué unidad se debe referir a la paciente?",
-                                "O Primer nivel de atención",
-                                "O Segundo nivel de atención",
-                                "O Tercer nivel de atención",
-                                "O Segundo nivel de atención",
-                                "O Segundo nivel de atención"
+                                "Primer nivel de atención",
+                                "Segundo nivel de atención",
+                                "Tercer nivel de atención",
+                                "Segundo nivel de atención",
+                                "Segundo nivel de atención"
                         },
                         {
                                 "Se presenta en consulta una mujer con datos clínicos compatibles con anemia ferropénica, por lo que se decide hacer una biometría hemática con reticulocitos para evaluarla. Según la guía Prevención, diagnóstico y tratamiento de la anemia por deficiencia de hierro en nos y adultos, ¿cuál es el siguiente paso en la atención de la paciente",
-                                "O Iniciar tratamiento con sulfato ferroso y citar en 1 mes con una nueva biometría hemática",
-                                "O Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar",
-                                "O Hacer un estudio de frotis sanguíneo y canalizar al Servicio de Hematología",
-                                "O Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar",
-                                "O Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar"
+                                "Iniciar tratamiento con sulfato ferroso y citar en 1 mes con una nueva biometría hemática",
+                                "Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar",
+                                "Hacer un estudio de frotis sanguíneo y canalizar al Servicio de Hematología",
+                                "Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar",
+                                "Solicitar un perfil de hierro y ferritina sérica y citar para volver a valorar"
                         },
                         {
                                 "Un paciente de 52 años, identificado en un módulo de prevención con diagnóstico probable de hipertensión arterial sistémica, acude a su primera consulta en el primer nivel de atención con TA de 140/90 mmhg; no reporta sintomatología, ni otros antecedentes familiares o patológicos. De acuerdo con las guías de práctica clínica, ¿qué conducta médica se debe seguir?",
-                                "O modificar el estilo de vida",
-                                "O iniciar tratamiento farmacológico",
-                                "O enviar a especialista de segundo nivel de atención",
-                                "O modificar el estilo de vida",
-                                "O modificar el estilo de vida"
+                                "modificar el estilo de vida",
+                                "iniciar tratamiento farmacológico",
+                                "enviar a especialista de segundo nivel de atención",
+                                "modificar el estilo de vida",
+                                "modificar el estilo de vida"
                         },
                         {
                                 "El calentamiento global ha desencadenado una serie de cambios en el medio ambiente que repercuten en la aparición de enfermedades infecciosas fuera de sus zonas endémicas tradicionales, lo cual dificulta la prevención de padecimientos como el dengue, el chikungunya o la fiebre amarilla. Además de estas enfermedades, ¿qué otra repercusión ha tenido el cambio climático en la salud global?",
-                                "O Reemergencia de enfermedades por el cambio en las temperaturas",
-                                "O Alteración de la alimentación por cambios en la producción alimentaria",
-                                "O Transmisión de enfermedades por vector debido al aumento del tránsito entre países",
-                                "O Reemergencia de enfermedades por el cambio en las temperaturas",
-                                "O Reemergencia de enfermedades por el cambio en las temperaturas"
+                                "Reemergencia de enfermedades por el cambio en las temperaturas",
+                                "Alteración de la alimentación por cambios en la producción alimentaria",
+                                "Transmisión de enfermedades por vector debido al aumento del tránsito entre países",
+                                "Reemergencia de enfermedades por el cambio en las temperaturas",
+                                "Reemergencia de enfermedades por el cambio en las temperaturas"
                         },
                         {
                                 "De acuerdo con una evaluación de los sistemas sanitarios en América Latina, 80% de los padecimientos son atendidos en sedes hospitalarias de tercer nivel, 15% en Segundo nivel y solo 5% en primer nivel de atención, lo que detona un rezago y una deficiencia en la salud pública nacional e internacional que se traducen en mayores tasas de morbimortalidad. Se realizar un análisis para diseñar una estrategia que permita incluir positivamente en la calidad y el costo beneficio de la atención sanitaria, y mejorar la salud pública global. ¿Qué factor de riesgo origina el problema de salud pública global identificado?",
-                                "O Gasto público insuficiente, en relación con el PIB, que se destina al segundo y tercer nivel de atención.",
-                                "O Inversión económica reducida en infraestructura, recursos y capital humano en el tercer nivel de atención.",
-                                "O inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero",
-                                "O inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero",
-                                "O inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero"
+                                "Gasto público insuficiente, en relación con el PIB, que se destina al segundo y tercer nivel de atención.",
+                                "Inversión económica reducida en infraestructura, recursos y capital humano en el tercer nivel de atención.",
+                                "inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero",
+                                "inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero",
+                                "inversión focalizada en la atención sanitaria del tercer nivel, en lugar de incrementar la del primero"
                         },
                         {
                                 "La aparición de eventos de interés epidemiológico, como la pandemia reciente por el SARS-COV-2, implica que los países miembros de la Organización Mundial de la Salud deben cumplir con lo estipulado por el Reglamento Sanitario Internacional, que tiene como finalidad...",
-                                "O proporcionar atención médica a los países que lo requieran",
-                                "O prevenir la propagación internacional de enfermedades",
-                                "O iniciar estudios de investigación clínica en animales y en seres humanos",
-                                "O prevenir la propagación internacional de enfermedades",
-                                "O prevenir la propagación internacional de enfermedades"
+                                "proporcionar atención médica a los países que lo requieran",
+                                "prevenir la propagación internacional de enfermedades",
+                                "iniciar estudios de investigación clínica en animales y en seres humanos",
+                                "prevenir la propagación internacional de enfermedades",
+                                "prevenir la propagación internacional de enfermedades"
                         },
                         {
                                 "Una paciente de 29 años de edad acude a consulta de urgencia por presentar dolor torácico, taquicardia y sensación de muerte inminente al estar en el transporte público. Menciona que ha tenido episodios iguales por lo menos cuatro veces; éstos son desencadenados al exponerse a lugares cerrados y con mucha gente o al tener que hablar en público. Comenta que su madre también padece los mismos episodios La medida asociada al tratamiento médico para disminuir los episodios y la ansiedad en la paciente es la terapia.",
-                                "O cognitivo-conductual",
-                                "O de desensibilización ocular",
-                                "O psicoanalítica",
-                                "O cognitivo-conductual",
-                                "O cognitivo-conductual"
+                                "cognitivo-conductual",
+                                "de desensibilización ocular",
+                                "psicoanalítica",
+                                "cognitivo-conductual",
+                                "cognitivo-conductual"
                         },
                         {
                                 "Un paciente de 35 años acude a su centro de Salud para solicitar un certificado médico, Presenta dolores de cabeza frecuentes, dificultad para conciliar el sueño por las noches y somnolencia excesiva durante el día, comenta que estos síntomas eran frecuentes en los últimos 8 meses en los que trabajo como vigilante, intensificándose en el último mes. Entre sus antecedentes heredofamiliares destaca que su madre presentaba insomnio con regularidad. Como medida para mejorar los hábitos de sueño, le recomendación es…",
-                                "O iniciar el uso de medicamentos como benzodiacepinas",
-                                "O realizar actividad física con un programa gradual de ejercicio vigoroso por las tardes",
-                                "O programar la misma hora para despertarse todos los días y evitar siestas durante el día.",
-                                "O iniciar el uso de medicamentos como benzodiacepinas",
-                                "O iniciar el uso de medicamentos como benzodiacepinas"
+                                " iniciar el uso de medicamentos como benzodiacepinas",
+                                " realizar actividad física con un programa gradual de ejercicio vigoroso por las tardes",
+                                " programar la misma hora para despertarse todos los días y evitar siestas durante el día.",
+                                " iniciar el uso de medicamentos como benzodiacepinas",
+                                " iniciar el uso de medicamentos como benzodiacepinas"
                         },
                         {
                                 "Un paciente de 16 años acude a consulta de control anual. Entre sus antecedentes familiares se menciona a ambos abuelos finados por complicaciones cardíacas, su madre y abuela materna padecen hipertensión arterial y su padre, diabetes mellitus. En la exploración física, se registra peso de 68 kg, talla de 1.67 m y un IMC de 24.4 kg/m2, el resto de la exploración por aparatos y sistemas se encuentra sin alteraciones. ¿Qué recomendación de actividad física se debe indicar para promover un estilo de vida saludable?",
-                                "O 60 minutos al día de ejercicio aeróbico de intensidad moderada",
-                                "O Entre 75 y 150 minutos al día de ejercicio aeróbico de alta intensidad",
-                                "O 180 minutos al día de actividad física diversa de intensidad variable",
-                                "O 60 minutos al día de ejercicio aeróbico de intensidad moderada",
-                                "O 60 minutos al día de ejercicio aeróbico de intensidad moderada"
+                                " 60 minutos al día de ejercicio aeróbico de intensidad moderada",
+                                " Entre 75 y 150 minutos al día de ejercicio aeróbico de alta intensidad",
+                                " 180 minutos al día de actividad física diversa de intensidad variable",
+                                " 60 minutos al día de ejercicio aeróbico de intensidad moderada",
+                                " 60 minutos al día de ejercicio aeróbico de intensidad moderada"
                         },
                         {
                                 "Un joven de 14 años es llevado a consulta por dolor en el muslo izquierdo desde hace 2 meses, el cual tiene predominio nocturno y en ocasiones lo imposibilita dormir, además, indica pérdida de peso de 4 kg. Tiene antecedente de padre con retinoblastoma de niño. En la exploración física se observa aumento de volumen en el muslo izquierdo, se palpa tumoración inmóvil e indolora, aparentemente fija a planos profundos, sin alteraciones tegumentarias visibles. De acuerdo con el cuadro actual, ¿qué acción de prevención secundaria debe llevarse a cabo?",
-                                "O Realizar ultrasonido",
-                                "O Solicitar radiografía",
-                                "O Programar biopsia",
-                                "O Realizar ultrasonido",
-                                "O Realizar ultrasonido"
+                                " Realizar ultrasonido",
+                                " Solicitar radiografía",
+                                " Programar biopsia",
+                                " Realizar ultrasonido",
+                                " Realizar ultrasonido"
                         },
                         {
                                 "Una paciente de 65 años, atendida en consulta externa y acompañada por su nieto, menciona que hay ocasiones en que no recuerda el nombre de sus hijos y tiene cierta limitación para llevar a cabo sus actividades de la vida diaria; asimismo, presenta cambios en su comportamiento. Ante la sospecha diagnóstica de demencia, ¿cuál es la recomendación nutricional para prevenir la progresión de la enfermedad?",
-                                "O Adicionar alimentos con folatos, vitaminas C, E y omega 3",
-                                "O Aumentar consumo de carne roja rica en grasa, homocisteína y flavonoides",
-                                "O Incluir suplementos con Ginkgo biloba, magnesio y zinc",
-                                "O Adicionar alimentos con folatos, vitaminas C, E y omega 3",
-                                "O Adicionar alimentos con folatos, vitaminas C, E y omega 3"
+                                " Adicionar alimentos con folatos, vitaminas C, E y omega 3",
+                                " Aumentar consumo de carne roja rica en grasa, homocisteína y flavonoides",
+                                " Incluir suplementos con Ginkgo biloba, magnesio y zinc",
+                                " Adicionar alimentos con folatos, vitaminas C, E y omega 3",
+                                " Adicionar alimentos con folatos, vitaminas C, E y omega 3"
                         },
                         {
                                 "Un paciente de 65 años acude al centro de Salud acompañado de un familiar porque sufrió una caída desde su propia altura debido a que Últimamente presenta dificultad para ponerse de pie y caminar, lo que ha provocado que permanezca en cama. El paciente tiene antecedente de diabetes mellitus tipo 2 e hipertensión arterial sistémica controladas, diagnosticadas hace 5 años, así como dermatitis actínica crónica inactiva, de 10 años de diagnóstico. En la EF, registra TA de 120/80 mmHg, FC de 89/min, FR de 16/min, T 36.5 °C, peso de 65 kg, talla de 160 cm y cara con placas liquenificadas en frente y v del cuello; asimismo, se observa hematoma de gran dimensión en glúteo derecho y limitación de movimiento. Con base en el cuadro actual, ¿cuál es la acción de prevención primaria para evitar complicaciones?",
-                                "O Prescribir esteroides tópicos",
-                                "O Referir a médico internista",
-                                "O Prescribir movilidad funcional",
-                                "O Prescribir esteroides tópicos",
-                                "O Prescribir esteroides tópicos"
+                                " Prescribir esteroides tópicos",
+                                " Referir a médico internista",
+                                " Prescribir movilidad funcional",
+                                " Prescribir esteroides tópicos",
+                                " Prescribir esteroides tópicos"
                         },
                         {
                                 "Un paciente de 51 años acude a consulta porque presenta malestar epigástrico y saciedad temprana, además de que ha percibido pérdida involuntaria de peso, 5 kg aproximadamente, en los últimos 3 meses. Entre sus antecedentes refiere tabaquismo a razón de 15 cigarros día y enfermedad acidopéptica para la que en ocasiones toma omeprazol. Se sospecha de neoplasia gástrica. ¿Qué prueba se debe realizar para la detección oportuna?",
-                                "O Test del aliento para Helicobacter pylori",
-                                "O Endoscopia con toma de muestra",
-                                "O Tomografía de alta resolución",
-                                "O Endoscopia con toma de muestra",
-                                "O Endoscopia con toma de muestra"
+                                " Test del aliento para Helicobacter pylori",
+                                " Endoscopia con toma de muestra",
+                                " Tomografía de alta resolución",
+                                " Endoscopia con toma de muestra",
+                                " Endoscopia con toma de muestra"
                         },
                         {
                                 "En una comunidad rural se desbordó el río. Lo que provocó un gran número de damnificados, heridos y muertos, así como daños a la infraestructura de servicios básicos y de vivienda. El personal de salud ha iniciado los trabajos de atención. ¿Cuál es la acción prioritaria de salud ambiental en esta situación de desastre?",
-                                "O Asegurar el acceso y el abastecimiento de agua para consumo humano",
-                                "O Asegurar el suministro de equipo y materiales para la atención de heridos",
-                                "O identificar los daños estructurales en las viviendas de los damnificados",
-                                "O Asegurar el acceso y el abastecimiento de agua para consumo humano",
-                                "O Asegurar el acceso y el abastecimiento de agua para consumo humano"
+                                " Asegurar el acceso y el abastecimiento de agua para consumo humano",
+                                " Asegurar el suministro de equipo y materiales para la atención de heridos",
+                                " identificar los daños estructurales en las viviendas de los damnificados",
+                                " Asegurar el acceso y el abastecimiento de agua para consumo humano",
+                                " Asegurar el acceso y el abastecimiento de agua para consumo humano"
                         },
                         {
                                 "Un hombre de 67 años tiene cansancio y dificultad para concentrarse. Durante el interrogatorio menciona que su alimentación no ha sido completa ni balanceada en el último mes y que dormido 5 horas diarias, pues ha trabajado más de normal para dejar todo en orden antes de jubilarse. ¿Qué medida preventiva se debe indicar para favorecer la salud mental del paciente?",
-                                "O Solicitar interconsulta con Psicología para tratar el insomnio secundario",
-                                "O Sugerir que en su estilo de vida incluya actividades físicas y recreativas",
-                                "O Iniciar tratamiento con complejo B para compensar la alimentación deficiente",
-                                "O Sugerir que en su estilo de vida incluya actividades físicas y recreativas",
-                                "O Sugerir que en su estilo de vida incluya actividades físicas y recreativas"
+                                " Solicitar interconsulta con Psicología para tratar el insomnio secundario",
+                                " Sugerir que en su estilo de vida incluya actividades físicas y recreativas",
+                                " Iniciar tratamiento con complejo B para compensar la alimentación deficiente",
+                                " Sugerir que en su estilo de vida incluya actividades físicas y recreativas",
+                                " Sugerir que en su estilo de vida incluya actividades físicas y recreativas"
                         },
                         {
                                 "Una paciente de 37 años acude a orientación clínica porque hace 1 mes nació su hijo y en el hospital le recomendaron alimentarlo únicamente con lecho materna. Sin embargo, hace 3 días fue diagnosticada con hipertensión arterial sistémica e inició tratamiento con hidralazina. Por ello, quiere saber si debe suspender la lactancia. ¿Qué recomendación se debe dar a la paciente?",
-                                "O Suspender la lactancia materna e iniciar alimentación a base de fórmula",
-                                "O Continuar con lactancia materna exclusiva y mantener en observación al lactante",
-                                "O Disminuir la lactancia materna a dos veces al día e iniciar fórmula a libre demanda",
-                                "O Continuar con lactancia materna exclusiva y mantener en observación al lactante",
-                                "O Continuar con lactancia materna exclusiva y mantener en observación al lactante"
+                                " Suspender la lactancia materna e iniciar alimentación a base de fórmula",
+                                " Continuar con lactancia materna exclusiva y mantener en observación al lactante",
+                                " Disminuir la lactancia materna a dos veces al día e iniciar fórmula a libre demanda",
+                                " Continuar con lactancia materna exclusiva y mantener en observación al lactante",
+                                " Continuar con lactancia materna exclusiva y mantener en observación al lactante"
                         },
                         {
                                 "Una mujer de 28 años, G2, A1, con 20 SDG por USG, acude a su consulta de control prenatal. Actualmente se observa asintomática. En la EF se registra FC de 90/min, FR de 18/min, TA de 110/80 mmHg, altura uterina de 16 cm, asimismo cérvix cerrado y formado. ¿Cuál es el esquema de vacunación indicado para la paciente?",
-                                "O Vacuna Td en este momento",
-                                "O Vacuna Td después del embarazo",
-                                "O Vacuna Tdpa en este momento",
-                                "O Vacuna Tdpa en este momento",
-                                "O Vacuna Tdpa en este momento"
+                                "Vacuna Td en este momento",
+                                "Vacuna Td después del embarazo",
+                                "Vacuna Tdpa en este momento",
+                                "Vacuna Tdpa en este momento",
+                                "Vacuna Tdpa en este momento"
                         },
                         {
                                 "En una empresa de servicios se incrementa el ausentismo entre los trabajadores y se reciben diferentes quejas por parte de los usuarios sobre conductas y actitudes inadecuadas y poco empáticas de los empleados. Se analizan los certificados de incapacidad y se detecta que las enfermedades generales registradas incluyen cefalea tensional, migraña, lumbalgia y crisis hipertensivas. ¿Qué acción se debe implementar para atender los riesgos a la salud descritos?",
-                                "O Programar sesiones grupales guiadas para reiterar los valores de la empresa que incentiven el compromiso de los empleados",
-                                "O Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física",
-                                "O Difundir entre todos los empleados las acciones incluidas en la política de prevención de riesgos psicosociales",
-                                "O Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física",
-                                "O Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física"
+                                "Programar sesiones grupales guiadas para reiterar los valores de la empresa que incentiven el compromiso de los empleados",
+                                "Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física",
+                                "Difundir entre todos los empleados las acciones incluidas en la política de prevención de riesgos psicosociales",
+                                "Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física",
+                                "Valorar médicamente a los empleados que presentan factores psicosociales con repercusión en su salud física"
                         },
                         {
                                 "Una paciente de 61 años, con antecedente familiar de primer grado con cáncer de mama, menopausia a los 55 años y tabaquismo positivo hace 20 años, a razón de un cigarro por día, acude a consulta por una masa dolorosa en la parte superior externa de la mama derecha. En la EF, los signos vitales se encuentran dentro de los parámetros normales, la mama derecha sin alteraciones, no se logra palpar nódulo o tumoración. ¿Cuál es el estudio de elección para descartar patología maligna en este caso?",
-                                "O Resonancia magnética",
-                                "O Ultrasonido",
-                                "O Mastografía",
-                                "O Mastografía",
-                                "O Mastografía"
+                                "Resonancia magnética",
+                                "Ultrasonido",
+                                "Mastografía",
+                                "Mastografía",
+                                "Mastografía"
                         },
                         {
                                 "Acude a consulta madre con recién nacido de 3 semanas. Indica que nació en casa con una partera, pero llama la atención el llanto ronco, que duerme mucho, lo tiene que despertar para que coma y evacua una vez al día. En la EF, se detecta un tinte ictérico, hernia umbilical, piel seca y letargia. ¿Cuál es el estudio para obtener el diagnóstico definitivo del paciente?",
-                                "O Tamiz metabólico básico",
-                                "O Prueba de función hepática",
-                                "O Tamiz cardiaco",
-                                "O Tamiz metabólico básico",
-                                "O Tamiz metabólico básico"
+                                "Tamiz metabólico básico",
+                                "Prueba de función hepática",
+                                "Tamiz cardiaco",
+                                "Tamiz metabólico básico",
+                                "Tamiz metabólico básico"
                         },
                         {
                                 "Un hombre de 58 años presenta pirosis, tos regurgitaciones desde hace 1 mes. En el interrogatorio menciona un alto consumo de carbohidratos y grasas Saturadas, tabaquismo positivo a razón de ocho cigarrillos diarios desde hace 15 años, consumo de alcohol una vez a la semana hasta llegar a la embriaguez y sedentarismo. En la exploración física se registra IMC de 30.4 kg/m2, abdomen globoso a expensas de panículo adiposo, doloroso a la palpación media en epigastrio y marco cólico. ¿Qué medida debe indicarse al paciente para disminuir el riesgo de padecer cáncer esofágico?",
-                                "O Iniciar tratamiento con antiácidos y alginatos",
-                                "O Evitar el consumo de tabaco y bebidas alcohólicas",
-                                "O Realizar una endoscopia para descartar esófago de Barret",
-                                "O Evitar el consumo de tabaco y bebidas alcohólicas",
-                                "O Evitar el consumo de tabaco y bebidas alcohólicas"
+                                "Iniciar tratamiento con antiácidos y alginatos",
+                                "Evitar el consumo de tabaco y bebidas alcohólicas",
+                                "Realizar una endoscopia para descartar esófago de Barret",
+                                "Evitar el consumo de tabaco y bebidas alcohólicas",
+                                "Evitar el consumo de tabaco y bebidas alcohólicas"
                         },
                         {
                                 "Un paciente de 45 años de edad acude a consulta por presentar nicturia y tenesmo vesical de 1 mes de evolución. Tiene antecedentes heredofamiliares de cáncer de próstata en su padre y tío paterno, indica tabaquismo positivo con índice tabáquico de 25 paquetes/año, alcoholismo y litiasis vesicular. ¿Cuál es la prueba de tamizaje prioritaria para la detección oportuna de cáncer de próstata en este paciente?",
-                                "O Ultrasonido prostático",
-                                "O Biopsia transrectal",
-                                "O Antígeno prostático específico",
-                                "O Antígeno prostático específico",
-                                "O Antígeno prostático específico"
+                                "Ultrasonido prostático",
+                                "Biopsia transrectal",
+                                "Antígeno prostático específico",
+                                "Antígeno prostático específico",
+                                "Antígeno prostático específico"
                         },
                         {
                                 "Una paciente de 30 años con antecedente familiar de primer grado con cáncer de mama acude a consulta por dolor cíclico en ambas mamas Indica que se le colocaron implantes mamarios con fines estéticos a los 26 años de edad. En la exploración física se registran signos vitales dentro de los parámetros normales, mama derecha sin alteraciones, implantes mamarios íntegros y no se logra palpar nódulo o tumoración. ¿Qué medida de autocuidado se debe recomendar?",
-                                "O Retirar implantes mamarios",
-                                "O Evitar consumo de folatos",
-                                "O Realizar autoexploración mamaria",
-                                "O Realizar autoexploración mamaria",
-                                "O Realizar autoexploración mamaria"
+                                "Retirar implantes mamarios",
+                                "Evitar consumo de folatos",
+                                "Realizar autoexploración mamaria",
+                                "Realizar autoexploración mamaria",
+                                "Realizar autoexploración mamaria"
                         },
                         {
                                 "En una comunidad rural hubo casos de dengue el año pasado, por lo que este año, en el centro de salud y con apoyo de la presidencia municipal, se realizó un programa educativo de prevención y promoción dirigido a los pobladores, con los siguientes objetivos: • Dar a conocer la enfermedad y sus complicaciones por medio de pláticas informativas • Realizar descacharrización en las zonas con mayor riesgo • Usar larvicidas en zonas con menos riesgo • Uso de mosquiteros en puertas y ventanas Después de aplicar el programa, se presentaron casos de dengue. ¿Qué se requiere modificar para restaurar la salud de la población?",
-                                "O Cloración de agua para consumo humano",
-                                "O Uso de malatión en zonas con mayor riesgo",
-                                "O Participación de la comunidad para limpieza a corto plazo",
-                                "O Participación de la comunidad para limpieza a corto plazo",
-                                "O Participación de la comunidad para limpieza a corto plazo"
+                                "Cloración de agua para consumo humano",
+                                "Uso de malatión en zonas con mayor riesgo",
+                                "Participación de la comunidad para limpieza a corto plazo",
+                                "Participación de la comunidad para limpieza a corto plazo",
+                                "Participación de la comunidad para limpieza a corto plazo"
                         },
                         {
                                 "Como parte de las normas de seguridad del paciente, ¿cuál es el orden correcto en el que deben frotarse las manos para la desinfección? 1. Las palmas de las manos entre sí 2. La punta de los dedos de la mano derecha contra la palma de la mano izquierda en un movimiento de rotación, y al contrario 3. La palma de la mano derecha contra el dorso de la mano izquierda entrelazando los dedos y viceversa 4. Con un movimiento de rotación del pulgar izquierdo, atraparlo con la palma de la mano derecha y lo mismo con la otra mano 5 Las palmas de las manos entre sí, con los dedos entrelazados 6 El dorso de los dedos de una mano con la palma de la mano opuesta, mientras se agarran los dedos",
-                                "o 1, 3, 2, 5, 6, 4",
-                                "o 1,3,5, 6, 4, 2",
-                                "O 3, 1, 6, 5, 4,2",
-                                "o 1,3,5, 6, 4, 2",
-                                "o 1,3,5, 6, 4, 2"
+                                "1, 3, 2, 5, 6, 4",
+                                "1,3,5, 6, 4, 2",
+                                "3, 1, 6, 5, 4,2",
+                                "1,3,5, 6, 4, 2",
+                                "1,3,5, 6, 4, 2"
                         },
                         {
                                 "Paciente femenino de 32 años acude por cefalea opresiva en región occipital de 5 días de evolución acompañada de acúfenos en algunas ocasiones, mareos, astenia y adinamia. Desconoce antecedentes personales de enfermedades crónicas y niega ingesta de medicamentos de manera habitual. Tiene padres con diabetes mellitus tipo 2 e hipertensión arterial. Antecedentes personales no patológicos, con dieta a base de harinas procesadas y carbohidratos refinados, sedentarismo, tabaquismo positivo, a razón de cuatro cigarrillos al día y alcoholismo de patrón social. Las alteraciones halladas en la exploración física son: IMC de 34.2 kg/m2, TA de 139/79 mmHg y glucosa postpandrial de 126 mg/dl. ¿Cuáles son los cambios necesarios en el estilo de vida de la paciente para restaurar su salud?",
-                                "O Actividad física de moderada a intensa, supervisada medicamente, de 3 a 5 días por semana, restricción de carbohidratos de la dieta para reducción de peso corporal; consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
-                                "O Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina del peso corporal, Consumo de sodio menor a 1.8g al día y consumo de proteínas menos de 0.6 g/kg/día",
-                                "O Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
-                                "O Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
-                                "O Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día."
+                                "Actividad física de moderada a intensa, supervisada medicamente, de 3 a 5 días por semana, restricción de carbohidratos de la dieta para reducción de peso corporal; consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
+                                "Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina del peso corporal, Consumo de sodio menor a 1.8g al día y consumo de proteínas menos de 0.6 g/kg/día",
+                                "Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
+                                "Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día.",
+                                "Actividad física de moderada a intensa, no supervisada, de 3 a 5 días por semana, consumo de carbohidratos de índice glicémico bajo para disminución paulatina de peso corporal, consumo de sodio de entre 1.8 y 2.4 g al día y consumo de proteínas de 0.8 g/kg/día, sin disminuir de 0.6 g/kg/día."
                         },
                         {
                                 "En una comunidad rural ha aumentado tres veces la incidencia de infecciones de transmisión sexual en mujeres en los últimos 6 meses. Debido a la escasez de recursos y medicamentos, el médico decide pedir apoyo a la unidad médica más cercana, a la que le solicita preservativos, antibióticos y material para realizar el papanicolaou. ¿Qué intervención favorece la protección de la salud sexual de la comunidad?",
-                                "O Capacitar para el uso de preservativos",
-                                "O Instruir acerca del consumo de antibióticos",
-                                "O Informar sobre el procedimiento del papanicolaou",
-                                "O Capacitar para el uso de preservativos",
-                                "O Capacitar para el uso de preservativos"
+                                "Capacitar para el uso de preservativos",
+                                "Instruir acerca del consumo de antibióticos",
+                                "Informar sobre el procedimiento del papanicolaou",
+                                "Capacitar para el uso de preservativos",
+                                "Capacitar para el uso de preservativos"
                         },
                         {
                                 "Se detecta que un grupo de 25 personas del personal de salud que se recuperó de la covid-19 requiere orientación para manejo de tensión emocional al reintegrarse a labores y percibir el alto riesgo de volver a infectarse. ¿Cuál es la intervención educativa sobre el manejo del estrés que se debe implementar?",
-                                "O Diplomado presencial de 120 horas con apoyo de un tutor",
-                                "O Taller virtual autoadministrado de 120 horas con apoyo de la plataforma hospitalaria",
-                                "O Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública",
-                                "O Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública",
-                                "O Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública"
+                                "Diplomado presencial de 120 horas con apoyo de un tutor",
+                                "Taller virtual autoadministrado de 120 horas con apoyo de la plataforma hospitalaria",
+                                "Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública",
+                                "Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública",
+                                "Curso virtual sincrónico de 30 horas con apoyo de plataforma virtual de salud pública"
                         },
                         {
                                 "En un municipio, se realizó el diagnóstico situacional de salud en 2020, en el que se reportaron 473 personas de 65 años y más, con una proyección de aumento de 55% para 2025. Por este incremento, el centro de salud decide implementar intervenciones educativas para favorecer la protección de las personas de la tercera edad. ¿Cuál de las siguientes intervenciones favorece la protección para el síndrome de fragilidad de esta población?",
-                                "O Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado",
-                                "O lncluir a los familiares o cuidadores en la hora de comer para socializar y apoyar, fomentar ejercicios de resistencia 30-45 minutos por día, mínimo tres veces por semana, asistir al centro de salud para valoración médica y para determinar niveles séricos de vitamina D",
-                                "O Realizar actividades de recreación grupales o individuales como taichí o bailar, ejercitarse regularmente con pesas, previa valoración médica, incluir en la dieta alimentos ricos en Ca y proteína e instalar pasamanos en baños, pasillos y escaleras.",
-                                "O Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado",
-                                "O Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado"
+                                "Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado",
+                                "lncluir a los familiares o cuidadores en la hora de comer para socializar y apoyar, fomentar ejercicios de resistencia 30-45 minutos por día, mínimo tres veces por semana, asistir al centro de salud para valoración médica y para determinar niveles séricos de vitamina D",
+                                "Realizar actividades de recreación grupales o individuales como taichí o bailar, ejercitarse regularmente con pesas, previa valoración médica, incluir en la dieta alimentos ricos en Ca y proteína e instalar pasamanos en baños, pasillos y escaleras.",
+                                "Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado",
+                                "Estimular comunicación con visitas de familiares, coloca relojes y Calendarios en la vivienda para facilitar orientación, incluir suplementos vitamínicos y estimular movilidad con actividades de autocuidado"
                         },
                         {
                                 "En una comunidad rural de Campeche se registra una tasa de mortalidad materna cercana a 20% y se identifica que las tres principales causas incluyen enfermedades preexistentes o surgidas durante el embarazo, infecciones y hemorragias posparto. En la comunidad es muy recurrente que las mujeres prefieran que sus partos sean atendidos por matronas porque, aunque hay una clínica cercana, el hospital se encuentra a 1 hora de distancia. ¿Qué aspecto se debe enfatizar en todas las intervenciones de educación para la salud que se implementen en la comunidad?",
-                                "O Recibir atención prenatal durante el embarazo",
-                                "O Promover la atención profesional del parto",
-                                "O Aumentar las medidas de higiene durante el parto",
-                                "O Recibir atención prenatal durante el embarazo",
-                                "O Recibir atención prenatal durante el embarazo"
+                                "Recibir atención prenatal durante el embarazo",
+                                "Promover la atención profesional del parto",
+                                "Aumentar las medidas de higiene durante el parto",
+                                "Recibir atención prenatal durante el embarazo",
+                                "Recibir atención prenatal durante el embarazo"
                         },
                         {
                                 "Llega al Servicio de Urgencias, por cuarta ocasión en 1 mes, un adolescente de 18 años con signos de intoxicación por Cannabis. El joven menciona que sus padres lo presionan mucho con los estudios y lo único que lo calma es fumar mariguana. ¿Cuáles son las acciones educativas para manejar el abuso de sustancias en este caso?",
-                                "O implementar estrategias de moderación y retroalimentación personalizadas acerca del consumo, sus riesgos y consecuencias.",
-                                "O Enfatizar la inexistencia de un nivel seguro de consumo de drogas y aconsejar mientras se destacan los factores protectores del paciente.",
-                                "O Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo",
-                                "O Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo",
-                                "O Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo"
+                                "implementar estrategias de moderación y retroalimentación personalizadas acerca del consumo, sus riesgos y consecuencias.",
+                                "Enfatizar la inexistencia de un nivel seguro de consumo de drogas y aconsejar mientras se destacan los factores protectores del paciente.",
+                                "Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo",
+                                "Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo",
+                                "Informar sobre actividades cognitivo-conductuales por medio de grupos de ayuda mutua para evitar el consumo"
                         },
                         {
                                 "En una secundaria, se detecta un aumento de las infecciones por transmisión sexual en un grupo de adolescentes de entre 12 y 15 años. Identifique la acción educativa por implementar",
-                                "O Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales",
-                                "O Promover la abstinencia y el reconocimiento de enfermedades de transmisión sexual",
-                                "O Informar sobre sexualidad de forma diferenciada a grupos de hombres y mujeres",
-                                "O Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales",
-                                "O Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales"
+                                "Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales",
+                                "Promover la abstinencia y el reconocimiento de enfermedades de transmisión sexual",
+                                "Informar sobre sexualidad de forma diferenciada a grupos de hombres y mujeres",
+                                "Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales",
+                                "Fortalecer las habilidades para la salud y los conocimientos acerca a las relaciones sexuales"
                         },
                         {
                                 "Paciente masculino de 48 años acude a consulta por náusea y vómito por ingesta de destilados en cantidad abundante la noche previa. Niega antecedentes de enfermedades crónicas y alergias, tabaquismo positivo a razón de cinco a siete cigarros al día: Al interrogar más a fondo, se detecta que desde hace 1 mes aumentó la ingesta de bebidas alcohólicas hasta hacerlo casi diariamente, incluso solo en casa, llegando a la embriaguez de manera ocasional. El paciente menciona que ha presentado retardos recurrentes en su trabajo por las molestias en la mañana y que en la última semana lo han amonestado por esta situación. ¿Cuál de las siguientes opciones de prevención y educación en salud se recomienda en este caso?",
-                                "O Disminuir el consumo de bebidas alcohólicas hasta suspenderlas por completo",
-                                "O Remitir a consulta de psiquiatría o a una clínica de control de adicciones",
-                                "O Iniciar tratamiento con una benzodiacepina de acción corta y analgésicos",
-                                "O Remitir a consulta de psiquiatría o a una clínica de control de adicciones",
-                                "O Remitir a consulta de psiquiatría o a una clínica de control de adicciones"
+                                "Disminuir el consumo de bebidas alcohólicas hasta suspenderlas por completo",
+                                "Remitir a consulta de psiquiatría o a una clínica de control de adicciones",
+                                "Iniciar tratamiento con una benzodiacepina de acción corta y analgésicos",
+                                "Remitir a consulta de psiquiatría o a una clínica de control de adicciones",
+                                "Remitir a consulta de psiquiatría o a una clínica de control de adicciones"
                         },
                         {
                                 "Una paciente de 68 años presenta un cuadro de tos con expectoración blanquecina y ortopnea, menciona que el día de hoy se agudizaron los síntomas y que presenta disnea. Reside en una comunidad rural y vive con cuatro familiares más; su casa habitación cuenta con dos cuartos, piso de tierra, techo de lámina, cocina rustica de leña y fosa séptica; indica que tienen aves de corral para autoconsumo. En la exploración física se registra TA de 120/80 mmHg, FC de 78/min, FR de 22/min, T de 36.9°C y sato2 de 96%. ¿Cuál es el factor de entorno de la paciente que se asocia a su problema de salud?",
